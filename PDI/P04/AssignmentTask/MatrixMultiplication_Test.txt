@@ -1,0 +1,12 @@
+Program: MatrixMultiplication
+Design date: 19/04/2020
+Test date: 19/04/2020
+
+Total Tests: 1
+Tests passed: 1
+Tests failed: 0
+
+TEST RESULTS:
+Expected OUTPUT                 ACTUAL OUTPUT                    CORRECT OUTPUT            PASS / FAIL
+[14 24 ]                        [14 24 ]                         [14 24 ]                  __________
+[10 20 ]                        [14 24 ]                         [14 24 ]                  PASS

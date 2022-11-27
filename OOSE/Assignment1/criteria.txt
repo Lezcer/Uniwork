@@ -1,0 +1,79 @@
+Name: Salah Mahamod 20152428
+Date: 21/04/2022 @ 11:30PM
+
+Responses to criteria questions
+
+(2) Appropiate use of containers
+    I created a Maze data structure storing general information about the maze in general, such as size, starting and ending locations and a 2D array containing 
+    another data structure, Location which are the different playable 'locations'. The Location container stores information specific to each location such as 
+    messages, keys it may contain, any barriers (doors & walls) to the north or west and their coordinates.
+
+    I believe I have used Java containers appropiately. One of the best design choices I have made was storing keys and doors of different types (but in the same
+    location) in an ArrayList containing Integer objects. The containsAll() method made the process of checking whether the Player had the keys necessary to 
+    go through a door (i.e. same color).
+    I utilized a standard 2D array container for the different locations in the maze, this makes iterating through different elements easier.
+
+    I have used a hashmap to access the ansi escape codes easier, this reduces the amount of if statements I would've needed to use.
+
+(3) Clear and distinct class/interface/method responsibilities
+    I have named classes, interfaces and methods appropiately.
+
+    The FileIO class handles reading of files and prompting the user for input.
+    The "_"Data classes that implement the StoreData class, implement the addInfo() method, which takes lines from the input file (other than the one specifying 
+    dimensions) and stores it into Maze and Location containers. 
+
+    When accessing the containers Location and Maze the appropiate accessors are called. Fields are protected.
+
+    MazeGame class contains main() which calls FileIO and saves the Maze data structure.
+
+(4) Appropiate error handling and logging
+    Regarding exceptions caused by external errors, it is handled. External errors arise from the following:
+    -   Incorrect filename -> FileNotFoundExcept is caught
+    -   Error while reading file -> IOException is caught
+    -   File's first line doesn't contain the dimensions -> NumberFormatException is caught, which arises when there's a parsing error
+    -   Other line's which may cause a parsing error -> NumberFormatException is caught
+    Those were the fatal ones, these external errors don't effect the game (these are logged & are ignored / default values may be used):
+    -   Other line's that have incorrect details, such as key or doors that have a type not between 1-6 or locations that are out of bound etc -> These are logged & 
+        ignored
+    -   For incorrrect starting and ending locations -> default is used, but not logged, this is becuase the constructor sets them by default just in case of this.
+    -   User enters anything other than NSWEnswe for the game -> They're told "Invalid input!" and are prompted to retry (without refreshing display) ALSO these are 
+        logged
+    -   User enters NSWEnswe BUT its an illegal move, whether:
+                                                                a) it is out of the maze's bounds
+                                                                b) there is a wall in that direction
+                                                                c) there is a door and the player hasn't picked up a key
+        and in this case -> They're told "Invalid Move!" and are prompted to retry (without refreshing display) ALSO these are logged
+
+    Regarding logging, I have categories logs in 3 categories, which are handled by the ConsoleHandler:
+    -   Severe: If it an exception has occured, it is logged regardless of whether the program ended or not
+    -   Warning: No exceptions, just a warning that invalid data was ignored and defaults may have been used
+    -   Info: logged when a user makes an incorrect move, non-fatal external errors
+
+(5) Appropiate use of the Strategy Pattern
+    I believe I have used the Sttategy Pattern well in this assignment. When it comes to storing data from other lines of the Input file, it is all handled by the 
+    addInfo() method which is implemented by other classes that "have similar goals" - store this information about the Maze / Location, check if it is valid and 
+    store it. The first character of each line is used as the key to access a hashmap that contains instances of these subclasses that implement the StoreData 
+    interface. This instance of subclass "A" is passed a String array which has the data in the line split into different elements.
+
+    As a result, I read the entire file with the use of 4 lines of code and absolutely no if statements. 
+
+    I am NOT creating the subclass objects where I am calling them, I have used initDataStorers, to create the hash map. and I have never queried which subclass I
+    was dealing with
+
+    I'm not sure if this is also considered use of the Strategy pattern but I also stored the 6 different colours in a hasmap using the number as the key, instead
+    of using if statements to check whether type is == 1 or 2 etc, I use the type as the key to access the colour hashmap which return the ansi escape code String
+    for e.g. RED, the type is 1, if I know the type as int, instead of using an if statement (if type == 1, then colour = RED), I can just do colours.get(type) - 
+    which sort of resembles the Strategy pattern but doesn't involve interfaces to be implemented.
+
+    
+
+(6) Appropiate use of the Decorator Pattern
+    Unfortunately I didn't implement the Decorator Pattern.
+    For what it's worth I wanted to "wrap" the location object with horizontal and vertical door objects but didn't have time.
+    I was thinking of sorting the Input file so that wrapping was consistent. In the specification, horizontal and vertical doors may appear in any order 
+    this would help with accessing the door easily and simplify the Location class, as a significant portion of the code there is dealing with horizontal
+    and vertical doors as they're more sophisticated (multiple doors in 1 spot, need a key of a specific colour, etc.)
+
+
+
+

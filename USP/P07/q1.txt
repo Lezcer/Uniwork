@@ -1,0 +1,13 @@
+1 Research
+lsmod: shows the status of modules in the linux kernel. Modules are pieces of code that can be loaded and unloaded into the kernel upon demand. 
+They extend the functionality of the kernel without the need to reboot the system. For example, 
+one type of module is the device driver, which allows the kernel to access hardware connected to the system.
+insmod: program used to insert a module into the linux kernel. (insert module). Function: Load the specified kernel modules into the kernel
+rmmod: program used to remove a module from the linux kernel
+printk(): similar to printf() but prints to the kernel log instead of stdout. Kernel log is a log for kernel ring buffer, which is a data structure 
+that records messages related to the operation of the kernel.
+sk_buff: i.e. socket buffers are data structures that hold packet data
+tail -f: tail in general outputs the last 10 lines of a file, the -f flag outputs appended data as the file grows.
+/var/log/syslog: Shows general messages and info regarding the system. Basically a data log of all activity throughout the global system. Could be 
+used with tail -f or dmesg could be used entirely. 
+dmesg: prints the kernel

@@ -1,0 +1,10 @@
+I.  The BST has the tallest height, whilst the B-Tree with 6 keys per node 
+    has the shortest. The Red-Black tree has a moderate height however the
+    data is more 'distributed' this allows it to self balance whilst still
+    maintaining the same time complexity as a BST (logarithmic). B-tree is
+    the least efficient.
+
+II. BST will be the easiest as there are 2 cases you need to visualise. The 
+    new node is greater or its smaller(/equal) thus it gets inserted either
+    the right or left. Personally, BST would've been the easiest ADT I've
+    implemented in DSA if it wasn't for the recursive implementation.

@@ -1,0 +1,64 @@
+PROGRAM Markup
+    MAIN:
+        DO
+            OUTPUT "Please input the number of terms you would like that would approximate Markup's Constant."
+            OUTPUT "Please make sure this number is between 2 and 35 (INCLUSIVE)." 
+            INPUT numTerms (Integer)
+        WHILE ( 2 < numTerms < 35)
+
+        DO
+            OUTPUT "Please enter the number for the precision of each individual term."
+            OUTPUT "Please make sure its between 5 and 100 (INCLUSIVE)."
+            INPUT k (Integer)
+        WHILE (5 < k < 100)
+        
+        terms (ARRAY OF Real OF SIZE (numTerms + 1))
+        terms := calculateTerm <- numTerms, k
+        displayArray<- terms
+
+    END MAIN
+
+    SUBMODULE: calculateTerm
+    IMPORT:numTerms (Integer), k (Integer)
+    EXPORT: terms (Real ARRAY OF SIZE (numTerms + 1))
+    ALGORITHM:
+        terms (ARRAY OF Real OF SIZE (numTerms + 1))
+        sum = 0
+        //So sum is initialised because we want to use it in RHS of equation
+        FOR ( i := 0 TO (terms.length - 1) (EXCLUSIVE) INC BY 1)
+            terms[i] := expressionCalc <- numTerms, k, i
+            sum := sum + terms[i]
+        END FOR
+        terms[terms.length - 1] := sum
+    END calculate
+
+    SUBMODULE: expressionCalc
+    IMPORT: numTerms (Integer), k (Integer), i (Integer)
+    EXPORT: result
+    ALGORITHM:
+        product := 1
+        FOR ( j := 0 TO k (INCLUSIVE) INC BY 1)
+            r := CONVERT TO Real (numTerms)
+            s := CONVERT TO Real (k)
+            t := CONVERT TO Real (i) + 1
+            u := CONVERT TO Real (j)
+
+            numerator := pow(t, 2.0) * (u + 1.0)
+            denominator := 4 * r * s
+            block := numerator / denominator
+            product := product * block
+        END FOR
+        result := product
+    END
+        
+    SUBMODULE: displayArray
+    IMPORT: array1Dimension (Real ARRAY)
+    EXPORT: none
+    ALGORITHM:
+        OUTPUT "[ "
+        FOR ( FF := 0 TO (SIZE OF array1Dimension) INC BY 1
+            OUTPUT array1Dimension[ff] + " "
+        END FOR
+        OUTPUT "]" + NEWLINE
+        
+    END displayArray

@@ -1,0 +1,2 @@
+20,10,4,Overlord
+5,4,3,Slime

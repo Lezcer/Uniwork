@@ -1,0 +1,24 @@
+Apr 25, 2022 7:56:04 AM edu.curtin.assignment.WallData addInfo
+SEVERE: Invalid argument for wall location.
+Apr 25, 2022 7:56:35 AM edu.curtin.assignment.Maze validMove
+INFO: Invalid because there's a wall South or North.
+Apr 25, 2022 7:56:54 AM edu.curtin.assignment.Maze validMove
+INFO: Invalid because there's a wall South or North.
+Apr 25, 2022 7:58:25 AM edu.curtin.assignment.Maze validMove
+INFO: Invalid because there's a door South or North and you don't have the keys.
+Apr 25, 2022 7:58:25 AM edu.curtin.assignment.Maze validMove
+INFO: Invalid because there's a door South or North and you don't have the keys.
+Apr 25, 2022 7:58:26 AM edu.curtin.assignment.Maze validMove
+INFO: Invalid because there's a door South or North and you don't have the keys.
+Apr 25, 2022 7:58:26 AM edu.curtin.assignment.Maze validMove
+INFO: Invalid because there's a door South or North and you don't have the keys.
+Apr 25, 2022 7:58:27 AM edu.curtin.assignment.Maze validMove
+INFO: Invalid because there's a door South or North and you don't have the keys.
+Apr 25, 2022 7:58:28 AM edu.curtin.assignment.Maze validMove
+INFO: Invalid because there's a door South or North and you don't have the keys.
+Apr 25, 2022 7:58:31 AM edu.curtin.assignment.Maze validMove
+INFO: Invalid because there's a wall South or North.
+Apr 25, 2022 7:58:52 AM edu.curtin.assignment.Maze validMove
+INFO: Invalid because there's a wall East or West.
+Apr 25, 2022 7:58:58 AM edu.curtin.assignment.Maze validMove
+INFO: Invalid because there's a door South or North and you don't have the keys.

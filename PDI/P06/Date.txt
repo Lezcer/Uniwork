@@ -1,0 +1,138 @@
+CLASS: Date
+
+CLASS FIELDS: year (Integer)
+              month (Integer)
+              day (Integer)
+
+CONSTRUCTORS:
+Default:
+    IMPORT: none
+    EXPORT: address of new Date object
+    ALGORITHM:
+        year := 2000
+        month := 8
+        day := 26
+ASSERTION: Creates a default object and requires no import
+
+Alternate:
+    IMPORT: inYear (Integer), inMonth (Integer), inDay (Integer)
+    EXPORT: address of new date object
+    ALGORITHM:
+        IF (validateMonth <- inMonth) AND (validateYear)  THEN
+            IF (validateDay <- inDay) THEN
+                year := inYear
+                month := inMonth
+                day := inDay
+            ELSE 
+                THROW invalid argument exception
+            END IF
+            THROW invalid argument exception
+        END IF
+ASSERTION: Creates am object only if imports are validated
+
+Copy:
+    IMPORT: inDate (Object)
+    EXPORT: address of new date object
+    ALGORITHM:
+        year := inDate.getYear <- none
+        month := inDate.getMonth <- none
+        day := inDate.getDay <- none
+ASSERTION: Creates a new object by copying another objects state, the one thats imported
+
+MUTATORS:
+SUBMODULE: clone
+IMPORT: none
+EXPORT: cloneDate
+ALGORITHM: 
+        CONSTRUCT cloneDate USING COPY CONSTRUCTOR WITH THIS OBJECT
+END clone
+
+SUBMODULE: toString
+IMPORT: none
+EXPORT: str (String)
+ALGORITHM: 
+        str := "It is the " + day + suffix + " day of " + monthName + " in " + year + leapYearString
+
+END toString
+
+SUBMODULE: equals
+IMPORT: inDate (Object)
+EXPORT: same (boolean)
+ALGORITHM: 
+        same := FALSE
+        IF () THEN
+        END IF
+        
+END equals
+
+SUBMODULE: isLeapYear
+IMPORT: none
+EXPORT: valid (Boolean)
+ALGORITHM:
+    IF (day == 29 && month == 2)
+        valid := (year % 4 == 0) || (year % 100 != 0 && year % 400 == 0)
+END isLeapYear
+
+SUBMODULE: getMonthName
+IMPORT: none
+EXPORT: monthName (String)
+ALGORITHM:
+    CREATE ARRAY OF String OF SIZE 12
+    monthNames[] := {"January", "Febuary", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"}
+    monthName := monthNames[month - 1]
+END getMonthName
+
+SUBMODULE: getSuffix
+IMPORT: none
+EXPORT: suffix (String)
+ALGORITHM:
+    lastDigit = day MOD 
+    CASE lastDigit
+        1:
+            IF (day != 11)
+                suffix := "st"
+            ELSE
+                suffix := "th"
+        2:
+            IF (day != 12)
+                suffix := "nd"
+            ELSE
+                suffix := "th"
+        3: 
+            IF (day != 13)
+                suffix := "rd"
+            ELSE
+                suffix := "th"
+        4: 5: 6: 7: 8: 9: 0:
+            suffix := "th"
+END getSuffix
+
+PRIVATE SUBMODULES
+SUBMODULE: validateYear
+IMPORT: none
+EXPORT: valid (Boolean)
+ALGORITHM:
+    valid := (year < 0)
+END validateYear
+
+SUBMODULE: validateMonth
+IMPORT: none
+EXPORT: valid (Boolean)
+ALGORITHM: 
+    valid := (month > 0 && month < 13)
+END validateMonth
+
+SUBMODULE: validateDay
+IMPORT: none
+EXPORT: valid (Boolean)
+ALGORITHM:
+    CASE month
+        4: 6: 9: 11:
+            valid := (day > 1 || day < 30)
+        1: 3: 5: 7: 8: 10: 12:
+            valid := (day > 1 || day < 31)
+        2:
+            IF (month == 2 && day == 2) THEN
+                valid := isLeapYear <- none
+END validateDay
+

@@ -1,0 +1,66 @@
+Name: Salah Mahamod 20152428
+Date: 04/06/2022 @ 07:53AM
+
+Responses to criteria questions
+
+(2) Clear  and  distinct  package/class/interface/method  responsibilities
+    (A) I have separated classes with similar functionality and purpose into different packages
+        There are 4 packages, the 'model' package, which contains the classes that hold all the data 
+        for emergencies and how they're simulated. Within the model package there's the 'states' package 
+        which contains classes that are used to implement the state design pattern. There's also the 
+        'io' package which was designed to contain classes that handle how data is displayed, and how it
+        is read and written to files. Finally the 'responders' package which contains the classes that 
+        implement the RespondersComm interface.
+    (B) I believe that all my classes have clear responsibilities, every class has a comment block at the 
+        top that summarises its purpose.
+    (C) I have implemented the state pattern with the use of an interface. 
+    (D) I also believe that all my methods have distinct responsibilities. Most methods are under the
+        model package and either get information from an instance of a class or mutate it. (i.e. setters
+        and getters) exception with the occur() method which is used to simulate the emergency and also
+        used as a state dependent method in the state package. And the update() method which is used to
+        update the observers (in this case the emergencies).
+    
+(3) Appropriate error  handling  and  logging
+    (A) Error handling
+        Most external errors would come from reading the file and I have used try and catch blocks to handle 
+        them. For example incorrect file names, invalid formatting for the lines or incorrect data values.
+        Most internal errors would usually originate from main() is I make calls to Emergency.occur(), 
+        RespondersComm.poll() and Thread.sleep(). I have also used try and catch blocks.
+    (B) Logging
+        I log all errors in the try and catch blocks. Fatal errors are logged as severe. Everytime poll() is 
+        called in main() an "info" level log is made, highlighting whether no updates where received from 
+        responders comm, whether the "end" signal was recieved or how many updates were recieved.
+
+(4) Implementation of  dependency injection
+    I believe throughout my implementation I have been injecting dependencies. There haven't been many moments
+    where I have needed to use the new keyword to create an instance of a class, except when it was necessary.
+    This inlcudes when I was creating an instance of RespondersCommImpl in main(), when I was creating 
+    instances of emergencies in readFile() from the file I was reading. when I was calling the setState()
+    method I injected the new State in.
+
+(5) Use  of  the   Observer Pattern
+    The RespondersComm.poll() method would send updates back to main(). Hence, main is the observerable and 
+    the emergencies are observing it. I didn't use the addObservers as they're already in a hashmap from the 
+    file that was read. When updates are received from poll(), the update consisting of 
+    "<Emergency type> (+ | -) <location>" I use the Emergency type and location to retrieve the Emergency from
+    the hashmap (the key is emergency type concatenated with location) and call the update method with the 
+    + or - (indicating whether responders are leaving or coming)
+
+(6) Use  of  the  State  Pattern
+    There were two ways of implementing the state pattern.
+    (1) All emergencies go through the states Inactive, OngoingAbsent, OngoingPresent, End. Or,
+    (2) Fire emergency goes through the states Low, High and End
+
+    Flood, Fire and Chemical go through all the states in (1) but they would have different implementations. 
+    which meant that each subclass of Emergency would have their own interfaces. For example FloodStates, 
+    ChemicalStates etc. Which didn't feel right. There would be three States interfaces in total for fire, flood 
+    and chemical that would have their own subclasses (i.e. states from (1)), thats 12 different classes. 
+
+    I made the decision to employ the simple state implementation from lecture 8 where constants are used in 
+    Emergency. This actually allowed Fire, Flood and Chemical to inherit these states from Emergency. 
+
+    For the actual state pattern, I implemented it for the fire states highlighted in (2). A fire emergency
+    can be in 4 different states, Inactive, ongoing but responders are absent, ongoing and responders are 
+    present and it "has cleaned up". For the states where its "ongoing" the fire could also be in a high 
+    or low state. So the switch clause in Fire which is similar to the ones in Flood and Chemical makes a call 
+    to state.occur() which has implements occur depending on whether the fire is in a high state or a low state. 

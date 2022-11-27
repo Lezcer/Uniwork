@@ -1,0 +1,1000 @@
+  139  sudo apt-get update
+  140  sudo apt install valgrind
+  141  valgrind ./program
+  142  clear
+  143  apt list --upgradeable
+  144  clear
+  145  cd DSA/PRAC04
+  146  ls
+  147  vim DSALinkedList.java 
+  148  ls
+  149  vim LinkedListTestharness.java
+  150  vim DSALinkedList.java 
+  151  javac *.java
+  152  sudo apt install openjdk-11-jdk-headless
+  153  javac *.java
+  154  vim DSALinkedList.java 
+  155  javac *.java
+  156  vim DSALinkedList.java 
+  157  javac *.java
+  158  vim DSALinkedList.java 
+  159  javac *.java
+  160  vim DSALinkedList.java 
+  161  javac *.java
+  162  vim DSALinkedList.java 
+  163  javac *.java
+  164  vim DSALinkedList.java 
+  165  javac *.java
+  166  exit
+  167  vim Question2.c
+  168  ls
+  169  mv Question2.c UCP/p4
+  170  ls
+  171  cd UCP/P4
+  172  ls
+  173  cd ../p3
+  174  vim makefile 
+  175  cp makefile ../p4
+  176  cd ../p4
+  177  vim makefile 
+  178  make
+  179  vim makefile 
+  180  make
+  181  vim Question2.c 
+  182  make
+  183  vim Question2.c 
+  184  make
+  185  vim Question2.c 
+  186  make
+  187  vim Question2.c 
+  188  ./program
+  189  vim Question2.c 
+  190  make
+  191  ./program
+  192  vim Question2.c 
+  193  make
+  194  vim Question2.c 
+  195  make
+  196  vim Question2.c 
+  197  make
+  198  vim Question2.c 
+  199  make
+  200  vim Question2.c 
+  201  make
+  202  vim Question2.c 
+  203  make
+  204  vim Question2.c 
+  205  make
+  206  ./program
+  207  vim Question2.c 
+  208  make
+  209  vim Question2.c 
+  210  make
+  211  ./program
+  212  vim Question2.c 
+  213  ./program
+  214  make
+  215  ./program
+  216  vim Question2.c 
+  217  make
+  218  ./program
+  219  cd UCP
+  220  ls
+  221  20152428_Assignment/
+  222  cd 20152428_Assignment/
+  223  ls
+  224  vim replace.c
+  225  cd ../../DSA/PRAC04
+  226  ls
+  227  javac *.java
+  228  ls
+  229  vim DSALinkedList.java 
+  230  vim LinkedListTestharness.java 
+  231  javac *.java
+  232  vim LinkedListTestharness.java 
+  233  javac *.java
+  234  vim LinkedListTestharness.java 
+  235  javac *.java
+  236  vim LinkedListTestharness.java 
+  237  javac *.java
+  238  vim LinkedListTestharness.java 
+  239  javac *.java
+  240  java LinkedListTestharness 
+  241  vim LinkedListTestharness.java 
+  242  javac *.java
+  243  java LinkedListTestharness 
+  244  vim LinkedListTestharness.java 
+  245  cd UCP/20152428_Assignment/
+  246  ls
+  247  cd ../p4
+  248  ls
+  249  cp makefile ../20152428_Assignment/
+  250  cd ../20152428_Assignment/
+  251  ls
+  252  vim
+  253  vim makefile 
+  254  vim replace.c 
+  255  vim main.c
+  256  vim replace.h
+  257  vim ClearAndSleep.c 
+  258  cd ../../DSA/p4
+  259  cd ../../DSA/PRAC04
+  260  ls
+  261  rm *.class
+  262  ls
+  263  vim LinkedListTestharness.java 
+  264  vim D
+  265  vim DSALinkedList.java 
+  266  ls
+  267  vim LinkedListTestharness.java 
+  268  cd ../PRAC03
+  269  vim StackTestHarness.java 
+  270  cd ../PRAC04
+  271  vim LinkedListTestharness.java 
+  272  javac *.java
+  273  java LinkedListTestharness 
+  274  vim DSALinkedList.java 
+  275  javac *.java
+  276  java LinkedListTestharness 
+  277  vim DSALinkedList.java 
+  278  javac *.java
+  279  vim DSALinkedList.java 
+  280  javac *.java
+  281  cd ../PRAC03
+  282  ls
+  283  cp DSAStack.java ../PRAC04
+  284  cp DSAQueue.java ../PRAC04
+  285  cd ../PRAC04
+  286  ls
+  287  rm *.class
+  288  ls
+  289  vim DSAQueue.java 
+  290  cd ../PRAC03
+  291  cp DSACircularQueue.java ../PRAC04
+  292  cd ../PRAC04
+  293  vim DSACircularQueue.java 
+  294  vim DSAQ
+  295  vim DSAQueue.java 
+  296  rm DSACircularQueue.java 
+  297  cd ../PRAC03
+  298  cp DSAShufflingQueue.java ../PRAC04
+  299  cd ../PRAC04
+  300  ls
+  301  clear
+  302  ls
+  303  vim DSAShufflingQueue.java 
+  304  vim DSAQueue.java 
+  305  vim DSAStack.java 
+  306  vim DSAQueue.java 
+  307  vim DSAStack.java 
+  308  javac *.java
+  309  vim DSALinkedList.java 
+  310  javac *.java
+  311  rm DSAShufflingQueue.java 
+  312  javac *.java
+  313  vim DSAStack.java 
+  314  vim DSAQueue.java 
+  315  vim LinkedListTestharness.java 
+  316  javac *.java
+  317  vim LinkedListTestharness.java 
+  318  vim DSAQueue.java 
+  319  javac *.java
+  320  vim DSAStack.java 
+  321  javac *.java
+  322  rm *.class
+  323  ls
+  324  cd ../PRAC03
+  325  ls
+  326  cp QueueTestHarness.java ../PRAC04
+  327  cp StackTestHarness.java ../PRAC04
+  328  cd ../PRACo4
+  329  cd ../PRAC04
+  330  ls
+  331  vim StackTestHarness.java 
+  332  cd UCP/20152428_Assignment/
+  333  ls
+  334  vim replace.c
+  335  cd UCP/20152428_Assignment/
+  336  vim replace.c
+  337  rm .replace.c.swp 
+  338  vim replace.c
+  339  vim replace.h
+  340  vim replace.c
+  341  vim replace.h
+  342  vim main.c
+  343  vim replace.h
+  344  vim replace.c
+  345  vim replace.h
+  346  vim main.c
+  347  vim replace.c
+  348  vim main.c
+  349  vim replace.c
+  350  vim main.c
+  351  cd UCP/20152428_Assignment/
+  352  ls
+  353  vim replace.c
+  354  ls
+  355  cd ../p3
+  356  ls
+  357  vim user_input.c 
+  358  vim numbers.c 
+  359  cd UCP/20152428_Assignment/
+  360  ls
+  361  vim main.c
+  362  vim replace.h
+  363  vim main.c
+  364  vim ma
+  365  vim makefile 
+  366  make
+  367  vim main.c
+  368  make
+  369  vim main.c
+  370  make
+  371  vim replace.c
+  372  make
+  373  vim replace.c
+  374  make
+  375  vim replace.c
+  376  vim main.c
+  377  make
+  378  vim main.c
+  379  make
+  380  vim replace.c
+  381  clear
+  382  ls
+  383  vim main.c
+  384  ls
+  385  make clean
+  386  make
+  387  vim main.c
+  388  vim replace.c
+  389  vim replace.h
+  390  vim main.c
+  391  make clean
+  392  make
+  393  vim replace.c
+  394  vim replace.h
+  395  make clean
+  396  make
+  397  vim replace.h
+  398  make clean
+  399  make
+  400  vim replace.c
+  401  vim replace.h
+  402  vim replace.c
+  403  make
+  404  vim replace.c
+  405  vim main.c
+  406  vim replace.c
+  407  make clean
+  408  make
+  409  vim replace.c
+  410  make clean
+  411  make
+  412  vim replace.c
+  413  vim replace.h
+  414  make clean
+  415  make
+  416  vim replace.c
+  417  make clean
+  418  make
+  419  vim replace.c
+  420  make clean
+  421  make
+  422  ./program 
+  423  make clean
+  424  vim main.c
+  425  make
+  426  ./program 
+  427  vim main.c
+  428  make clean
+  429  make
+  430  ./program 
+  431  vim main.c
+  432  make clean
+  433  make
+  434  ./program 
+  435  vim main.c
+  436  make
+  437  vim main.c
+  438  make
+  439  vim main.c
+  440  vim replace.c
+  441  clear
+  442  make clean
+  443  make
+  444  ./program 
+  445  vim main.c
+  446  vim replace.c
+  447  make clean
+  448  make
+  449  ./program 
+  450  vim replace.c
+  451  cd DSA/PRAC04
+  452  vim DSAStack.java 
+  453  java StackTestHarness 
+  454  vim DSAQueue.java 
+  455  vim DSAStack.java 
+  456  vim DSAQueue.java 
+  457  cd DSA/PRAC04
+  458  ls
+  459  vim StackTestHarness.java 
+  460  javac StackTestHarness.java 
+  461  vim StackTestHarness.java 
+  462  javac StackTestHarness.java 
+  463  vim StackTestHarness.java 
+  464  javac StackTestHarness.java 
+  465  java StackTestHarness 
+  466  vim QueueTestHarness.java 
+  467  javac QueueTestHarness.java 
+  468  vim QueueTestHarness.java 
+  469  javac QueueTestHarness.java 
+  470  vim QueueTestHarness.java 
+  471  javac QueueTestHarness.java 
+  472  java QueueTestHarness 
+  473  vim DSALinkedList.java 
+  474  javac DSALinkedList.java 
+  475  javac QueueTestHarness.java 
+  476  java QueueTestHarness 
+  477  vim DSALinkedList.java 
+  478  javac QueueTestHarness.java 
+  479  java QueueTestHarness 
+  480  vim DSALinkedList.java 
+  481  javac StackTestHarness.java 
+  482  java StackTestHarness 
+  483  cd DSA/PRAC04
+  484  ls
+  485  rm *.class
+  486  vim DSALinkedList.java 
+  487  javac *.java
+  488  java StackTestHarness 
+  489  java QueueTestHarness 
+  490  vim DSAStack.java 
+  491  vim DSAQueue.java 
+  492  vim DSALinkedList.java 
+  493  cd ../PRAC03
+  494  vim DSACircularQueue.java 
+  495  cd DSA/PRAC04
+  496  l;s
+  497  ls
+  498  cd UCP/20152428_Assignment/
+  499  vim temp.txt
+  500  vim replace.c
+  501  rm .replace.c.swp 
+  502  ls
+  503  vim replace.c
+  504  make clean
+  505  make
+  506  ./program 
+  507  vim main.c
+  508  make
+  509  ./program 
+  510  vim replace.c
+  511  vim main.c
+  512  make
+  513  ./program 
+  514  vim main.c
+  515  vim replace.c
+  516  make
+  517  ./program 
+  518  vim replace.c
+  519  make
+  520  ./program 
+  521  vim replace.c
+  522  make
+  523  vim replace.c
+  524  ./program 
+  525  vim replace.c
+  526  make
+  527  ./program 
+  528  vim replace.c
+  529  make
+  530  ./program 
+  531  vim replace.c
+  532  vim main.c
+  533  make
+  534  ./program 
+  535  vim replace.c
+  536  make
+  537  ./program 
+  538  vim replace.c
+  539  valgrind ./program 
+  540  vim make
+  541  ls
+  542  vim makefile 
+  543  make
+  544  valgrind ./program 
+  545  valgrind --leak-chec=full --track-origins+yes ./program 
+  546  valgrind --leak-check=full --track-origins+yes ./program 
+  547  valgrind --leak-check=full --track-origins=yes ./program 
+  548  clear
+  549  vim makefile 
+  550  vim ma
+  551  vim main.c 
+  552  vim replace.
+  553  vim replace.c
+  554  vim replace.h
+  555  vim replace.c
+  556  vim replace.h
+  557  make clean
+  558  make
+  559  vim main.c
+  560  make clean\
+  561  make clean
+  562  make
+  563  vim main.c
+  564  make clean
+  565  make
+  566  vim replace.c
+  567  vim replace.h
+  568  make clean
+  569  make
+  570  vim replace.h
+  571  make clean
+  572  make
+  573  vim replace.c
+  574  vim replace.h
+  575  make
+  576  vim replace.h
+  577  make
+  578  vim replace.c
+  579  vim replace.h
+  580  make
+  581  vim replace.h
+  582  make
+  583  vim replace.h
+  584  make
+  585  vim replace.c
+  586  make
+  587  ./program 
+  588  vim replace.c
+  589  ls
+  590  make clean
+  591  ls
+  592  vim colour.h
+  593  vim replace.h
+  594  vim colour.h
+  595  vim colour.c
+  596  vim colour.h
+  597  vim replace.h
+  598  vim colour.h
+  599  vim colour.c
+  600  vim colour.h
+  601  vim colour.c
+  602  vim main.c
+  603  vim makefile 
+  604  vim colour.h
+  605  vim replace.c
+  606  make
+  607  vim replace.c
+  608  make
+  609  vim replace.c
+  610  make
+  611  vim colour.c
+  612  make
+  613  vim colour.c
+  614  make
+  615  vim colour.c
+  616  make
+  617  vim colour.c
+  618  make
+  619  vim colour.h
+  620  vim colour.c
+  621  make
+  622  vim colour.c
+  623  make
+  624  vim colour.c
+  625  make
+  626  ./program
+  627  vim colour.c
+  628  vim colour.h
+  629  make
+  630  vim colour.c
+  631  make
+  632  vim colour.c
+  633  make clean
+  634  make
+  635  make clean
+  636  ls
+  637  clean
+  638  ls
+  639  clear
+  640  ls
+  641  vim replace.c
+  642  vim main.c
+  643  make
+  644  ./program 
+  645  vim main.c
+  646  ./program 
+  647  make
+  648  ./program 
+  649  vim main.c
+  650  vim replace.c
+  651  ./program 
+  652  make
+  653  ./program 
+  654  wq
+  655  vim main.c
+  656  make
+  657  ./program 
+  658  vim main.c
+  659  make
+  660  vim main.c
+  661  make
+  662  vim main.c
+  663  make
+  664  ./program hoes_before_bros bros lads green red
+  665  vim main.c
+  666  make
+  667  ./program hoes_before_bros bros lads green red
+  668  vim replace.c
+  669  vim replace.h
+  670  vim main.c
+  671  make
+  672  vim main.c
+  673  vim replace.h
+  674  vim replace.c
+  675  make
+  676  vim main.c
+  677  vim replace.c
+  678  vim replace.h
+  679  make
+  680  vim replace.c
+  681  vim replace.h
+  682  vim replace.c
+  683  vim colour.c
+  684  make
+  685  vim colour.c
+  686  make
+  687  vim colour.c
+  688  make
+  689  vim colour.c
+  690  make
+  691  vim replace.c
+  692  vim main.c 
+  693  ls
+  694  vim ClearAndSleep.c 
+  695  vim main.c 
+  696  vim replace.
+  697  rm ClearAndSleep.c 
+  698  ls
+  699  vim replace.c
+  700  vim main.c 
+  701  vim replace.c
+  702  vim replace.h
+  703  vim replace.c
+  704  vim replace.h
+  705  vim makefile
+  706  vim main.c 
+  707  make
+  708  ls
+  709  make
+  710  vim main.c
+  711  make
+  712  vim main.c
+  713  vim makefile 
+  714  make
+  715  vim replace.h
+  716  make
+  717  vim replace.h
+  718  make
+  719  vim main.c
+  720  make
+  721  vim colour.c
+  722  vim replace.c
+  723  make
+  724  ./program 
+  725  ./program "i am soo tired" soo not green yellow
+  726  vim main.c
+  727  make
+  728  vim main.c
+  729  make
+  730  ./program "i am soo tired" soo not green yellow
+  731  vim main.c
+  732  vim replace.c
+  733  ls
+  734  make clean
+  735  ls
+  736  cd ..
+  737  tar -cvzf 20152428_Salah_Mahamod_Assignment1.tar.gz 20152428_Assignment/
+  738  ls
+  739  sl
+  740  cd DSA/
+  741  ls
+  742  vim PRAC05
+  743  cd PRAC05
+  744  ls
+  745  vim Program.java
+  746  vim DSATreeNode.java
+  747  vim DSABinarySearchTree
+  748  vim Program.java 
+  749  vim DSATreeNode.java 
+  750  vim DSABinarySearchTree 
+  751  vim DSABinarySearchTree.java
+  752  vim DSABinarySearchTree 
+  753  vim DSABinarySearchTree.java
+  754  rm DSABinarySearchTree
+  755  vim DSABinarySearchTree.java
+  756  vim DSATreeNode.java 
+  757  vim DSABinarySearchTree.java
+  758  rm DSATreeNode.java 
+  759  ls
+  760  vim DSABinarySearchTree.java 
+  761  cd UCP/
+  762  ls
+  763  vim p4
+  764  cd p4
+  765  ls
+  766  vim Question2.c 
+  767  vim Question2.c \
+  768  vim Question2.c 
+  769  vim Question4.c 
+  770  vim Question2.c 
+  771  vim Question4.h 
+  772  cd ../p3
+  773  ls
+  774  cp makefile ../p4
+  775  cd ../p4
+  776  ls
+  777  vim makefile 
+  778  make
+  779  vim Question4
+  780  vim Question4.c
+  781  vim Question4.h
+  782  make clean
+  783  make
+  784  vim Question2.c
+  785  make clean
+  786  make
+  787  vim Question2.c
+  788  make clean
+  789  make
+  790  vim Question4.c
+  791  make clean
+  792  make
+  793  vim makefile 
+  794  vim ../p3/makefile 
+  795  vim ../p3/order.h
+  796  vim ../p3/power.h
+  797  vim ../p3/powers.h
+  798  ls ../p3
+  799  vim ../p3/numbers.h
+  800  vim ../p3/numbers.c
+  801  vim ../p3/makefile 
+  802  vim makefile 
+  803  ls
+  804  ./p
+  805  ./program 
+  806  ls
+  807  vim Question4.c
+  808  make cleanm
+  809  make clean
+  810  make
+  811  ./program 
+  812  make clean
+  813  ls
+  814  :q
+  815  vim makefile 
+  816  vim Question4.c
+  817  make clean
+  818  make
+  819  ./program 
+  820  vim Question2.c
+  821  make clean
+  822  make
+  823  ./program 
+  824  ./test
+  825  vim makefile 
+  826  ls
+  827  rm -f program
+  828  ls
+  829  make clean
+  830  ls
+  831  clear
+  832  ls
+  833  vim Question2.c 
+  834  vim Question4.h 
+  835  vim Question4.c 
+  836  make
+  837  ./test 
+  838  cs ..
+  839  cd ..
+  840  ls
+  841  cd 20152428_Assignment/
+  842  ls
+  843  cp colour.c ../p5
+  844  cp colour.h ../p5
+  845  cp colour.h ../p4
+  846  cp colour.c ../p4
+  847  cd ../p4
+  848  ls
+  849  vim colour.
+  850  vim colour.c
+  851  vim Question2.c
+  852  vim colour.h
+  853  vim Question2.c
+  854  vim makefile 
+  855  vim Question2.c
+  856  make
+  857  ls
+  858  vim makefile 
+  859  vim colour.h
+  860  vim Question2.c
+  861  vim colour.h
+  862  vim colour.c
+  863  vim Question2.c
+  864  vim makefile 
+  865  make
+  866  ./test 
+  867  vim Question2.c
+  868  vim colour.c
+  869  vim Question2.c
+  870  cd ../p5
+  871  ls
+  872  man 3 strlen
+  873  man printf
+  874  man sleep
+  875  man fopen
+  876  man 3 fopen
+  877  man fopen
+  878  man fclose
+  879  cd UCP/p5
+  880  vim prelab.txt
+  881  man scanf
+  882  vim prelab.txt
+  883  cd DSA/PRAC05
+  884  ls
+  885  vim Program.java 
+  886  vim DSABinarySearchTree.java 
+  887  man perror
+  888  cd DSA/PRAC04
+  889  ls
+  890  java StackTestHarness >output.txt
+  891  vim output.txt 
+  892  java StackTestHarness
+  893  rm output.txt 
+  894  cd UCP/p5
+  895  vim logfile 
+  896  cd UCP/p5
+  897  ls
+  898  vim prelab.txt 
+  899  ls
+  900  vim plot.c
+  901  vim q1.c
+  902  cd ../p4
+  903  cp makefile ../p5
+  904  cd ../p5
+  905  vim makefile 
+  906  make
+  907  vim makefile 
+  908  make
+  909  vim q1.c
+  910  make
+  911  vim q1.c
+  912  vim makefile 
+  913  vim ../p4/makefile 
+  914  gcc -Wall -ansi -pedantic -Werror q1.c -c
+  915  ls
+  916  ./q1
+  917  ./q1 input.txt output.txt
+  918  vim q1.c
+  919  clear
+  920  make clean
+  921  gcc -Wall -ansi -pedantic -Werror q1.c -c
+  922  ./q1
+  923  ls
+  924  make
+  925  ./q1 
+  926  make clean
+  927  make
+  928  ./q1 input.txt output.txt
+  929  diff input.txt output.txt
+  930  make clean
+  931  ls
+  932  make clean
+  933  vim makefile 
+  934  make clean
+  935  ls
+  936  vim logfile 
+  937  grep fail logfile
+  938  clear
+  939  cp makefile ../
+  940  cd ..
+  941  ls
+  942  vim makefile 
+  943  cd p5
+  944  ls
+  945  q2.c
+  946  vim q2.c
+  947  vim q1.c
+  948  vim q2.c
+  949  vim q1.c
+  950  vim q2.c
+  951  vim q1.c
+  952  vim q2.c
+  953  man strstr
+  954  vim q2.c
+  955  man strstr
+  956  vim q2.c
+  957  man printf
+  958  man 2 printf
+  959  vim q2.c
+  960  vim q1.c
+  961  vim q2.c
+  962  vim makefile 
+  963  make
+  964  vim q2.c
+  965  make
+  966  vim q2.c
+  967  make
+  968  man fscanf
+  969  vim q2.c
+  970  make
+  971  vim q2.c
+  972  make
+  973  vim q2.c
+  974  make
+  975  vim q2.c
+  976  make
+  977  vim q2.c
+  978  make
+  979  ./one logfile
+  980  vim q2.c
+  981  ./one logfile
+  982  make
+  983  ./one logfile
+  984  vim q2.c
+  985  ./one logfile
+  986  ls
+  987  clear
+  988  vim q2.c
+  989  make clean
+  990  make
+  991  ./one logfile
+  992  make clean
+  993  vim q2.c
+  994  make
+  995  ./one logfile
+  996  vim q2.c
+  997  make
+  998  ./one logfile
+  999  vim q2.c
+ 1000  clear
+ 1001  make
+ 1002  ./one logfile
+ 1003  q
+ 1004  vim q2.c
+ 1005  make
+ 1006  vim q2.c
+ 1007  make
+ 1008  vim q2.c
+ 1009  make
+ 1010  vim q2.c
+ 1011  make
+ 1012  ./one logfile
+ 1013  vim q2.c
+ 1014  vim logfile 
+ 1015  vim q2.c
+ 1016  make
+ 1017  ./one logfile
+ 1018  vim q2.c
+ 1019  make
+ 1020  ./one logfile
+ 1021  grep fail logfile
+ 1022  clear
+ 1023  ls
+ 1024  vim q2.c
+ 1025  cd UCP/p1
+ 1026  vim q1.c
+ 1027  cd UCP/p5
+ 1028  cd ../p5
+ 1029  vim q1.c
+ 1030  vim q2.c
+ 1031  vim q1.c
+ 1032  cd UCP/p5
+ 1033  ls
+ 1034  vim q1.c
+ 1035  cd UCP/p5
+ 1036  vim q1.c
+ 1037  cd ../20152428_Assignment/
+ 1038  ls
+ 1039  vim ma
+ 1040  vim main.c 
+ 1041  cd ../p5
+ 1042  ls
+ 1043  vim q2.c
+ 1044  make clean
+ 1045  make
+ 1046  ./one logfile
+ 1047  vim q2.c
+ 1048  make clean
+ 1049  make
+ 1050  ./one logfile
+ 1051  vim q2.c
+ 1052  make
+ 1053  ./one logfile
+ 1054  clear
+ 1055  ./one logfile
+ 1056  grep fail logfile
+ 1057  q
+ 1058  cleart
+ 1059  clear
+ 1060  vim display.c
+ 1061  vim plot.h
+ 1062  vim display.c
+ 1063  vim makefile 
+ 1064  vim plot.c
+ 1065  vim makefile 
+ 1066  make
+ 1067  vim display.c 
+ 1068  make
+ 1069  vim display.c 
+ 1070  make
+ 1071  make clean
+ 1072  ls
+ 1073  rm -f q2.o
+ 1074  rm -f one
+ 1075  ls\
+ 1076  ls *.o
+ 1077  ls
+ 1078  gcc -Wall -ansi -pedantic -Werror display.c -c
+ 1079  gcc -Wall -ansi -pedantic -Werror q2.c -c
+ 1080  vim q2.c
+ 1081  gcc -Wall -ansi -pedantic -Werror q2.c -o two
+ 1082  ./two 
+ 1083  rm -f q2.o
+ 1084  rm -f two
+ 1085  ls
+ 1086  cd UCP/p5
+ 1087  ls
+ 1088  vim q2.c
+ 1089  grep fail logfile
+ 1090  gcc -Wall -ansi -pedantic q2.c -o test
+ 1091  ./test logfile
+ 1092  vim q2.c
+ 1093  clear
+ 1094  vim q3.c
+ 1095  vim q2.c
+ 1096  vim display.c 
+ 1097  make
+ 1098  vim display.c 
+ 1099  make
+ 1100  vim display.c 
+ 1101  make
+ 1102  vim display.c 
+ 1103  make
+ 1104  vim display.c 
+ 1105  make
+ 1106  ./three plottestdata
+ 1107  vim display.c 
+ 1108  make
+ 1109  man printf
+ 1110  vim display.c 
+ 1111  make
+ 1112  ./three plottestdata
+ 1113  vim display.c 
+ 1114  make
+ 1115  ./three plottestdata
+ 1116  vim plottestdata 
+ 1117  clear
+ 1118  vim plottestdata 
+ 1119  vim display.c 
+ 1120  make clean
+ 1121  vim display.c 
+ 1122  ls
+ 1123  vim q2.c
+ 1124  gcc -Wall -ansi -pedantic q2.c -o test
+ 1125  vim q2.c
+ 1126  gcc -Wall -ansi -pedantic q2.c -o test
+ 1127  vim display.c 
+ 1128  vim plot.h
+ 1129  vim display.c 
+ 1130  amke
+ 1131  make
+ 1132  ./three plottestdata 
+ 1133  vim display.c 
+ 1134  make
+ 1135  ./three plottestdata 
+ 1136  gnuplot
+ 1137  sudo apt install gnuplot-qt
+ 1138  history >history.txt

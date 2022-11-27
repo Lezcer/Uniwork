@@ -1,0 +1,9 @@
+a) carnivore.equals("Hyena")
+
+b) predator > 40 || (amphibian > 5 && anphibian < 19) 
+
+c) mammal + TOL >= 122.0 || mammal - TOL <= 649.0
+
+d) amphibian % 37 == 0
+
+e) Math.abs(organism - critter) < TOL

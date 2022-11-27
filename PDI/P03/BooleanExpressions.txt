@@ -1,0 +1,13 @@
+a) susan.equals(sarah)
+
+b) (lucas % 2 == 0) && (scott % 2 != 0)
+
+c) (john == 'S') || (matthew == 'S') 
+
+d) chrAt(0) == 'V'
+ 
+e) john == matthew
+
+f) Math.Abs(steve - tony) < TOL
+ 
+g) (luke > 0) || (steve >= 25.0) && ((steve <= 125.0))

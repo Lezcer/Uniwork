@@ -1,0 +1,29 @@
+1.  a) Inserts the content of a standard (pre-defined) header file.
+    b) Inserts the content of the header files in the current directory.
+    c) Assigns a name to a constant value and replaces the name with that value
+       when called.
+    d) Assigns a name with a parameter to an expression and repalces the name 
+       with that expression when called.
+    e) same as above.
+    f) Will only compile the code between the directives if LENGTH has been 
+       defined above. can also be triggered by the compile command.
+    g) 
+
+2.  a) ls *Ralph*
+    b) ls codes/[0-9][0-9]-[a-z][a-z][a-z]
+    c) ls *[^aeiou]/*[aeiou].
+    d) alias listc='ls *.c'
+    e) alias gcc='gcc -Wall -ansi -pedantic -Werror'
+
+3.  a) They are accessible by all functions and possibly accros different sour-
+       ce files. Which allows them to change it's value - creating a mess.
+    b) Point of using a static function is so that it cannot be accessed elsew-
+       here, declaring it in a header file copies the code into the file that 
+       calls it which makes it accessible.
+    
+4.  a) main.c includes database.h -> util.h -> nothing
+    b) util.h includes nothing
+    c) main.o databse.o util.o interface.o
+    d) database.o main.o
+    e) database.o util.o interface.o main.o
+    f) util.o

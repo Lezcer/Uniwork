@@ -1,0 +1,18 @@
+Question 4
+a. Discuss what a system call is and how it differs from a function defined by the user.
+    Answer: A system call is a call made to the kernel to request a service that cannot be done 
+    in the user mode. A function defined by a user usually makes system calls when it requests
+    services such as a open / file a file, write to a file / screen. A function may call functions
+    like open() which essentially appear to be system calls but aren't, they are wrappers that 
+    actually use the primitive system calls and set some default values.
+
+b. Many system calls in C are provided by a glibc wrapper. If a wrapper does not exist for
+the system call you are interested in or you do not wish to use it, how do you use a
+system call?
+    Answer: Firstly you find out which header library '.h' files need to be included when this
+    call is made. Now you understand (using the API / man) which parameters the call requires and their types, minimum
+    / maximum value for a paramter, flags that suit what you're after. Then understanding what the
+    call returns on success, and failure and how to identify what casused the failure. Now you can 
+    either create your own wrapper or use the call itself with the correct parameters required.
+
+c. For C program check Question4.c

@@ -1,0 +1,12 @@
+START Converter
+    MAIN:
+        OUTPUT "What is the temprature in Celcius?"
+        INPUT myVar C
+
+        F := 9 DIV 5 * C + 32
+
+        OUTPUT "The temperature in Fahrenheit is F"
+    END MAIN
+END
+  
+

@@ -1,0 +1,5 @@
+the top command displays dynamic real-time information about the user an
+current processes that are currently managed by the linux kernel.
+the nice command can be used to execute and adjust the process with a scheduling
+priority?
+renice just changes the priority of a currently excuting program?

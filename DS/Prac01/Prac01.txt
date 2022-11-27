@@ -1,0 +1,33 @@
+mysql -u me -p
+myUserPassword
+exit
+
+show databases;
+use dswork;
+
+create table Students(
+sno CHAR(8),
+firstname VARCHAR(12),
+lastname VARCHAR(15),
+phoneno CHAR(10)
+);
+create table Units(
+sno CHAR(8),
+unitindex CHAR(8),
+dept CHAR(10),
+unitname VARCHAR(40)
+);
+create table Students(
+unit CHAR(8),
+student CHAR(8),
+year CHAR(4),
+mark INT(3),
+grade CHAR(1)
+);
+
+show tables;
+
+desrcibe Students;
+show columns from Students;
+
+SOURCE Prac01tables;

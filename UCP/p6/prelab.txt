@@ -1,0 +1,69 @@
+1. 
+a)  typedef struct Date{
+        int day;
+        int month;
+        int year;
+    };
+b)  typedef struct 3DCoordinates{
+        double x;
+        double y;
+        double z;
+    };
+c) typedef struct Address{
+        int unit;
+        int number;
+        char street[LENGTH];
+        char suburb[LENGTH];
+        int postcode;
+    };
+d) typedef struct {
+        struct {
+            int year;
+            int month;
+            int day;
+        } date;
+        struct {
+            int hours;
+            int minutes;
+            int seconds;
+        } time;
+        char unitcode[8];
+        char description[LENGTH];
+    } Practical;
+d) typedef struct Practical{
+        struct {
+            int year;
+            int month;
+            int day;
+        } date;
+        struct {
+            int hours;
+            int minutes;
+            int seconds;
+        } time;
+        int practicalNo;
+        char description[LENGTH];
+    };
+-------------------------------------------------------------------------------------
+2.
+a. Date *date = (Date *)malloc(sizeof(Date)); //free(date);
+b. 3DCoordinates *array = (3DCoordinates *)malloc(sizeof(25 * 3DCoordinates)); //free
+c. typedef struct Info {char name[99];};
+    Info *information = (Info *)malloc(sizeof(Info)); //free(information);
+d. Info *array = (Info *)malloc(25 * sizeof(Info)); //free(array);
+e. InfoList *list = (InfoList *)malloc(25 * sizeof(InfoList)); //free(list);
+-------------------------------------------------------------------------------------
+3.
+a. The field b in the struct var.
+b. The field b in the struct that var is pointing to.
+c. The field b in the struct that var + i is pointing to.
+d. The pointer b which is a field of the struct var + i is pointing to.
+e. The pointer b + i which is a field of struct var.
+f. The pointer b + j which is a field of the struct var + i is pointing to.
+g. Going to the address stored in field b which is a field that struct var + i is pto.
+h. b is a pointer struct that contains c's address. var points to the struct b is in.
+i. var has a 2D array of b structs as a field, which has c as fields?
+-------------------------------------------------------------------------------------
+4.
+-------------------------------------------------------------------------------------
+5.

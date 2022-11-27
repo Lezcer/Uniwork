@@ -1,0 +1,20 @@
+Write a paragraph discussing the results in terms of complexity 
+and other characteristics of the three sorts.
+______________________________________________________________
+
+The Insertion sort is more efficient by having a smaller 
+runtime compared to the other two sorts. (7 out of 8)
+This is because it is finding a place to insert each element
+which is good for really large data sizes.
+
+Bubble sort just switches around an element when the one 
+before it is larger. This is very inefficient for nearly
+sorted lists and this was evident in the 100000 data size 
+bubble sort nearly... test. Even though the data was 90% 
+sorted the runtime was ~4x as long as second place.
+
+Selection sort looks for the smallest element and swaps it 
+with the first item. This 'swapping' is what causes it to be 
+slow. It has a similar complexity to Bubble sort. and this is
+because they both seem to 'swap' instead of shifting like
+Insertion.

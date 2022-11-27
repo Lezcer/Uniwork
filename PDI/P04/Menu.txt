@@ -1,0 +1,215 @@
+PROGRAM Menu
+    MAIN: 
+        DO 
+            OUTPUT "Welcome to Programming Design and Implementation, Workshop 4"
+            OUTPUT "Please enter an integer between 0 and 5"
+            OUTPUT "(1) Sum of 2 integers"
+            OUTPUT "(2) Convert Temperature"
+            OUTPUT "(3) Convert a character's case OR display its ASCII value"
+            OUTPUT "(4) Check if 2 integers are divisible"
+            OUTPUT "(5) Split a Date into its components"
+            OUTPUT "(0) Exit Menu"
+            INPUT selection (integer)
+        
+            IF (selection == 1) THEN
+                validIntAdd := True
+
+                DO
+                    OUTPUT "Please enter the first number"
+                    INPUT numOne(Integer)
+
+                    OUTPUT "Please enter the second number"
+                    INPUT numTwo(Integer)
+               
+                    answer = numOne + numTwo
+               
+                    OUTPUT "The answer is: " + answer
+                WHILE (!validIntAdd) 
+
+            ELSE IF (selection == 2) THEN
+                
+                DO
+
+                    validTemp := True 
+
+                    OUTPUT "What temperature Scale are you working with?"
+                    OUTPUT "    >(C)elsius"
+                    OUTPUT "    >(F)ahrenheit"
+                    INPUT temp (Character)
+                
+                    IF (temp is 'C' OR 'c')  THEN
+                        OUTPUT "Please input temperature in Celsius"
+                        INPUT tempCel (Real)
+                        tempFah := tempCel * (9 / 5) + 32
+                        OUTPUT "Temperature in Fahrenheit is:" + tempFah
+
+                    ELSE IF (temp is 'F' OR 'f') THEN
+                        INPUT tempFah (Real)
+                        tempCel := (tempFah - 32) * 5 / 9
+                        OUTPUT "Temperature in Celsius is:" + tempCel
+                
+                    ELSE 
+                        OUTPUT "Invalid Input, Please input either C or F. AND / OR enter a number for temperature"
+                        validTemp := False
+
+                    END IF
+
+                WHILE (!validTemp)
+
+        
+            ELSE IF (selection == 3) THEN
+
+
+                DO
+
+                    OUTPUT "Please enter an uppercase character"
+                    INPUT upperCase(Character)
+                   
+                    decimal = (convert to INTEGER)(upperCase)
+                    lowerCase = (convert to CHARACTER)(decimal + 32)
+         
+                    OUTPUT "The ASCII value of" + upperCase + "is" + decimal
+                    OUTPUT "The lowercase of" + upperCase + "is" + lowerCase
+
+                WHILE ((decimal > upperlimit ) OR (decimal < lowerlimit  ))
+
+    
+            ELSE IF (selection == 4) THEN
+
+                DO
+                    OUTPUT "Weclome to the Division Checker, Please input your First number"
+                    INPUT firstNo(Integer)
+                
+                    OUTPUT "Enter the second number as well"
+                    INPUT secondNo(Integer)
+                
+                    IF (firstNo MOD secondNo = 0) THEN 
+                        OUTPUT "The two integers are DIVISIBLE"
+                    ELSE 
+                        OUTPUT "The two integers are NOT DIVISIBLE"
+                    END IF
+                WHILE ?????? I HAVE NO CLUE BRO
+            ELSE IF (selection == 5) THEN
+                
+                DO
+
+                    validDate = true
+
+                    OUTPUT "Please enter the date you would like to split"
+                    OUTPUT "Please enter it in the format DDMMYYYY"
+                    INPUT date(Integer)
+
+                    day := date DIV 1000000
+                    month := (date DIV 10000) - (day * 100)
+                    year := date - (date DIV 10000) * (10000)
+                    lastDigit = day MOD 10
+                
+                    CASE lastDigit
+                        1:
+                            suffix := st
+
+                        2: 
+                            suffix := nd
+                    
+                        3:
+                            suffix := rd
+
+                        4: 5: 6: 7: 8: 9: 0: 
+                            suffix := th 
+                    END CASE
+
+                    CASE month
+                        4: 6: 9: 11: 
+                            IF (day < 1) || (day > 30) THEN 
+                                OUTPUT "Error, this day does not exist."
+                                validDate := false
+                            END IF
+
+                        1: 3: 5: 7: 8: 10: 12: 
+                            IF (day < 1) || (day > 31) THEN
+                                OUTPUT "Error, this day does not exist."
+                                validDate := false
+                            END IF 
+
+                        2:
+                            IF (day < 1) || (day > 28) THEN
+                                IF (day != 29) THEN 
+                                    OUTPUT "Error, this day does not exist"
+                                    validDate := false
+
+                                ELSE IF ((year % 4 != 0) || ((year % 400 != 0) && (year % 100 == 0))) THEN
+                                    OUTPUT "Error, this day does not exist, as it is not a Leap year"
+                                    validDate := false
+                  
+                                END IF
+                            END IF
+
+                        DEFAULT:
+                            OUTPUT "Error, this day does not exist."
+                            validDate := false
+
+                    END CASE
+
+
+                    CASE month
+                        1: 
+                            monthName := January
+
+                        2: 
+                            monthName := Febuary
+
+                        3:
+                            monthName := March
+
+                        4: 
+                            monthName := April
+
+                        5:
+                            monthName := May
+
+                        6: 
+                            monthName := June
+                    
+                        7: 
+                            monthName := July
+
+                        8: 
+                            monthName := August
+                    
+                        9: 
+                            monthName := September
+
+                        10: 
+                            monthName := October
+
+                        11: 
+                            monthName := November
+
+                        12: 
+                            monthName := December
+
+                        DEFAULT:
+                            OUTPUT "Please make sure the month (i.e. MM) is between 01 to 12"
+                            validDate := false
+                    END CASE
+
+
+                    IF ((day == 29) && (month == 2)) THEN 
+                        IF (validDate) THEN
+                            OUTPUT "It is the 29th of Febuary in " + year + ". It is a Leap year!"
+                    ELSE 
+                        IF (validDate) THEN
+                            OUTPUT "It is the " + day + suffix + " day of " + monthName + " in " + year + "."
+                        END IF
+                    END IF
+                WHILE (!validDate)
+
+            ELSE
+
+                OUTPUT "Good-bye :)"
+
+            END IF
+        
+        WHILE ((selection > 5) OR (selection < 0)) 
+    END MAIN
+END

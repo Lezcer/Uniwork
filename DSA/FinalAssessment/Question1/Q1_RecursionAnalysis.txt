@@ -1,0 +1,51 @@
+           |10  |20  |30  |40   |50     |60      |70 
+It. Fact   |185 |195 |190 |196  |187    |191     |183        <- Results in microsecods
+Rec. Fact  |187 |186 |194 |185  |187    |183     |201
+Iter. Fib  |199 |220 |671 |50598|6194496|>10 mins|Negligible
+Rec. Fib   |186 |207 |651 |50743|6195895|>10 mins|Negligible
+
+## Factorial Discussion
+
+Input data + performance
+Input data started from 10 to 70 by increments of 10.
+Performance stays relatively the same.
+
+Discussion
+
+Shortest possible time overall for both implementations is
+183 and longest was 201. Because of this the data I've 
+gathered will not be enough to make a conclusion on recursive
+vs iterative performance. Theoretically, for smaller values
+the recursive algorithm should be the fastest as it makes the 
+code smaller, thus less instructions to go through. However
+for larger values, recursion would be slower and would take up
+more memory.
+
+
+
+
+## Fibonacci Discussion
+
+Input data + performance
+Input data started from 10 to 70 by increments of 10.
+Performance
+
+Discussion
+So for smaller values for n, the recursive algorithm was
+faster however at n>40, the Iterative method took less time
+by a small amount. However, with values beyond 50 the Algorithm 
+Did't respond. 
+Theoretically this is correct (performance wise). An Iterative 
+Algorithm contains more code, than a recursive approach so for 
+small values it will take slightly longer. However, with large
+values recursion is slower than iteration due to the overhead
+of maintaining the stack(1). Thus a decrease in performance is
+expected from a recursion approach.
+
+(1) Raja 2019. What are the differences between recursion 
+and iteration in Java? https://www.tutorialspoint.com/what-are-
+the-differences-between-recursion-and-iteration-in
+-java#:~:text=What%20are%20the%20differences%20between%20r
+ecursion%20and%20iteration%20in%20Java%3F,-JavaObject%2
+0Oriented&text=The%20Recursion%20and%20Iteration%20both,
+the%20controlling%20condition%20becomes%20false.

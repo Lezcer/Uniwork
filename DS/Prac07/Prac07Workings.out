@@ -1,0 +1,1782 @@
+mysql> touch Prac07Commands.sql
+    -> ^C
+mysql> show databases;
++--------------------+
+| Database           |
++--------------------+
+| information_schema |
+| dswork             |
+| koha_library       |
+| mysql              |
+| performance_schema |
+| sys                |
++--------------------+
+6 rows in set (0.00 sec)
+
+mysql> use dswork;
+Database changed
+mysql> \. rebuild_task1.sql
+Query OK, 0 rows affected, 1 warning (0.00 sec)
+
+Query OK, 0 rows affected (0.04 sec)
+
+Query OK, 0 rows affected, 1 warning (0.00 sec)
+
+Query OK, 0 rows affected (0.03 sec)
+
+Query OK, 0 rows affected, 1 warning (0.00 sec)
+
+Query OK, 0 rows affected (0.03 sec)
+
+Query OK, 0 rows affected, 1 warning (0.00 sec)
+
+Query OK, 0 rows affected (0.03 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.01 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.01 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.01 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.01 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.01 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.01 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.01 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.01 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.01 sec)
+
+Query OK, 1 row affected (0.01 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.01 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.01 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.01 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.01 sec)
+
+Query OK, 1 row affected (0.01 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.01 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.01 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.01 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.01 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.01 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.01 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.01 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.01 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.01 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.01 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.01 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.01 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.01 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.01 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.01 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.01 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.01 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.01 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+mysql> show tables;
++------------------+
+| Tables_in_dswork |
++------------------+
+| Dept             |
+| Emp              |
+| Proj             |
+| Pworks           |
++------------------+
+4 rows in set (0.00 sec)
+
+mysql> desc Dept;
++----------+-------------+------+-----+---------+-------+
+| Field    | Type        | Null | Key | Default | Extra |
++----------+-------------+------+-----+---------+-------+
+| deptno   | char(3)     | NO   | PRI | NULL    |       |
+| deptname | varchar(36) | NO   |     | NULL    |       |
+| mgrno    | char(6)     | YES  |     | NULL    |       |
+| admrdept | char(3)     | NO   |     | NULL    |       |
++----------+-------------+------+-----+---------+-------+
+4 rows in set (0.00 sec)
+
+mysql> Desc Emp;
++-----------+--------------+------+-----+---------+-------+
+| Field     | Type         | Null | Key | Default | Extra |
++-----------+--------------+------+-----+---------+-------+
+| empno     | char(6)      | NO   | PRI | NULL    |       |
+| firstname | varchar(12)  | YES  |     | NULL    |       |
+| midinit   | char(1)      | YES  |     | NULL    |       |
+| lastname  | varchar(15)  | YES  |     | NULL    |       |
+| workdept  | char(3)      | YES  | MUL | NULL    |       |
+| phoneno   | char(4)      | YES  |     | NULL    |       |
+| hiredate  | date         | YES  |     | NULL    |       |
+| job       | char(10)     | YES  |     | NULL    |       |
+| edlevel   | int(2)       | YES  |     | NULL    |       |
+| gender    | char(1)      | YES  |     | NULL    |       |
+| birthdate | date         | YES  |     | NULL    |       |
+| salary    | decimal(8,2) | YES  |     | NULL    |       |
+| bonus     | decimal(8,2) | YES  |     | NULL    |       |
+| comm      | decimal(8,2) | YES  |     | NULL    |       |
++-----------+--------------+------+-----+---------+-------+
+14 rows in set (0.00 sec)
+
+mysql> Desc Proj;
++----------+-------------+------+-----+---------+-------+
+| Field    | Type        | Null | Key | Default | Extra |
++----------+-------------+------+-----+---------+-------+
+| projno   | char(6)     | NO   | PRI | NULL    |       |
+| projname | varchar(24) | NO   |     | NULL    |       |
+| deptno   | char(3)     | NO   | MUL | NULL    |       |
+| respemp  | char(6)     | NO   | MUL | NULL    |       |
+| prstdate | date        | YES  |     | NULL    |       |
+| prendate | date        | YES  |     | NULL    |       |
+| majproj  | char(6)     | YES  |     | NULL    |       |
++----------+-------------+------+-----+---------+-------+
+7 rows in set (0.00 sec)
+
+mysql> Desc Pworks;
++--------+-------------+------+-----+---------+-------+
+| Field  | Type        | Null | Key | Default | Extra |
++--------+-------------+------+-----+---------+-------+
+| empno  | char(6)     | NO   | PRI | NULL    |       |
+| projno | char(6)     | NO   | PRI | NULL    |       |
+| hours  | smallint(6) | YES  |     | NULL    |       |
++--------+-------------+------+-----+---------+-------+
+3 rows in set (0.00 sec)
+
+mysql> SELECT D.deptname FROM Dept D INNER JOIN (SELECT P.deptno FROM Proj P WHERE P.prstdate <= CURRENT_DATE) ON D.deptno = P.Deptno;
+ERROR 1248 (42000): Every derived table must have its own alias
+mysql> SELECT D.deptname FROM Dept D INNER JOIN (SELECT P.deptno FROM Proj P WHERE P.prstdate <= CURRENT_DATE) ON D.deptno = P.deptno;
+ERROR 1248 (42000): Every derived table must have its own alias
+mysql> SELECT D.deptname FROM Dept D INNER JOIN (SELECT deptno FROM Proj WHERE prstdate <= CURRENT_DATE) P ON D.deptno = P.deptno;
++------------------------+
+| deptname               |
++------------------------+
+| Development Centre     |
+| Administration Systems |
+| Administration Systems |
+| Administration Systems |
+| Administration Systems |
+| Information Centre     |
+| Information Centre     |
+| Development Centre     |
+| Manufacturing Systems  |
+| Manufacturing Systems  |
+| Manufacturing Systems  |
+| Manufacturing Systems  |
+| Support Services       |
+| Operations             |
+| Support Services       |
+| Software Support       |
+| Software Support       |
+| Software Support       |
+| Software Support       |
+| Planning               |
++------------------------+
+20 rows in set (0.00 sec)
+
+mysql> SELECT DISTINCT D.deptname FROM Dept D INNER JOIN (SELECT deptno FROM Proj WHERE prstdate <= CURRENT_DATE) P ON D.deptno = P.deptno;
++------------------------+
+| deptname               |
++------------------------+
+| Development Centre     |
+| Administration Systems |
+| Information Centre     |
+| Manufacturing Systems  |
+| Support Services       |
+| Operations             |
+| Software Support       |
+| Planning               |
++------------------------+
+8 rows in set (0.00 sec)
+
+mysql> SELECT projname, prstdate, TRUNCATE(DATEDIFF(A.prstdate, A.prendate)/30) AS 'Duration in Months' From Proj WHERE prendate <= ALL(SELECT prendate FROM Proj);
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') AS 'Duration in Months' From Proj WHERE prendate <= ALL(SELECT prendate FROM P' at line 1
+mysql> SELECT projname, prstdate, TRUNCATE(DATEDIFF(prstdate, prendate)/30) AS 'Duration in Months' From Proj WHERE prendate <= ALL(SELECT prendate FROM Proj);
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ') AS 'Duration in Months' From Proj WHERE prendate <= ALL(SELECT prendate FROM P' at line 1
+mysql> SELECT projname, prstdate, TIMESTAMPDIFF(MONTH, prstdate, prendate) AS 'Duration in Months' From Proj WHERE prendate <= ALL(SELECT prendate FROM Proj);
++--------------------+------------+--------------------+
+| projname           | prstdate   | Duration in Months |
++--------------------+------------+--------------------+
+| Weld Line Planning | 2014-01-01 |                  8 |
++--------------------+------------+--------------------+
+1 row in set (0.00 sec)
+
+mysql> select firstname from Emp where gender = 'F';
++-----------+
+| firstname |
++-----------+
+| Christine |
+| Sally     |
+| Eva       |
+| Eileen    |
+| Dolores   |
+| Heather   |
+| Elizabeth |
+| Marilyn   |
+| Jennifer  |
+| Sybil     |
+| 03ia      |
+| Ethel     |
+| Maude     |
++-----------+
+13 rows in set (0.00 sec)
+
+mysql> SELECT empno, firstname, lastname FROM Emp WHERE gender = 'F' AND edlevel > (SELECT AVG(edlevel) from Emp GROUP BY empno);
+ERROR 1242 (21000): Subquery returns more than 1 row
+mysql> SELECT AVG(edlevel) from Emp GROUP BY empno;
++--------------+
+| AVG(edlevel) |
++--------------+
+|      18.0000 |
+|      18.0000 |
+|      20.0000 |
+|      16.0000 |
+|      16.0000 |
+|      16.0000 |
+|      16.0000 |
+|      14.0000 |
+|      19.0000 |
+|      14.0000 |
+|      16.0000 |
+|      18.0000 |
+|      16.0000 |
+|      17.0000 |
+|      16.0000 |
+|      17.0000 |
+|      16.0000 |
+|      16.0000 |
+|      17.0000 |
+|      18.0000 |
+|      14.0000 |
+|      17.0000 |
+|      15.0000 |
+|      16.0000 |
+|      15.0000 |
+|      17.0000 |
+|      12.0000 |
+|      14.0000 |
+|      12.0000 |
+|      16.0000 |
+|      14.0000 |
+|      16.0000 |
++--------------+
+32 rows in set (0.00 sec)
+
+mysql> SELECT AVG(edlevel) from Emp;
++--------------+
+| AVG(edlevel) |
++--------------+
+|      16.0000 |
++--------------+
+1 row in set (0.00 sec)
+
+mysql> SELECT empno, firstname, lastname FROM Emp WHERE gender = 'F' AND edlevel > (SELECT AVG(edlevel) from Emp);
++--------+-----------+-----------+
+| empno  | firstname | lastname  |
++--------+-----------+-----------+
+| 000010 | Christine | Haas      |
+| 000030 | Sally     | Kwan      |
+| 000140 | Heather   | Nicholls  |
+| 000160 | Elizabeth | Pianka    |
+| 000180 | Marilyn   | Scoutten  |
+| 000220 | Jennifer  | Lutz      |
+| 000280 | Ethel     | Schneider |
++--------+-----------+-----------+
+7 rows in set (0.00 sec)
+
+mysql> SELECT lastname, job, salary from Emp WHERE empno NOT IN (SELECT empno FROM Pworks);
++----------+------------+-----------+
+| lastname | job        | salary    |
++----------+------------+-----------+
+| Haas     | Pres       | 312750.00 |
+| Lucchesi | Salesrep   | 156500.00 |
+| Oconnell | Programmer |  99250.00 |
++----------+------------+-----------+
+3 rows in set (0.00 sec)
+
+mysql> SELECT MAX(edlevel) FROM Emp WHERE job = 'Designer';
++--------------+
+| MAX(edlevel) |
++--------------+
+|           18 |
++--------------+
+1 row in set (0.00 sec)
+
+mysql> SELECT A.firstname, A.lastname, A.edlevel FROM Emp A INNER JOIN (SELECT MAX(edlevel) FROM Emp WHERE job = 'Designer') B ON B.edlevel < A.edlevel; 
+ERROR 1054 (42S22): Unknown column 'B.edlevel' in 'on clause'
+mysql> SELECT A.firstname, A.lastname, A.edlevel FROM Emp A INNER JOIN (SELECT MAX(edlevel) FROM Emp WHERE job = 'Designer') B ON B.edlevel < A.edlevel;
+ERROR 1054 (42S22): Unknown column 'B.edlevel' in 'on clause'
+mysql> SELECT A.firstname, A.lastname, A.edlevel FROM Emp A INNER JOIN (SELECT MAX(edlevel) FROM Emp B WHERE job = 'Designer') ON B.edlevel < A.edlevel;
+ERROR 1248 (42000): Every derived table must have its own alias
+mysql> SELECT firstname, lastname, edlevel FROM Emp WHERE edlevel > (SELECT MAX(edlevel) FROM Emp WHERE job = 'Designer');
++-----------+----------+---------+
+| firstname | lastname | edlevel |
++-----------+----------+---------+
+| Sally     | Kwan     |      20 |
+| Vincenzo  | Lucchesi |      19 |
++-----------+----------+---------+
+2 rows in set (0.00 sec)
+
+mysql> SELECT D.deptname FROM Dept D INNER JOIN (SELECT deptno FROM Proj NATURAL JOIN Dept WHERE COUNT(projno) = 1) D1P ON D.deptno = D1P.deptno;
+ERROR 1111 (HY000): Invalid use of group function
+mysql> SELECT deptno FROM Proj NATURAL JOIN Dept WHERE COUNT(projno) = 1;
+ERROR 1111 (HY000): Invalid use of group function
+mysql> SELECT D.deptname FROM Dept D INNER JOIN (SELECT deptno FROM Proj NATURAL JOIN Dept WHERE COUNT(projno) = 1 GROUP BY deptno) D1P ON D.deptno = D1P.deptno;
+ERROR 1111 (HY000): Invalid use of group function
+mysql> SELECT deptno FROM Proj NATURAL JOIN Dept WHERE COUNT(projno) = 1 GROUP BY deptno;
+ERROR 1111 (HY000): Invalid use of group function
+mysql> SELECT P.deptno FROM P.Proj NATURAL JOIN P.Dept WHERE COUNT(P.projno) = 1 GROUP BY P.deptno
+    -> ;
+ERROR 1146 (42S02): Table 'P.Proj' doesn't exist
+mysql> SELECT P.deptno FROM Proj P NATURAL JOIN Dept D WHERE COUNT(P.projno) = 1 GROUP BY P.deptno
+    -> ;
+ERROR 1111 (HY000): Invalid use of group function
+mysql> desc Proj;
++----------+-------------+------+-----+---------+-------+
+| Field    | Type        | Null | Key | Default | Extra |
++----------+-------------+------+-----+---------+-------+
+| projno   | char(6)     | NO   | PRI | NULL    |       |
+| projname | varchar(24) | NO   |     | NULL    |       |
+| deptno   | char(3)     | NO   | MUL | NULL    |       |
+| respemp  | char(6)     | NO   | MUL | NULL    |       |
+| prstdate | date        | YES  |     | NULL    |       |
+| prendate | date        | YES  |     | NULL    |       |
+| majproj  | char(6)     | YES  |     | NULL    |       |
++----------+-------------+------+-----+---------+-------+
+7 rows in set (0.00 sec)
+
+mysql> SELECT deptno FROM Proj WHERE COUNT(projno) = 1 GROUP BY P.deptno;
+ERROR 1111 (HY000): Invalid use of group function
+mysql> SELECT deptno FROM Proj WHERE COUNT(projno) = 1 GROUP BY deptno;
+ERROR 1111 (HY000): Invalid use of group function
+mysql> SELECT deptno, COUNT(projno) FROM GROUP BY deptno;
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'GROUP BY deptno' at line 1
+mysql> SELECT deptno, COUNT(projno) Proj FROM GROUP BY deptno;
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'GROUP BY deptno' at line 1
+mysql> SELECT deptno, COUNT(projno) FROM Proj GROUP BY deptno;
++--------+---------------+
+| deptno | COUNT(projno) |
++--------+---------------+
+| B01    |             1 |
+| C01    |             2 |
+| D01    |             2 |
+| D11    |             4 |
+| D21    |             4 |
+| E01    |             2 |
+| E11    |             1 |
+| E21    |             4 |
++--------+---------------+
+8 rows in set (0.00 sec)
+
+mysql> SELECT deptno FROM Proj WHERE COUNT(projno) = 1 GROUP BY deptno;
+ERROR 1111 (HY000): Invalid use of group function
+mysql> SELECT deptno FROM Proj GROUP BY deptno HAVING COUNT(projno) = 1;
++--------+
+| deptno |
++--------+
+| B01    |
+| E11    |
++--------+
+2 rows in set (0.00 sec)
+
+mysql> SELECT D.deptname FROM Dept D INNER JOIN (SELECT deptno FROM Proj GROUP BY deptno HAVING COUNT(projno) = 1) D1P ON D.deptno = D1P.deptno;
++------------+
+| deptname   |
++------------+
+| Planning   |
+| Operations |
++------------+
+2 rows in set (0.00 sec)
+
+mysql> Desc Proj;
++----------+-------------+------+-----+---------+-------+
+| Field    | Type        | Null | Key | Default | Extra |
++----------+-------------+------+-----+---------+-------+
+| projno   | char(6)     | NO   | PRI | NULL    |       |
+| projname | varchar(24) | NO   |     | NULL    |       |
+| deptno   | char(3)     | NO   | MUL | NULL    |       |
+| respemp  | char(6)     | NO   | MUL | NULL    |       |
+| prstdate | date        | YES  |     | NULL    |       |
+| prendate | date        | YES  |     | NULL    |       |
+| majproj  | char(6)     | YES  |     | NULL    |       |
++----------+-------------+------+-----+---------+-------+
+7 rows in set (0.00 sec)
+
+mysql> (SELECT projno, projname, prendate, 'Sub-project' AS remark FROM Proj WHERE MAJPROJ IS NULL)
+    -> UNION
+    -> (SELECT projno, projname, prendate, 'Not a sub-project' AS remark FROM Proj WHERE MAJPROJ IS NOT NULL)
+    -> ORDER BY prendate;
++--------+----------------------+------------+-------------------+
+| projno | projname             | prendate   | remark            |
++--------+----------------------+------------+-------------------+
+| PL2100 | Weld Line Planning   | 2014-09-15 | Not a sub-project |
+| MA2113 | W L Prod Cont Progs  | 2014-12-01 | Not a sub-project |
+| MA2111 | W L Program Design   | 2014-12-01 | Not a sub-project |
+| MA2112 | W L Robot Design     | 2014-12-01 | Not a sub-project |
+| OP2000 | GEN Systems Services | 2015-02-01 | Not a sub-project |
+| OP2012 | Applications Support | 2015-02-01 | Not a sub-project |
+| AD3100 | Admin Services       | 2015-02-01 | Sub-project       |
+| MA2100 | Weld Line Automation | 2015-02-01 | Sub-project       |
+| AD3111 | Payroll Programming  | 2015-02-01 | Not a sub-project |
+| MA2110 | W L Programming      | 2015-02-01 | Not a sub-project |
+| OP2010 | Systems Support      | 2015-02-01 | Not a sub-project |
+| OP2013 | DB/DC Support        | 2015-02-01 | Not a sub-project |
+| IF1000 | Query Services       | 2015-02-01 | Sub-project       |
+| OP1000 | Operation Support    | 2015-02-01 | Sub-project       |
+| AD3112 | Personnel Programmg  | 2015-02-01 | Not a sub-project |
+| OP1010 | Operation            | 2015-02-01 | Not a sub-project |
+| OP2011 | SCP Systems Support  | 2015-02-01 | Not a sub-project |
+| IF2000 | User Education       | 2015-02-01 | Sub-project       |
+| AD3110 | General AD Systems   | 2015-02-01 | Not a sub-project |
+| AD3113 | Account.Programming  | 2015-02-01 | Not a sub-project |
++--------+----------------------+------------+-------------------+
+20 rows in set (0.00 sec)
+
+mysql> create database NewComapny;
+Query OK, 1 row affected (0.00 sec)
+
+mysql> use NewComany;
+ERROR 1049 (42000): Unknown database 'NewComany'
+mysql> use NewCompany;
+ERROR 1049 (42000): Unknown database 'NewCompany'
+mysql> drop database NewComapny;
+Query OK, 0 rows affected (0.01 sec)
+
+mysql> create database NewCompany;
+Query OK, 1 row affected (0.00 sec)
+
+mysql> use NewCompany;
+Database changed
+mysql> \. rebuildtask2.sql
+ERROR: 
+Failed to open file 'rebuildtask2.sql', error: 2
+mysql> \. rebuild_task2.sql
+Query OK, 0 rows affected (0.04 sec)
+
+Query OK, 0 rows affected (0.03 sec)
+
+Query OK, 1 row affected (0.01 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.01 sec)
+
+Query OK, 1 row affected (0.01 sec)
+
+Query OK, 1 row affected (0.01 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.01 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.01 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.01 sec)
+
+ERROR 1406 (22001): Data too long for column 'job' at row 1
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.01 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.01 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.01 sec)
+
+ERROR 1406 (22001): Data too long for column 'job' at row 1
+ERROR 1406 (22001): Data too long for column 'job' at row 1
+ERROR 1406 (22001): Data too long for column 'job' at row 1
+ERROR 1406 (22001): Data too long for column 'job' at row 1
+ERROR 1406 (22001): Data too long for column 'job' at row 1
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.01 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.01 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.01 sec)
+
+mysql> drop database NewCompany;
+Query OK, 2 rows affected (0.04 sec)
+
+mysql> show tables;
+ERROR 1046 (3D000): No database selected
+mysql> create database NewCompany;
+Query OK, 1 row affected (0.00 sec)
+
+mysql> \. rebuild_task2.sql
+ERROR 1046 (3D000): No database selected
+ERROR 1046 (3D000): No database selected
+ERROR 1046 (3D000): No database selected
+ERROR 1046 (3D000): No database selected
+ERROR 1046 (3D000): No database selected
+ERROR 1046 (3D000): No database selected
+ERROR 1046 (3D000): No database selected
+ERROR 1046 (3D000): No database selected
+ERROR 1046 (3D000): No database selected
+ERROR 1046 (3D000): No database selected
+ERROR 1046 (3D000): No database selected
+ERROR 1046 (3D000): No database selected
+ERROR 1046 (3D000): No database selected
+ERROR 1046 (3D000): No database selected
+ERROR 1046 (3D000): No database selected
+ERROR 1046 (3D000): No database selected
+ERROR 1046 (3D000): No database selected
+ERROR 1046 (3D000): No database selected
+ERROR 1046 (3D000): No database selected
+ERROR 1046 (3D000): No database selected
+ERROR 1046 (3D000): No database selected
+ERROR 1046 (3D000): No database selected
+ERROR 1046 (3D000): No database selected
+ERROR 1046 (3D000): No database selected
+ERROR 1046 (3D000): No database selected
+ERROR 1046 (3D000): No database selected
+ERROR 1046 (3D000): No database selected
+ERROR 1046 (3D000): No database selected
+ERROR 1046 (3D000): No database selected
+ERROR 1046 (3D000): No database selected
+ERROR 1046 (3D000): No database selected
+ERROR 1046 (3D000): No database selected
+ERROR 1046 (3D000): No database selected
+ERROR 1046 (3D000): No database selected
+ERROR 1046 (3D000): No database selected
+ERROR 1046 (3D000): No database selected
+ERROR 1046 (3D000): No database selected
+ERROR 1046 (3D000): No database selected
+ERROR 1046 (3D000): No database selected
+ERROR 1046 (3D000): No database selected
+ERROR 1046 (3D000): No database selected
+ERROR 1046 (3D000): No database selected
+ERROR 1046 (3D000): No database selected
+mysql> use NewCompany;
+Database changed
+mysql> \. rebuild_task2.sql
+Query OK, 0 rows affected (0.03 sec)
+
+Query OK, 0 rows affected (0.03 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.01 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.01 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.01 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.01 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.01 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.01 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.01 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.01 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.01 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.01 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.01 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+Query OK, 1 row affected (0.00 sec)
+
+mysql> show tables;
++----------------------+
+| Tables_in_NewCompany |
++----------------------+
+| Dept                 |
+| Emp                  |
++----------------------+
+2 rows in set (0.00 sec)
+
+mysql> Desc Emp;
++-----------+--------------+------+-----+---------+-------+
+| Field     | Type         | Null | Key | Default | Extra |
++-----------+--------------+------+-----+---------+-------+
+| empno     | char(6)      | NO   | PRI | NULL    |       |
+| firstname | varchar(12)  | NO   |     | NULL    |       |
+| midinit   | char(1)      | NO   |     | NULL    |       |
+| lastname  | varchar(15)  | NO   |     | NULL    |       |
+| workdept  | char(3)      | YES  |     | NULL    |       |
+| phoneno   | char(4)      | YES  |     | NULL    |       |
+| hiredate  | date         | YES  |     | NULL    |       |
+| job       | char(11)     | YES  |     | NULL    |       |
+| edlevel   | int(2)       | YES  |     | NULL    |       |
+| sex       | char(1)      | YES  |     | NULL    |       |
+| birthdate | date         | YES  |     | NULL    |       |
+| salary    | decimal(8,2) | YES  |     | NULL    |       |
+| bonus     | decimal(8,2) | YES  |     | NULL    |       |
+| comm      | decimal(8,2) | YES  |     | NULL    |       |
++-----------+--------------+------+-----+---------+-------+
+14 rows in set (0.00 sec)
+
+mysql> CREATE TABLE Emp2(
+    -> eID CHAR(6),
+    -> eName VARCHAR(17),
+    -> age INTEGER,
+    -> gender CHAR(1),
+    -> salary DECIMAL(8,2))
+    -> AS SELECT empno, CONCAT(lastname, ',', SUBSTR(firstname, 0, 1), '.'), TIMESTAMPDIFF(YEAR, birthdate, CURRDATE), gender, salary FROM Emp;
+ERROR 1054 (42S22): Unknown column 'CURRDATE' in 'field list'
+mysql> CREATE TABLE Emp2(
+    -> eID CHAR(6),
+    -> eName VARCHAR(17),
+    -> age INTEGER,
+    -> gender CHAR(1),
+    -> salary DECIMAL(8,2))
+    -> AS SELECT empno, CONCAT(lastname, ',', SUBSTR(firstname, 0, 1), '.'), TIMESTAMPDIFF(YEAR, birthdate, CURRDATE()), gender, salary FROM Emp;
+ERROR 1305 (42000): FUNCTION NewCompany.CURRDATE does not exist
+mysql> CREATE TABLE Emp2(
+    -> eID CHAR(6),
+    -> eName VARCHAR(17),
+    -> age INTEGER,
+    -> gender CHAR(1),
+    -> salary DECIMAL(8,2))
+    -> AS SELECT empno, CONCAT(lastname, ',', SUBSTR(firstname, 0, 1), '.'), TIMESTAMPDIFF(YEAR, birthdate, CURRENT_DATE), gender, salary FROM Emp;
+ERROR 1054 (42S22): Unknown column 'gender' in 'field list'
+mysql> CREATE TABLE Emp2(
+    -> eID CHAR(6),
+    -> eName VARCHAR(17),
+    -> age INTEGER,
+    -> sex CHAR(1),
+    -> salary DECIMAL(8,2))
+    -> AS SELECT empno, CONCAT(lastname, ',', SUBSTR(firstname, 0, 1), '.'), TIMESTAMPDIFF(YEAR, birthdate, CURRENT_DATE), gender, salary FROM Emp;
+ERROR 1054 (42S22): Unknown column 'gender' in 'field list'
+mysql> CREATE TABLE Emp2(
+    -> eID CHAR(6),
+    -> eName VARCHAR(17),
+    -> age INTEGER,
+    -> gender CHAR(1),
+    -> salary DECIMAL(8,2))
+    -> AS SELECT empno, CONCAT(lastname, ',', SUBSTR(firstname, 0, 1), '.'), TIMESTAMPDIFF(YEAR, birthdate, CURRENT_DATE), sex, salary FROM Emp;
+Query OK, 32 rows affected (0.05 sec)
+Records: 32  Duplicates: 0  Warnings: 0
+
+mysql> Desc Emp2;
++-----------------------------------------------------+--------------+------+-----+---------+-------+
+| Field                                               | Type         | Null | Key | Default | Extra |
++-----------------------------------------------------+--------------+------+-----+---------+-------+
+| eID                                                 | char(6)      | YES  |     | NULL    |       |
+| eName                                               | varchar(17)  | YES  |     | NULL    |       |
+| age                                                 | int(11)      | YES  |     | NULL    |       |
+| gender                                              | char(1)      | YES  |     | NULL    |       |
+| empno                                               | char(6)      | NO   |     | NULL    |       |
+| CONCAT(lastname, ',', SUBSTR(firstname, 0, 1), '.') | varchar(17)  | YES  |     | NULL    |       |
+| TIMESTAMPDIFF(YEAR, birthdate, CURRENT_DATE)        | bigint(21)   | YES  |     | NULL    |       |
+| sex                                                 | char(1)      | YES  |     | NULL    |       |
+| salary                                              | decimal(8,2) | YES  |     | NULL    |       |
++-----------------------------------------------------+--------------+------+-----+---------+-------+
+9 rows in set (0.00 sec)
+
+mysql> select * from Emp2;
++------+-------+------+--------+--------+-----------------------------------------------------+----------------------------------------------+------+-----------+
+| eID  | eName | age  | gender | empno  | CONCAT(lastname, ',', SUBSTR(firstname, 0, 1), '.') | TIMESTAMPDIFF(YEAR, birthdate, CURRENT_DATE) | sex  | salary    |
++------+-------+------+--------+--------+-----------------------------------------------------+----------------------------------------------+------+-----------+
+| NULL | NULL  | NULL | NULL   | 000010 | Haas,.                                              |                                           53 | F    | 312750.00 |
+| NULL | NULL  | NULL | NULL   | 000020 | Thompson,.                                          |                                           38 | M    | 161250.00 |
+| NULL | NULL  | NULL | NULL   | 000030 | Kwan,.                                              |                                           41 | F    | 158250.00 |
+| NULL | NULL  | NULL | NULL   | 000050 | Geyer,.                                             |                                           46 | M    | 160175.00 |
+| NULL | NULL  | NULL | NULL   | 000060 | Stern,.                                             |                                           46 | M    | 155555.00 |
+| NULL | NULL  | NULL | NULL   | 000070 | Pulaski,.                                           |                                           38 | F    | 156170.00 |
+| NULL | NULL  | NULL | NULL   | 000090 | Henderson,.                                         |                                           45 | F    | 149750.00 |
+| NULL | NULL  | NULL | NULL   | 000100 | Spenser,.                                           |                                           31 | M    | 146150.00 |
+| NULL | NULL  | NULL | NULL   | 000110 | Lucchesi,.                                          |                                           37 | M    | 156500.00 |
+| NULL | NULL  | NULL | NULL   | 000120 | Oconnell,.                                          |                                           38 | M    |  99250.00 |
+| NULL | NULL  | NULL | NULL   | 000130 | Quintana,.                                          |                                           36 | F    |  93800.00 |
+| NULL | NULL  | NULL | NULL   | 000140 | Nicholls,.                                          |                                           34 | F    |  88420.00 |
+| NULL | NULL  | NULL | NULL   | 000150 | Adamson,.                                           |                                           39 | M    |  95280.00 |
+| NULL | NULL  | NULL | NULL   | 000160 | Pianka,.                                            |                                           34 | F    |  92250.00 |
+| NULL | NULL  | NULL | NULL   | 000170 | Yoshimura,.                                         |                                           35 | M    |  84680.00 |
+| NULL | NULL  | NULL | NULL   | 000180 | Scoutten,.                                          |                                           39 | F    |  81340.00 |
+| NULL | NULL  | NULL | NULL   | 000190 | Walker,.                                            |                                           29 | M    |  70450.00 |
+| NULL | NULL  | NULL | NULL   | 000200 | Brown,.                                             |                                           35 | M    |  77740.00 |
+| NULL | NULL  | NULL | NULL   | 000210 | Jones,.                                             |                                           38 | M    |  88270.00 |
+| NULL | NULL  | NULL | NULL   | 000220 | Lutz,.                                              |                                           42 | F    |  89840.00 |
+| NULL | NULL  | NULL | NULL   | 000230 | Jefferson,.                                         |                                           36 | M    |  62180.00 |
+| NULL | NULL  | NULL | NULL   | 000240 | Marino,.                                            |                                           37 | M    |  68760.00 |
+| NULL | NULL  | NULL | NULL   | 000250 | Smith,.                                             |                                           38 | M    |  59180.00 |
+| NULL | NULL  | NULL | NULL   | 000260 | Johnson,.                                           |                                           35 | F    |  57250.00 |
+| NULL | NULL  | NULL | NULL   | 000270 | Perez,.                                             |                                           38 | F    |  57380.00 |
+| NULL | NULL  | NULL | NULL   | 000280 | Schneider,.                                         |                                           35 | F    |  86250.00 |
+| NULL | NULL  | NULL | NULL   | 000290 | Parker,.                                            |                                           33 | M    |  75340.00 |
+| NULL | NULL  | NULL | NULL   | 000300 | Smith,.                                             |                                           34 | M    |  77750.00 |
+| NULL | NULL  | NULL | NULL   | 000310 | Setright,.                                          |                                           40 | F    |  75900.00 |
+| NULL | NULL  | NULL | NULL   | 000320 | Mehta,.                                             |                                           39 | M    |  99950.00 |
+| NULL | NULL  | NULL | NULL   | 000330 | Lee,.                                               |                                           40 | M    |  95370.00 |
+| NULL | NULL  | NULL | NULL   | 000340 | Gounot,.                                            |                                           45 | M    | 123840.00 |
++------+-------+------+--------+--------+-----------------------------------------------------+----------------------------------------------+------+-----------+
+32 rows in set (0.00 sec)
+
+mysql> pager less -SFX
+PAGER set to 'less -SFX'
+mysql> select * from Emp2;
++------+-------+------+--------+--------+-----------------------------------------------------+----------------------------------------------+------+-----------+
+| eID  | eName | age  | gender | empno  | CONCAT(lastname, ',', SUBSTR(firstname, 0, 1), '.') | TIMESTAMPDIFF(YEAR, birthdate, CURRENT_DATE) | sex  | salary    |
++------+-------+------+--------+--------+-----------------------------------------------------+----------------------------------------------+------+-----------+
+| NULL | NULL  | NULL | NULL   | 000010 | Haas,.                                              |                                           53 | F    | 312750.00 |
+| NULL | NULL  | NULL | NULL   | 000020 | Thompson,.                                          |                                           38 | M    | 161250.00 |
+| NULL | NULL  | NULL | NULL   | 000030 | Kwan,.                                              |                                           41 | F    | 158250.00 |
+| NULL | NULL  | NULL | NULL   | 000050 | Geyer,.                                             |                                           46 | M    | 160175.00 |
+| NULL | NULL  | NULL | NULL   | 000060 | Stern,.                                             |                                           46 | M    | 155555.00 |
+| NULL | NULL  | NULL | NULL   | 000070 | Pulaski,.                                           |                                           38 | F    | 156170.00 |
+| NULL | NULL  | NULL | NULL   | 000090 | Henderson,.                                         |                                           45 | F    | 149750.00 |
+| NULL | NULL  | NULL | NULL   | 000100 | Spenser,.                                           |                                           31 | M    | 146150.00 |
+| NULL | NULL  | NULL | NULL   | 000110 | Lucchesi,.                                          |                                           37 | M    | 156500.00 |
+| NULL | NULL  | NULL | NULL   | 000120 | Oconnell,.                                          |                                           38 | M    |  99250.00 |
+| NULL | NULL  | NULL | NULL   | 000130 | Quintana,.                                          |                                           36 | F    |  93800.00 |
+| NULL | NULL  | NULL | NULL   | 000140 | Nicholls,.                                          |                                           34 | F    |  88420.00 |
+| NULL | NULL  | NULL | NULL   | 000150 | Adamson,.                                           |                                           39 | M    |  95280.00 |
+| NULL | NULL  | NULL | NULL   | 000160 | Pianka,.                                            |                                           34 | F    |  92250.00 |
+| NULL | NULL  | NULL | NULL   | 000170 | Yoshimura,.                                         |                                           35 | M    |  84680.00 |
+| NULL | NULL  | NULL | NULL   | 000180 | Scoutten,.                                          |                                           39 | F    |  81340.00 |
+| NULL | NULL  | NULL | NULL   | 000190 | Walker,.                                            |                                           29 | M    |  70450.00 |
+| NULL | NULL  | NULL | NULL   | 000200 | Brown,.                                             |                                           35 | M    |  77740.00 |
+| NULL | NULL  | NULL | NULL   | 000210 | Jones,.                                             |                                           38 | M    |  88270.00 |
+| NULL | NULL  | NULL | NULL   | 000220 | Lutz,.                                              |                                           42 | F    |  89840.00 |
+| NULL | NULL  | NULL | NULL   | 000230 | Jefferson,.                                         |                                           36 | M    |  62180.00 |
+| NULL | NULL  | NULL | NULL   | 000240 | Marino,.                                            |                                           37 | M    |  68760.00 |
+| NULL | NULL  | NULL | NULL   | 000250 | Smith,.                                             |                                           38 | M    |  59180.00 |
+| NULL | NULL  | NULL | NULL   | 000260 | Johnson,.                                           |                                           35 | F    |  57250.00 |
+| NULL | NULL  | NULL | NULL   | 000270 | Perez,.                                             |                                           38 | F    |  57380.00 |
+| NULL | NULL  | NULL | NULL   | 000280 | Schneider,.                                         |                                           35 | F    |  86250.00 |
+| NULL | NULL  | NULL | NULL   | 000290 | Parker,.                                            |                                           33 | M    |  75340.00 |
+| NULL | NULL  | NULL | NULL   | 000300 | Smith,.                                             |                                           34 | M    |  77750.00 |
+| NULL | NULL  | NULL | NULL   | 000310 | Setright,.                                          |                                           40 | F    |  75900.00 |
+| NULL | NULL  | NULL | NULL   | 000320 | Mehta,.                                             |                                           39 | M    |  99950.00 |
+| NULL | NULL  | NULL | NULL   | 000330 | Lee,.                                               |                                           40 | M    |  95370.00 |
+| NULL | NULL  | NULL | NULL   | 000340 | Gounot,.                                            |                                           45 | M    | 123840.00 |
++------+-------+------+--------+--------+-----------------------------------------------------+----------------------------------------------+------+-----------+
+32 rows in set (0.00 sec)
+
+mysql> Drop table Emp2;
+Query OK, 0 rows affected (0.02 sec)
+
+mysql> Desc Emp;
++-----------+--------------+------+-----+---------+-------+
+| Field     | Type         | Null | Key | Default | Extra |
++-----------+--------------+------+-----+---------+-------+
+| empno     | char(6)      | NO   | PRI | NULL    |       |
+| firstname | varchar(12)  | NO   |     | NULL    |       |
+| midinit   | char(1)      | NO   |     | NULL    |       |
+| lastname  | varchar(15)  | NO   |     | NULL    |       |
+| workdept  | char(3)      | YES  |     | NULL    |       |
+| phoneno   | char(4)      | YES  |     | NULL    |       |
+| hiredate  | date         | YES  |     | NULL    |       |
+| job       | char(11)     | YES  |     | NULL    |       |
+| edlevel   | int(2)       | YES  |     | NULL    |       |
+| sex       | char(1)      | YES  |     | NULL    |       |
+| birthdate | date         | YES  |     | NULL    |       |
+| salary    | decimal(8,2) | YES  |     | NULL    |       |
+| bonus     | decimal(8,2) | YES  |     | NULL    |       |
+| comm      | decimal(8,2) | YES  |     | NULL    |       |
++-----------+--------------+------+-----+---------+-------+
+14 rows in set (0.00 sec)
+
+mysql> 
+mysql> CREATE TABLE Emp2 AS SELECT empno AS eID, CONCAT(lastname, ',', SUBSTR(firstname, 0, 1), '.') AS eName, TIMESTAMPDIFF(YEAR, birthdate, CURRENT_DATE) AS age, sex AS gender, salary FROM Emp;
+Query OK, 32 rows affected (0.05 sec)
+Records: 32  Duplicates: 0  Warnings: 0
+
+mysql> select * from Emp2;
++--------+-------------+------+--------+-----------+
+| eID    | eName       | age  | gender | salary    |
++--------+-------------+------+--------+-----------+
+| 000010 | Haas,.      |   53 | F      | 312750.00 |
+| 000020 | Thompson,.  |   38 | M      | 161250.00 |
+| 000030 | Kwan,.      |   41 | F      | 158250.00 |
+| 000050 | Geyer,.     |   46 | M      | 160175.00 |
+| 000060 | Stern,.     |   46 | M      | 155555.00 |
+| 000070 | Pulaski,.   |   38 | F      | 156170.00 |
+| 000090 | Henderson,. |   45 | F      | 149750.00 |
+| 000100 | Spenser,.   |   31 | M      | 146150.00 |
+| 000110 | Lucchesi,.  |   37 | M      | 156500.00 |
+| 000120 | Oconnell,.  |   38 | M      |  99250.00 |
+| 000130 | Quintana,.  |   36 | F      |  93800.00 |
+| 000140 | Nicholls,.  |   34 | F      |  88420.00 |
+| 000150 | Adamson,.   |   39 | M      |  95280.00 |
+| 000160 | Pianka,.    |   34 | F      |  92250.00 |
+| 000170 | Yoshimura,. |   35 | M      |  84680.00 |
+| 000180 | Scoutten,.  |   39 | F      |  81340.00 |
+| 000190 | Walker,.    |   29 | M      |  70450.00 |
+| 000200 | Brown,.     |   35 | M      |  77740.00 |
+| 000210 | Jones,.     |   38 | M      |  88270.00 |
+| 000220 | Lutz,.      |   42 | F      |  89840.00 |
+| 000230 | Jefferson,. |   36 | M      |  62180.00 |
+| 000240 | Marino,.    |   37 | M      |  68760.00 |
+| 000250 | Smith,.     |   38 | M      |  59180.00 |
+| 000260 | Johnson,.   |   35 | F      |  57250.00 |
+| 000270 | Perez,.     |   38 | F      |  57380.00 |
+| 000280 | Schneider,. |   35 | F      |  86250.00 |
+| 000290 | Parker,.    |   33 | M      |  75340.00 |
+| 000300 | Smith,.     |   34 | M      |  77750.00 |
+| 000310 | Setright,.  |   40 | F      |  75900.00 |
+| 000320 | Mehta,.     |   39 | M      |  99950.00 |
+| 000330 | Lee,.       |   40 | M      |  95370.00 |
+| 000340 | Gounot,.    |   45 | M      | 123840.00 |
++--------+-------------+------+--------+-----------+
+32 rows in set (0.01 sec)
+
+mysql> Drop table Emp2;
+Query OK, 0 rows affected (0.02 sec)
+
+mysql> CREATE TABLE Emp2 AS SELECT empno AS eID, CONCAT(lastname, ',', SUBSTR(firstname, 1, 1), '.') AS eName, TIMESTAMPDIFF(YEAR, birthdate, CURRENT_DATE) AS age, sex AS gender, salary FROM Emp;
+Query OK, 32 rows affected (0.05 sec)
+Records: 32  Duplicates: 0  Warnings: 0
+
+mysql> select * from Emp2;
++--------+--------------+------+--------+-----------+
+| eID    | eName        | age  | gender | salary    |
++--------+--------------+------+--------+-----------+
+| 000010 | Haas,C.      |   53 | F      | 312750.00 |
+| 000020 | Thompson,M.  |   38 | M      | 161250.00 |
+| 000030 | Kwan,S.      |   41 | F      | 158250.00 |
+| 000050 | Geyer,J.     |   46 | M      | 160175.00 |
+| 000060 | Stern,I.     |   46 | M      | 155555.00 |
+| 000070 | Pulaski,E.   |   38 | F      | 156170.00 |
+| 000090 | Henderson,E. |   45 | F      | 149750.00 |
+| 000100 | Spenser,T.   |   31 | M      | 146150.00 |
+| 000110 | Lucchesi,V.  |   37 | M      | 156500.00 |
+| 000120 | Oconnell,S.  |   38 | M      |  99250.00 |
+| 000130 | Quintana,D.  |   36 | F      |  93800.00 |
+| 000140 | Nicholls,H.  |   34 | F      |  88420.00 |
+| 000150 | Adamson,B.   |   39 | M      |  95280.00 |
+| 000160 | Pianka,E.    |   34 | F      |  92250.00 |
+| 000170 | Yoshimura,M. |   35 | M      |  84680.00 |
+| 000180 | Scoutten,M.  |   39 | F      |  81340.00 |
+| 000190 | Walker,J.    |   29 | M      |  70450.00 |
+| 000200 | Brown,D.     |   35 | M      |  77740.00 |
+| 000210 | Jones,W.     |   38 | M      |  88270.00 |
+| 000220 | Lutz,J.      |   42 | F      |  89840.00 |
+| 000230 | Jefferson,J. |   36 | M      |  62180.00 |
+| 000240 | Marino,S.    |   37 | M      |  68760.00 |
+| 000250 | Smith,D.     |   38 | M      |  59180.00 |
+| 000260 | Johnson,S.   |   35 | F      |  57250.00 |
+| 000270 | Perez,0.     |   38 | F      |  57380.00 |
+| 000280 | Schneider,E. |   35 | F      |  86250.00 |
+| 000290 | Parker,J.    |   33 | M      |  75340.00 |
+| 000300 | Smith,P.     |   34 | M      |  77750.00 |
+| 000310 | Setright,M.  |   40 | F      |  75900.00 |
+| 000320 | Mehta,R.     |   39 | M      |  99950.00 |
+| 000330 | Lee,W.       |   40 | M      |  95370.00 |
+| 000340 | Gounot,J.    |   45 | M      | 123840.00 |
++--------+--------------+------+--------+-----------+
+32 rows in set (0.00 sec)
+
+mysql> CREATE TABLE Dept2 (
+    -> dID CHAR(3),
+    -> dName VARCHAR(36),
+    -> budget DECIMAL(12,2),
+    -> managerID CHAR(6),
+    -> PRIMARY KEY(dID),
+    -> FOREIGN KEY (managerID) REFERENCES Emp2 (eID)
+    -> );
+ERROR 1215 (HY000): Cannot add foreign key constraint
+mysql> desc Emp2;
++--------+--------------+------+-----+---------+-------+
+| Field  | Type         | Null | Key | Default | Extra |
++--------+--------------+------+-----+---------+-------+
+| eID    | char(6)      | NO   |     | NULL    |       |
+| eName  | varchar(18)  | YES  |     | NULL    |       |
+| age    | bigint(21)   | YES  |     | NULL    |       |
+| gender | char(1)      | YES  |     | NULL    |       |
+| salary | decimal(8,2) | YES  |     | NULL    |       |
++--------+--------------+------+-----+---------+-------+
+5 rows in set (0.00 sec)
+
+mysql> ALTER TABLE Emp2 ADD PRIMARY KEY eID;
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1
+mysql> ALTER TABLE Emp2 ADD PRIMARY KEY (eID);
+Query OK, 0 rows affected (0.09 sec)
+Records: 0  Duplicates: 0  Warnings: 0
+
+mysql> desc Emp2;
++--------+--------------+------+-----+---------+-------+
+| Field  | Type         | Null | Key | Default | Extra |
++--------+--------------+------+-----+---------+-------+
+| eID    | char(6)      | NO   | PRI | NULL    |       |
+| eName  | varchar(18)  | YES  |     | NULL    |       |
+| age    | bigint(21)   | YES  |     | NULL    |       |
+| gender | char(1)      | YES  |     | NULL    |       |
+| salary | decimal(8,2) | YES  |     | NULL    |       |
++--------+--------------+------+-----+---------+-------+
+5 rows in set (0.00 sec)
+
+mysql> CREATE TABLE Dept2 ( dID CHAR(3), dName VARCHAR(36), budget DECIMAL(12,2), managerID CHAR(6), PRIMARY KEY(dID), FOREIGN KEY (managerID) REFERENCES Emp2 (eID) );
+Query OK, 0 rows affected (0.05 sec)
+
+mysql> Desc Dept2;
++-----------+---------------+------+-----+---------+-------+
+| Field     | Type          | Null | Key | Default | Extra |
++-----------+---------------+------+-----+---------+-------+
+| dID       | char(3)       | NO   | PRI | NULL    |       |
+| dName     | varchar(36)   | YES  |     | NULL    |       |
+| budget    | decimal(12,2) | YES  |     | NULL    |       |
+| managerID | char(6)       | YES  | MUL | NULL    |       |
++-----------+---------------+------+-----+---------+-------+
+4 rows in set (0.00 sec)
+
+mysql> Desc Dept;
++----------+-------------+------+-----+---------+-------+
+| Field    | Type        | Null | Key | Default | Extra |
++----------+-------------+------+-----+---------+-------+
+| deptno   | char(3)     | NO   | PRI | NULL    |       |
+| deptname | varchar(36) | NO   |     | NULL    |       |
+| mgrno    | char(6)     | YES  |     | NULL    |       |
+| admrdept | char(3)     | NO   |     | NULL    |       |
++----------+-------------+------+-----+---------+-------+
+4 rows in set (0.00 sec)
+
+mysql> Terminal close -- exit!
+Aborted
+mysql> Desc Dept;
++----------+-------------+------+-----+---------+-------+
+| Field    | Type        | Null | Key | Default | Extra |
++----------+-------------+------+-----+---------+-------+
+| deptno   | char(3)     | NO   | PRI | NULL    |       |
+| deptname | varchar(36) | NO   |     | NULL    |       |
+| mgrno    | char(6)     | YES  |     | NULL    |       |
+| admrdept | char(3)     | NO   |     | NULL    |       |
++----------+-------------+------+-----+---------+-------+
+4 rows in set (0.00 sec)
+
+mysql> Desc Dept2;
++-----------+---------------+------+-----+---------+-------+
+| Field     | Type          | Null | Key | Default | Extra |
++-----------+---------------+------+-----+---------+-------+
+| dID       | char(3)       | NO   | PRI | NULL    |       |
+| dName     | varchar(36)   | YES  |     | NULL    |       |
+| budget    | decimal(12,2) | YES  |     | NULL    |       |
+| managerID | char(6)       | YES  | MUL | NULL    |       |
++-----------+---------------+------+-----+---------+-------+
+4 rows in set (0.00 sec)
+
+mysql> Desc Emp;
++-----------+--------------+------+-----+---------+-------+
+| Field     | Type         | Null | Key | Default | Extra |
++-----------+--------------+------+-----+---------+-------+
+| empno     | char(6)      | NO   | PRI | NULL    |       |
+| firstname | varchar(12)  | NO   |     | NULL    |       |
+| midinit   | char(1)      | NO   |     | NULL    |       |
+| lastname  | varchar(15)  | NO   |     | NULL    |       |
+| workdept  | char(3)      | YES  |     | NULL    |       |
+| phoneno   | char(4)      | YES  |     | NULL    |       |
+| hiredate  | date         | YES  |     | NULL    |       |
+| job       | char(11)     | YES  |     | NULL    |       |
+| edlevel   | int(2)       | YES  |     | NULL    |       |
+| sex       | char(1)      | YES  |     | NULL    |       |
+| birthdate | date         | YES  |     | NULL    |       |
+| salary    | decimal(8,2) | YES  |     | NULL    |       |
+| bonus     | decimal(8,2) | YES  |     | NULL    |       |
+| comm      | decimal(8,2) | YES  |     | NULL    |       |
++-----------+--------------+------+-----+---------+-------+
+14 rows in set (0.00 sec)
+
+mysql> Desc Emp2;
++--------+--------------+------+-----+---------+-------+
+| Field  | Type         | Null | Key | Default | Extra |
++--------+--------------+------+-----+---------+-------+
+| eID    | char(6)      | NO   | PRI | NULL    |       |
+| eName  | varchar(18)  | YES  |     | NULL    |       |
+| age    | bigint(21)   | YES  |     | NULL    |       |
+| gender | char(1)      | YES  |     | NULL    |       |
+| salary | decimal(8,2) | YES  |     | NULL    |       |
++--------+--------------+------+-----+---------+-------+
+5 rows in set (0.00 sec)
+
+mysql> INSERT INTO Dept2 VALUES(dID, dName, managerID, budget)
+    -> (SELECT deptno, deptname, mgrno FROM Dept D 
+    -> INNER JOIN (SELECT 1.2*SUM(salary) FROM Emp GROUP BY deptno) E ON D.deptno = E.deptno;
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '(SELECT deptno, deptname, mgrno FROM Dept D 
+INNER JOIN (SELECT 1.2*SUM(salary) ' at line 2
+mysql> INSERT INTO Dept2 VALUES(dID, dName, managerID, budget)
+    -> (SELECT D.deptno, D.deptname, D.mgrno FROM Dept D 
+    -> INNER JOIN (SELECT 1.2*SUM(salary) FROM Emp GROUP BY deptno) E ON D.deptno = E.deptno;
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '(SELECT D.deptno, D.deptname, D.mgrno FROM Dept D 
+INNER JOIN (SELECT 1.2*SUM(sa' at line 2
+mysql> SELECT 1.2*SUM(salary) FROM Emp GROUP BY deptno
+    -> ;
+ERROR 1054 (42S22): Unknown column 'deptno' in 'group statement'
+mysql> SELECT 1.2*SUM(salary) FROM Emp GROUP BY workdept;
++-----------------+
+| 1.2*SUM(salary) |
++-----------------+
+|      682200.000 |
+|      193500.000 |
+|      408564.000 |
+|     1002486.000 |
+|      553104.000 |
+|      192210.000 |
+|      557988.000 |
+|      558372.000 |
++-----------------+
+8 rows in set (0.00 sec)
+
+mysql> SELECT workdept, SUM(salary) FROM Emp GROUP BY workdept
+    -> ;
++----------+-------------+
+| workdept | SUM(salary) |
++----------+-------------+
+| A00      |   568500.00 |
+| B01      |   161250.00 |
+| C01      |   340470.00 |
+| D11      |   835405.00 |
+| D21      |   460920.00 |
+| E01      |   160175.00 |
+| E11      |   464990.00 |
+| E21      |   465310.00 |
++----------+-------------+
+8 rows in set (0.00 sec)
+
+mysql> SELECT D.deptno, D.deptname, D.mgrno FROM Dept D 
+    -> INNER JOIN (SELECT 1.2*SUM(salary) FROM Emp GROUP BY workdept) E ON D.deptno = E.workdept;
+ERROR 1054 (42S22): Unknown column 'E.workdept' in 'on clause'
+mysql> SELECT deptno, deptname, mgrno 
+    -> FROM Dept INNER JOIN (SELECT 1.2*SUM(salary) 
+    -> 
+    -> ;
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 2
+mysql> SELECT deptno, deptname, mgrno 
+    -> FROM Dept INNER JOIN (SELECT 1.2*SUM(salary) 
+    ->   FROM Emp 
+    -> GROUP BY workdept) 
+    -> 
+    -> ;
+ERROR 1248 (42000): Every derived table must have its own alias
+mysql> INSERT INTO Dept2 VALUES(dID, dName, managerID, budget)
+    -> (SELECT deptno, deptname, mgrno 
+    -> FROM Dept INNER JOIN (SELECT 1.2*SUM(salary) 
+    -> FROM Emp 
+    -> GROUP BY workdept) 
+    -> ON deptno = workdept);
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '(SELECT deptno, deptname, mgrno 
+FROM Dept INNER JOIN (SELECT 1.2*SUM(salary) 
+F' at line 2
+mysql> SELECT deptno, deptname, mgrno 
+    -> FROM Dept INNER JOIN (SELECT 1.2*SUM(salary) 
+    -> FROM Emp 
+    -> GROUP BY workdept) 
+    -> ON deptno = workdept;
+ERROR 1248 (42000): Every derived table must have its own alias
+mysql> SELECT deptno, deptname, mgrno 
+    -> FROM Dept D INNER JOIN (SELECT workdept, 1.2*SUM(salary) 
+    -> FROM Emp 
+    -> GROUP BY workdept) E
+    -> ON D.deptno = E.workdept;
++--------+------------------------------+--------+
+| deptno | deptname                     | mgrno  |
++--------+------------------------------+--------+
+| A00    | Spiffy Computer Service DIV. | 000010 |
+| B01    | Planning                     | 000020 |
+| C01    | Information Centre           | 000030 |
+| D11    | Manufacturing Systems        | 000060 |
+| D21    | Administration Systems       | 000070 |
+| E01    | Support Services             | 000050 |
+| E11    | Operations                   | 000090 |
+| E21    | Software Support             | 000100 |
++--------+------------------------------+--------+
+8 rows in set (0.00 sec)
+
+mysql> SELECT workdept, 1.2*SUM(salary) 
+    -> FROM Emp 
+    -> GROUP BY workdept;
++----------+-----------------+
+| workdept | 1.2*SUM(salary) |
++----------+-----------------+
+| A00      |      682200.000 |
+| B01      |      193500.000 |
+| C01      |      408564.000 |
+| D11      |     1002486.000 |
+| D21      |      553104.000 |
+| E01      |      192210.000 |
+| E11      |      557988.000 |
+| E21      |      558372.000 |
++----------+-----------------+
+8 rows in set (0.00 sec)
+
+mysql> SELECT deptno, deptname, mgrno 
+    -> FROM Dept D INNER JOIN (SELECT workdept, 1.2*SUM(salary) 
+    -> FROM Emp 
+    -> GROUP BY workdept HAVING workdept = deptno;
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 4
+mysql> SELECT deptno, deptname, mgrno 
+    -> FROM Dept D INNER JOIN (SELECT workdept, 1.2*SUM(salary) 
+    -> FROM Emp 
+    -> GROUP BY workdept HAVING workdept = deptno);
+ERROR 1248 (42000): Every derived table must have its own alias
+mysql> SELECT deptno, deptname, mgrno  FROM Dept D INNER JOIN (SELECT workdept, 1.2*SUM(salary)  FROM Emp  GROUP BY workdept HAVING workdept = deptno) E;
+ERROR 1054 (42S22): Unknown column 'deptno' in 'having clause'
+mysql> SELECT deptno, deptname, mgrno 
+    -> FROM Dept D INNER JOIN (SELECT workdept, 1.2*SUM(salary) 
+    -> FROM Emp 
+    -> GROUP BY workdept HAVING workdept = D.deptno);
+ERROR 1248 (42000): Every derived table must have its own alias
+mysql> SELECT deptno, deptname, mgrno 
+    -> FROM Dept D INNER JOIN (SELECT workdept, 1.2*SUM(salary) 
+    -> FROM Emp 
+    -> GROUP BY workdept HAVING workdept = D.deptno) E
+    -> ;
+ERROR 1054 (42S22): Unknown column 'D.deptno' in 'having clause'
+mysql> ^C
+mysql> FROM Emp 
+    -> GROUP BY workdept
+    -> ;
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'FROM Emp 
+GROUP BY workdept' at line 1
+mysql> SELECT workdept, 1.2*SUM(salary) AS budget
+    -> FROM Emp 
+    -> GROUP BY workdept;
++----------+-------------+
+| workdept | budget      |
++----------+-------------+
+| A00      |  682200.000 |
+| B01      |  193500.000 |
+| C01      |  408564.000 |
+| D11      | 1002486.000 |
+| D21      |  553104.000 |
+| E01      |  192210.000 |
+| E11      |  557988.000 |
+| E21      |  558372.000 |
++----------+-------------+
+8 rows in set (0.00 sec)
+
+mysql> SELECT deptno, deptname, mgrno 
+    -> FROM Dept D;
++--------+------------------------------+--------+
+| deptno | deptname                     | mgrno  |
++--------+------------------------------+--------+
+| A00    | Spiffy Computer Service DIV. | 000010 |
+| B01    | Planning                     | 000020 |
+| C01    | Information Centre           | 000030 |
+| D01    | Development Centre           | NULL   |
+| D11    | Manufacturing Systems        | 000060 |
+| D21    | Administration Systems       | 000070 |
+| E01    | Support Services             | 000050 |
+| E11    | Operations                   | 000090 |
+| E21    | Software Support             | 000100 |
++--------+------------------------------+--------+
+9 rows in set (0.00 sec)
+
+mysql> SELECT deptno, deptname, mgrno 
+    -> FROM Dept D 
+    -> INNER JOIN 
+    -> (SELECT workdept, 1.2*SUM(salary) AS budget FROM Emp GROUP BY workdept) E
+    -> ON D.deptno = E.workdept;
++--------+------------------------------+--------+
+| deptno | deptname                     | mgrno  |
++--------+------------------------------+--------+
+| A00    | Spiffy Computer Service DIV. | 000010 |
+| B01    | Planning                     | 000020 |
+| C01    | Information Centre           | 000030 |
+| D11    | Manufacturing Systems        | 000060 |
+| D21    | Administration Systems       | 000070 |
+| E01    | Support Services             | 000050 |
+| E11    | Operations                   | 000090 |
+| E21    | Software Support             | 000100 |
++--------+------------------------------+--------+
+8 rows in set (0.00 sec)
+
+mysql> desc Emp;
++-----------+--------------+------+-----+---------+-------+
+| Field     | Type         | Null | Key | Default | Extra |
++-----------+--------------+------+-----+---------+-------+
+| empno     | char(6)      | NO   | PRI | NULL    |       |
+| firstname | varchar(12)  | NO   |     | NULL    |       |
+| midinit   | char(1)      | NO   |     | NULL    |       |
+| lastname  | varchar(15)  | NO   |     | NULL    |       |
+| workdept  | char(3)      | YES  |     | NULL    |       |
+| phoneno   | char(4)      | YES  |     | NULL    |       |
+| hiredate  | date         | YES  |     | NULL    |       |
+| job       | char(11)     | YES  |     | NULL    |       |
+| edlevel   | int(2)       | YES  |     | NULL    |       |
+| sex       | char(1)      | YES  |     | NULL    |       |
+| birthdate | date         | YES  |     | NULL    |       |
+| salary    | decimal(8,2) | YES  |     | NULL    |       |
+| bonus     | decimal(8,2) | YES  |     | NULL    |       |
+| comm      | decimal(8,2) | YES  |     | NULL    |       |
++-----------+--------------+------+-----+---------+-------+
+14 rows in set (0.00 sec)
+
+mysql> Desc Dept;
++----------+-------------+------+-----+---------+-------+
+| Field    | Type        | Null | Key | Default | Extra |
++----------+-------------+------+-----+---------+-------+
+| deptno   | char(3)     | NO   | PRI | NULL    |       |
+| deptname | varchar(36) | NO   |     | NULL    |       |
+| mgrno    | char(6)     | YES  |     | NULL    |       |
+| admrdept | char(3)     | NO   |     | NULL    |       |
++----------+-------------+------+-----+---------+-------+
+4 rows in set (0.00 sec)
+
+mysql> SELECT deptno, deptname, mgrno  FROM Dept D JOIN  (SELECT workdept, 1.2*SUM(salary) AS budget FROM Emp GROUP BY workdept) E ON D.deptno = E.workdept;
++--------+------------------------------+--------+
+| deptno | deptname                     | mgrno  |
++--------+------------------------------+--------+
+| A00    | Spiffy Computer Service DIV. | 000010 |
+| B01    | Planning                     | 000020 |
+| C01    | Information Centre           | 000030 |
+| D11    | Manufacturing Systems        | 000060 |
+| D21    | Administration Systems       | 000070 |
+| E01    | Support Services             | 000050 |
+| E11    | Operations                   | 000090 |
+| E21    | Software Support             | 000100 |
++--------+------------------------------+--------+
+8 rows in set (0.00 sec)
+
+mysql> SELECT workdept, 1.2*SUM(salary) AS budget FROM Emp GROUP BY workdept;
++----------+-------------+
+| workdept | budget      |
++----------+-------------+
+| A00      |  682200.000 |
+| B01      |  193500.000 |
+| C01      |  408564.000 |
+| D11      | 1002486.000 |
+| D21      |  553104.000 |
+| E01      |  192210.000 |
+| E11      |  557988.000 |
+| E21      |  558372.000 |
++----------+-------------+
+8 rows in set (0.00 sec)
+
+mysql> SELECT deptno, deptname, mgrno 
+    -> FROM Dept;
++--------+------------------------------+--------+
+| deptno | deptname                     | mgrno  |
++--------+------------------------------+--------+
+| A00    | Spiffy Computer Service DIV. | 000010 |
+| B01    | Planning                     | 000020 |
+| C01    | Information Centre           | 000030 |
+| D01    | Development Centre           | NULL   |
+| D11    | Manufacturing Systems        | 000060 |
+| D21    | Administration Systems       | 000070 |
+| E01    | Support Services             | 000050 |
+| E11    | Operations                   | 000090 |
+| E21    | Software Support             | 000100 |
++--------+------------------------------+--------+
+9 rows in set (0.00 sec)
+
+mysql> CREATE TABLE Works2 AS SELECT empno AS eID, workdept AS dID, 100 AS pct_time FROM Emp;
+Query OK, 32 rows affected (0.06 sec)
+Records: 32  Duplicates: 0  Warnings: 0
+
+mysql> select * from Works2;
++--------+------+----------+
+| eID    | dID  | pct_time |
++--------+------+----------+
+| 000010 | A00  |      100 |
+| 000020 | B01  |      100 |
+| 000030 | C01  |      100 |
+| 000050 | E01  |      100 |
+| 000060 | D11  |      100 |
+| 000070 | D21  |      100 |
+| 000090 | E11  |      100 |
+| 000100 | E21  |      100 |
+| 000110 | A00  |      100 |
+| 000120 | A00  |      100 |
+| 000130 | C01  |      100 |
+| 000140 | C01  |      100 |
+| 000150 | D11  |      100 |
+| 000160 | D11  |      100 |
+| 000170 | D11  |      100 |
+| 000180 | D11  |      100 |
+| 000190 | D11  |      100 |
+| 000200 | D11  |      100 |
+| 000210 | D11  |      100 |
+| 000220 | D11  |      100 |
+| 000230 | D21  |      100 |
+| 000240 | D21  |      100 |
+| 000250 | D21  |      100 |
+| 000260 | D21  |      100 |
+| 000270 | D21  |      100 |
+| 000280 | E11  |      100 |
+| 000290 | E11  |      100 |
+| 000300 | E11  |      100 |
+| 000310 | E11  |      100 |
+| 000320 | E21  |      100 |
+| 000330 | E21  |      100 |
+| 000340 | E21  |      100 |
++--------+------+----------+
+32 rows in set (0.00 sec)
+
+mysql> Define (eid, did) as the primary key of Works2, using ALTER TABLE in the form:
+    -> Remember to separate attribute names of the key by commas;
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'Define (eid, did) as the primary key of Works2, using ALTER TABLE in the form:
+R' at line 1
+mysql> ALTER TABLE Works2 ADD since TIMESTAMP DEFAULT CURRENT_TIMESTAMP;
+Query OK, 0 rows affected (0.09 sec)
+Records: 0  Duplicates: 0  Warnings: 0
+
+mysql> select * from Works2;
++--------+------+----------+---------------------+
+| eID    | dID  | pct_time | since               |
++--------+------+----------+---------------------+
+| 000010 | A00  |      100 | 2021-10-16 17:34:17 |
+| 000020 | B01  |      100 | 2021-10-16 17:34:17 |
+| 000030 | C01  |      100 | 2021-10-16 17:34:17 |
+| 000050 | E01  |      100 | 2021-10-16 17:34:17 |
+| 000060 | D11  |      100 | 2021-10-16 17:34:17 |
+| 000070 | D21  |      100 | 2021-10-16 17:34:17 |
+| 000090 | E11  |      100 | 2021-10-16 17:34:17 |
+| 000100 | E21  |      100 | 2021-10-16 17:34:17 |
+| 000110 | A00  |      100 | 2021-10-16 17:34:17 |
+| 000120 | A00  |      100 | 2021-10-16 17:34:17 |
+| 000130 | C01  |      100 | 2021-10-16 17:34:17 |
+| 000140 | C01  |      100 | 2021-10-16 17:34:17 |
+| 000150 | D11  |      100 | 2021-10-16 17:34:17 |
+| 000160 | D11  |      100 | 2021-10-16 17:34:17 |
+| 000170 | D11  |      100 | 2021-10-16 17:34:17 |
+| 000180 | D11  |      100 | 2021-10-16 17:34:17 |
+| 000190 | D11  |      100 | 2021-10-16 17:34:17 |
+| 000200 | D11  |      100 | 2021-10-16 17:34:17 |
+| 000210 | D11  |      100 | 2021-10-16 17:34:17 |
+| 000220 | D11  |      100 | 2021-10-16 17:34:17 |
+| 000230 | D21  |      100 | 2021-10-16 17:34:17 |
+| 000240 | D21  |      100 | 2021-10-16 17:34:17 |
+| 000250 | D21  |      100 | 2021-10-16 17:34:17 |
+| 000260 | D21  |      100 | 2021-10-16 17:34:17 |
+| 000270 | D21  |      100 | 2021-10-16 17:34:17 |
+| 000280 | E11  |      100 | 2021-10-16 17:34:17 |
+| 000290 | E11  |      100 | 2021-10-16 17:34:17 |
+| 000300 | E11  |      100 | 2021-10-16 17:34:17 |
+| 000310 | E11  |      100 | 2021-10-16 17:34:17 |
+| 000320 | E21  |      100 | 2021-10-16 17:34:17 |
+| 000330 | E21  |      100 | 2021-10-16 17:34:17 |
+| 000340 | E21  |      100 | 2021-10-16 17:34:17 |
++--------+------+----------+---------------------+
+32 rows in set (0.00 sec)
+
+mysql> Desc Dept;
++----------+-------------+------+-----+---------+-------+
+| Field    | Type        | Null | Key | Default | Extra |
++----------+-------------+------+-----+---------+-------+
+| deptno   | char(3)     | NO   | PRI | NULL    |       |
+| deptname | varchar(36) | NO   |     | NULL    |       |
+| mgrno    | char(6)     | YES  |     | NULL    |       |
+| admrdept | char(3)     | NO   |     | NULL    |       |
++----------+-------------+------+-----+---------+-------+
+4 rows in set (0.00 sec)
+
+mysql> DELETE FROM Work2 W WHERE EXISTS (SELECT * From Dept WHERE mgrno = W.eID);
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'W WHERE EXISTS (SELECT * From Dept WHERE mgrno = W.eID)' at line 1
+mysql> Desc Emp2;
++--------+--------------+------+-----+---------+-------+
+| Field  | Type         | Null | Key | Default | Extra |
++--------+--------------+------+-----+---------+-------+
+| eID    | char(6)      | NO   | PRI | NULL    |       |
+| eName  | varchar(18)  | YES  |     | NULL    |       |
+| age    | bigint(21)   | YES  |     | NULL    |       |
+| gender | char(1)      | YES  |     | NULL    |       |
+| salary | decimal(8,2) | YES  |     | NULL    |       |
++--------+--------------+------+-----+---------+-------+
+5 rows in set (0.00 sec)
+
+mysql> Desc Emp;
++-----------+--------------+------+-----+---------+-------+
+| Field     | Type         | Null | Key | Default | Extra |
++-----------+--------------+------+-----+---------+-------+
+| empno     | char(6)      | NO   | PRI | NULL    |       |
+| firstname | varchar(12)  | NO   |     | NULL    |       |
+| midinit   | char(1)      | NO   |     | NULL    |       |
+| lastname  | varchar(15)  | NO   |     | NULL    |       |
+| workdept  | char(3)      | YES  |     | NULL    |       |
+| phoneno   | char(4)      | YES  |     | NULL    |       |
+| hiredate  | date         | YES  |     | NULL    |       |
+| job       | char(11)     | YES  |     | NULL    |       |
+| edlevel   | int(2)       | YES  |     | NULL    |       |
+| sex       | char(1)      | YES  |     | NULL    |       |
+| birthdate | date         | YES  |     | NULL    |       |
+| salary    | decimal(8,2) | YES  |     | NULL    |       |
+| bonus     | decimal(8,2) | YES  |     | NULL    |       |
+| comm      | decimal(8,2) | YES  |     | NULL    |       |
++-----------+--------------+------+-----+---------+-------+
+14 rows in set (0.00 sec)
+
+mysql> Select empno, hiredate from Emp;
++--------+------------+
+| empno  | hiredate   |
++--------+------------+
+| 000010 | 2000-01-01 |
+| 000020 | 2008-10-10 |
+| 000030 | 2010-05-05 |
+| 000050 | 2003-08-17 |
+| 000060 | 2003-09-14 |
+| 000070 | 2000-09-30 |
+| 000090 | 2002-08-15 |
+| 000100 | 2006-06-19 |
+| 000110 | 2003-05-16 |
+| 000120 | 2003-10-05 |
+| 000130 | 2006-07-28 |
+| 000140 | 2006-12-15 |
+| 000150 | 2007-02-12 |
+| 000160 | 2009-10-11 |
+| 000170 | 2008-01-01 |
+| 000180 | 2003-07-07 |
+| 000190 | 2012-07-26 |
+| 000200 | 2008-03-03 |
+| 000210 | 2009-04-11 |
+| 000220 | 2004-08-29 |
+| 000230 | 2011-11-21 |
+| 000240 | 2009-12-05 |
+| 000250 | 2009-10-30 |
+| 000260 | 2005-09-11 |
+| 000270 | 2009-09-30 |
+| 000280 | 2009-03-24 |
+| 000290 | 2006-05-30 |
+| 000300 | 2007-06-19 |
+| 000310 | 2001-09-12 |
+| 000320 | 2005-07-07 |
+| 000330 | 1999-02-23 |
+| 000340 | 1999-05-05 |
++--------+------------+
+32 rows in set (0.00 sec)
+
+mysql> quit

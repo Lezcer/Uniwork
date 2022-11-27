@@ -1,0 +1,10 @@
+1)  ERROR: On line 1; count is assigned the value 0, and it is used on line 7 as a denominator, 
+    this will result mean to be undefined, as x/0 is impossible.
+
+2)  ERROR: The while - do loop may not run if the conditions aren't met, as x doesn't have a value yet
+    the loop won't run and as a result sum won't be initialised, a do - while loop is suggested.
+
+3)  ERROR: The sum on the right hand side of the equation on Line 5; doesn't have a value yet 
+    as a result it cannot be used if it hasn't been initialised, this will cause a 
+    "variable sum may not have been initialised" error. to fix this declare and 
+    initialise sum (i.e. sum = 0) outside of the loop.

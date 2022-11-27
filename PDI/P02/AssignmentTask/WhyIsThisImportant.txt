@@ -1,0 +1,5 @@
+Why is ASCII important?
+ASCII basically translates computer text to understandable and readable human text. Different computers run on different languages, ASCII basically allows different computers the same language so thy can share documents and files.
+Why do we need to use it?
+Because then all computers could have an international language where they could interpret their code.
+

@@ -1,0 +1,100 @@
+CLASS UserInterface
+
+SUBMODULE: userInput
+IMPORT: prompt(String), lower(int), upper(int)
+EXPORT: choice(int)
+ALGORITHM:
+    prompt := "Please enter a value: "
+    errormsg := " "
+    
+
+    DO
+        OUTPUT prompt
+        INPUT choice
+        displayError <- errormsg
+        errormsg := "Error, Input a number between " + lower + " and " + upper + ". "
+    WHILE(choice > upper OR choice < lower)
+END 
+
+SUBMODULE: userInput
+IMPORT: prompt(String), lower(Real), upper(Real)
+EXPORT: choice(Real)
+ALGORITHM:
+    prompt := "Please enter a value: "
+    errormsg := " "
+    
+
+    DO
+        OUTPUT prompt
+        INPUT choice
+        displayError <- errormsg
+        errormsg := "Error, Input a number between " + lower + " and " + upper + ". "
+    WHILE(choice > upper OR choice < lower)
+END 
+
+SUBMODULE: userInput
+IMPORT: prompt(String), lower(Long), upper(Long)
+EXPORT: choice(Long)
+ALGORITHM:
+    prompt := "Please enter a value: "
+    errormsg := " "
+    
+
+    DO
+        OUTPUT prompt
+        INPUT choice
+        displayError <- errormsg
+        errormsg := "Error, Input a number between " + lower + " and " + upper + ". "
+    WHILE(choice > upper OR choice < lower)
+END 
+
+SUBMODULE: userInput
+IMPORT: prompt(String), lower(Float), upper(Float)
+EXPORT: choice(Float)
+ALGORITHM:
+    prompt := "Please enter a value: "
+    errormsg := " "
+    
+
+    DO
+        OUTPUT prompt
+        INPUT choice
+        displayError <- errormsg
+        errormsg := "Error, Input a number between " + lower + " and " + upper + ". "
+    WHILE(choice > upper OR choice < lower)
+END 
+
+SUBMODULE: userInput
+IMPORT: prompt(String), lower(Character), upper(Character)
+EXPORT: choice(Character)
+ALGORITHM:
+    prompt := "Please enter a Character: "
+    errormsg := 0
+    
+
+    min := (convert to Integer) lower
+    max := (convert to Integer) upper    
+
+    DO
+        OUTPUT prompt
+        INPUT choice
+        choiceVal := (convert to Integer) choice
+        displayError <- errormsg
+        errormsg := "Error, Input a character between " + lower + " and " + upper + ". "
+    WHILE(choiceVal > max OR choiceVal < min)
+END 
+
+SUBMODULE: userInput
+IMPORT: prompt (String)
+EXPORT: str (String)
+ALGORITHM:
+    OUTPUT prompt
+    INPUT str (String)
+END
+
+SUBMODULE: displayError
+IMPORT: error (String)
+EXPORT: none
+ALGORITHM:
+    OUTPUT error
+END

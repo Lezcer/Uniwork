@@ -1,0 +1,1000 @@
+ 1026  man open
+ 1027  make clean
+ 1028  rm ./ass
+ 1029  ls
+ 1030  man open
+ 1031  man read
+ 1032  man assert
+ 1033  man read
+ 1034  man chgrp
+ 1035  cd OS/Assignment/Question1
+ 1036  vim LinkedList.
+ 1037  vim LinkedList.c
+ 1038  cd USP/Assignment/
+ 1039  make
+ 1040  ./pipesim input 
+ 1041  make clean
+ 1042  make
+ 1043  gcc -ansi -pedantic LinkedListTest.c -o test LinkedList.o
+ 1044  ./test
+ 1045  make
+ 1046  gcc -ansi -pedantic LinkedListTest.c -o test LinkedList.o
+ 1047  ./test
+ 1048  gcc -ansi -pedantic LinkedListTest.c -o test LinkedList.o
+ 1049  ./test
+ 1050  ./pipesim input 
+ 1051  make clean
+ 1052  make
+ 1053  ./pipesim input 
+ 1054  make
+ 1055  ./pipesim input 
+ 1056  make
+ 1057  ./pipesim input 
+ 1058  make clean
+ 1059  ./test
+ 1060  rm test
+ 1061  man execve
+ 1062  man clone
+ 1063  man execve
+ 1064  man execvp
+ 1065  gcc -ansi -pedantic hello.c -o hello
+ 1066  ./hello
+ 1067  make
+ 1068  ./pipesim input 
+ 1069  ./pipesim input &
+ 1070  jobs
+ 1071  ps 356
+ 1072  kill 356
+ 1073  jobs
+ 1074  make
+ 1075  ./pipesim input &
+ 1076  ./pipesim input
+ 1077  job
+ 1078  jobs
+ 1079  ./pipesim input
+ 1080  make
+ 1081  ./pipesim input
+ 1082  make
+ 1083  ./pipesim input
+ 1084  make
+ 1085  ./pipesim input
+ 1086  make
+ 1087  ./pipesim input
+ 1088  make
+ 1089  ./pipesim input
+ 1090  make
+ 1091  ./pipesim input
+ 1092  gdb ./pipesim
+ 1093  make
+ 1094  ./pipesim input
+ 1095  valgrind --track-origins=yes ./pipesim input 
+ 1096  cd USP/Assignment/
+ 1097  make
+ 1098  ./pipesim input
+ 1099  cd USP/Assignment/
+ 1100  make clean
+ 1101  make
+ 1102  ./pipesim input
+ 1103  make
+ 1104  ./pipesim input
+ 1105  make clean
+ 1106  make
+ 1107  ./pipesim input
+ 1108  valgrind --track-origins=yes ./pipesim input 
+ 1109  make
+ 1110  ./pipesim input
+ 1111  make
+ 1112  ./pipesim input
+ 1113  valgrind --track-origins=yes ./pipesim input 
+ 1114  make
+ 1115  ./pipesim input
+ 1116  valgrind --track-origins=yes ./pipesim input 
+ 1117  make
+ 1118  ./pipesim input
+ 1119  make
+ 1120  ./pipesim input
+ 1121  valgrind --track-origins=yes ./pipesim input 
+ 1122  make
+ 1123  ./pipesim input
+ 1124  valgrind --track-origins=yes ./pipesim input 
+ 1125  make
+ 1126  ./pipesim input
+ 1127  valgrind --track-origins=yes ./pipesim input 
+ 1128  make
+ 1129  ./pipesim input
+ 1130  make
+ 1131  ./pipesim input
+ 1132  valgrind --track-origins=yes ./pipesim input 
+ 1133  make
+ 1134  ./pipesim input
+ 1135  valgrind --track-origins=yes ./pipesim input 
+ 1136  make
+ 1137  ./pipesim input
+ 1138  make
+ 1139  ./pipesim input
+ 1140  make
+ 1141  ./pipesim input
+ 1142  make
+ 1143  ./pipesim input
+ 1144  make
+ 1145  ./pipesim input
+ 1146  make
+ 1147  ./pipesim input
+ 1148  clear
+ 1149  make clean
+ 1150  make
+ 1151  ./pipesim input
+ 1152  make
+ 1153  ./pipesim input
+ 1154  make
+ 1155  ./pipesim input
+ 1156  make
+ 1157  ./pipesim input
+ 1158  make
+ 1159  ./pipesim input
+ 1160  make
+ 1161  ./pipesim input
+ 1162  make
+ 1163  ./pipesim input
+ 1164  make
+ 1165  ./pipesim input
+ 1166  make
+ 1167  ./pipesim input
+ 1168  make
+ 1169  ./pipesim input
+ 1170  make
+ 1171  ./pipesim input
+ 1172  valgrind --track-origins=yes ./pipesim input 
+ 1173  make
+ 1174  ./pipesim input
+ 1175  make
+ 1176  ./pipesim input
+ 1177  make clean
+ 1178  ./pipesim input
+ 1179  make
+ 1180  ./pipesim input
+ 1181  valgrind --track-origins=yes ./pipesim input 
+ 1182  make
+ 1183  ./pipesim input
+ 1184  man 2 getpid
+ 1185  clear
+ 1186  ./pipesim input
+ 1187  make clean
+ 1188  make
+ 1189  ./pipesim input
+ 1190  valgrind --track-origins=yes ./pipesim input 
+ 1191  make
+ 1192  ./pipesim input
+ 1193  valgrind --track-origins=yes ./pipesim input 
+ 1194  make
+ 1195  ./pipesim input
+ 1196  make
+ 1197  ./pipesim input
+ 1198  valgrind --track-origins=yes ./pipesim input 
+ 1199  ./pipesim input
+ 1200  make
+ 1201  ./pipesim input
+ 1202  make
+ 1203  ./pipesim input
+ 1204  make
+ 1205  make clean
+ 1206  man clone
+ 1207  man execve
+ 1208  man malloc
+ 1209  ls
+ 1210  man clone
+ 1211  man wait
+ 1212  man fork
+ 1213  man execlp
+ 1214  man execve
+ 1215  man fork
+ 1216  cd USP/Assignment/
+ 1217  cd test\ area/
+ 1218  gcc -ansi -pedantic clone.c
+ 1219  ./a.out 
+ 1220  touch test1
+ 1221  touch test2
+ 1222  touch test3
+ 1223  gcc -ansi -pedantic clone.c
+ 1224  ./a.out 
+ 1225  ls /usr/bin
+ 1226  clear
+ 1227  ls /bin
+ 1228  ls /usr/bin
+ 1229  ls /usr
+ 1230  ls /
+ 1231  ./a.out 
+ 1232  gcc -ansi -pedantic clone.c
+ 1233  ./a.out 
+ 1234  gcc -ansi -pedantic clone.c
+ 1235  ./a.out 
+ 1236  ls -l
+ 1237  gcc -ansi -pedantic clone.c
+ 1238  ./a.out 
+ 1239  gcc -ansi -pedantic clone.c
+ 1240  ./a.out 
+ 1241  ls -l
+ 1242  gcc -ansi -pedantic clone.c
+ 1243  ./a.out 
+ 1244  gcc -ansi -pedantic clone.c
+ 1245  man execve
+ 1246  gcc -ansi -pedantic clone.c
+ 1247  man execlp
+ 1248  man execve
+ 1249  gcc -ansi -pedantic clone.c
+ 1250  ./a.out 
+ 1251  gcc -ansi -pedantic clone.c
+ 1252  ./a.out 
+ 1253  gcc -ansi -pedantic clone.c
+ 1254  ./a.out 
+ 1255  gcc -ansi -pedantic clone.c
+ 1256  ./a.out 
+ 1257  gcc -ansi -pedantic clone.c
+ 1258  ./a.out 
+ 1259  gcc -ansi -pedantic clone.c
+ 1260  ./a.out 
+ 1261  gcc -ansi -pedantic clone.c
+ 1262  ./a.out 
+ 1263  gcc -ansi -pedantic clone.c
+ 1264  ./a.out 
+ 1265  gcc -ansi -pedantic clone.c
+ 1266  ./a.out 
+ 1267  man foo
+ 1268  /bin/ls -la
+ 1269  ls -la
+ 1270  ls -l
+ 1271  gcc -ansi -pedantic clone.c
+ 1272  ./a.out 
+ 1273  gcc -ansi -pedantic clone.c
+ 1274  ./a.out 
+ 1275  gcc -ansi -pedantic clone.c
+ 1276  ./a.out 
+ 1277  gcc -ansi -pedantic clone.c
+ 1278  ./a.out 
+ 1279  gcc -ansi -pedantic clone.c
+ 1280  ./a.out 
+ 1281  gcc -ansi -pedantic clone.c
+ 1282  ./a.out 
+ 1283  gcc -ansi -pedantic clone.c
+ 1284  ./a.out 
+ 1285  gcc -ansi -pedantic clone.c
+ 1286  ./a.out 
+ 1287  gcc -ansi -pedantic clone.c
+ 1288  ./a.out 
+ 1289  gcc -ansi -pedantic clone.c
+ 1290  ./a.out 
+ 1291  gcc -ansi -pedantic clone.c
+ 1292  ./a.out 
+ 1293  gcc -ansi -pedantic clone.c
+ 1294  ./a.out 
+ 1295  gcc -ansi -pedantic clone.c
+ 1296  ./a.out 
+ 1297  gcc -ansi -pedantic clone.c
+ 1298  ./a.out 
+ 1299  gcc -ansi -pedantic clone.c
+ 1300  ./a.out 
+ 1301  gcc -ansi -pedantic clone.c
+ 1302  ./a.out 
+ 1303  gcc -ansi -pedantic clone.c
+ 1304  ./a.out 
+ 1305  ./a.out | grep - E "PATH"
+ 1306  cd USP/Assignment/test\ area/
+ 1307  gcc -ansi -pedantic clone.c
+ 1308  ./a.out 
+ 1309  ls /mnt/
+ 1310  ls /mnt/c
+ 1311  ./a.out 
+ 1312  gcc -ansi -pedantic clone.c
+ 1313  ./a.out 
+ 1314  gcc -ansi -pedantic clone.c
+ 1315  ./a.out 
+ 1316  gcc -ansi -pedantic clone.c
+ 1317  ./a.out 
+ 1318  gcc -ansi -pedantic clone.c
+ 1319  ./a.out 
+ 1320  ls /bin/ls
+ 1321  ./a.out 
+ 1322  ls /bin/ls
+ 1323  gcc -ansi -pedantic clone.c
+ 1324  ./a.out 
+ 1325  ls -la /bin/
+ 1326  man umount
+ 1327  gcc -ansi -pedantic clone.c
+ 1328  ./a.out 
+ 1329  gcc -ansi -pedantic clone.c
+ 1330  ./a.out 
+ 1331  gcc -ansi -pedantic clone.c
+ 1332  ./a.out 
+ 1333  gcc -ansi -pedantic clone.c
+ 1334  ./a.out 
+ 1335  gcc -ansi -pedantic clone.c
+ 1336  ./a.out 
+ 1337  man exec
+ 1338  man execve
+ 1339  gcc -ansi -pedantic clone.c
+ 1340  ./a.out 
+ 1341  gcc -ansi -pedantic clone.c
+ 1342  ./a.out 
+ 1343  gcc -ansi -pedantic clone.c
+ 1344  ./a.out 
+ 1345  gcc -ansi -pedantic clone.c
+ 1346  ./a.out 
+ 1347  ls
+ 1348  ls /bin/cat
+ 1349  vim test1
+ 1350  ./a.out 
+ 1351  man write
+ 1352  man 2 write
+ 1353  man pipe
+ 1354  man dup2
+ 1355  strace ./a.out 
+ 1356  strace ./a.out | grep -E read
+ 1357  strace ./a.out
+ 1358  gcc -ansi -pedantic clone.c two
+ 1359  gcc -ansi -pedantic clone.c -o two
+ 1360  ./two 
+ 1361  strace ./two
+ 1362  gcc -ansi -pedantic clone.c -o two
+ 1363  strace ./two
+ 1364  strace ./two > test3
+ 1365  cat test3
+ 1366  man dup2
+ 1367  man close
+ 1368  cd USP/Assignment/
+ 1369  make
+ 1370  ./pipesim input
+ 1371  make
+ 1372  ./pipesim input
+ 1373  make
+ 1374  ./pipesim input
+ 1375  make
+ 1376  ./pipesim input
+ 1377  make
+ 1378  ./pipesim input
+ 1379  make
+ 1380  ./pipesim input
+ 1381  make
+ 1382  ./pipesim input
+ 1383  make
+ 1384  ./pipesim input
+ 1385  make
+ 1386  ./pipesim input
+ 1387  ./pipesim input | grep salah
+ 1388  strace ./pipesim input | grep salah
+ 1389  strace ./pipesim input | grep salah |grep dup2
+ 1390  strace ./pipesim input | grep salah > output
+ 1391  ls
+ 1392  cat output | grep dup2
+ 1393  cat output | grep salah
+ 1394  cat output | grep pipe
+ 1395  cat output | grep open
+ 1396  cat output | grep mode
+ 1397  cat output
+ 1398  ( strace ./pipesim input | grep salah ) > output
+ 1399  cat output
+ 1400  make
+ 1401  ./pipesim input
+ 1402  make
+ 1403  ./pipesim input
+ 1404  jobs
+ 1405  ps 
+ 1406  kill 916
+ 1407  ps 
+ 1408  jobs
+ 1409  make
+ 1410  ./pipesim input
+ 1411  make
+ 1412  ./pipesim input
+ 1413  make
+ 1414  ./pipesim input
+ 1415  make
+ 1416  ./pipesim input
+ 1417  make
+ 1418  ./pipesim input
+ 1419  make
+ 1420  ./pipesim input
+ 1421  make
+ 1422  ./pipesim input
+ 1423  make
+ 1424  ./pipesim input
+ 1425  make
+ 1426  ./pipesim input
+ 1427  make
+ 1428  ./pipesim input
+ 1429  clear
+ 1430  ./pipesim input
+ 1431  clear
+ 1432  make
+ 1433  ./pipesim input
+ 1434  make
+ 1435  ./pipesim input
+ 1436  make
+ 1437  ./pipesim input
+ 1438  make
+ 1439  ./pipesim input
+ 1440  make
+ 1441  ./pipesim input
+ 1442  make
+ 1443  ./pipesim input
+ 1444  make
+ 1445  ./pipesim input
+ 1446  ls -l | grep salah
+ 1447  make
+ 1448  ./pipesim input
+ 1449  make
+ 1450  ./pipesim input
+ 1451  make
+ 1452  ./pipesim input
+ 1453  make
+ 1454  ./pipesim input
+ 1455  ls -l
+ 1456  make
+ 1457  ./pipesim input
+ 1458  ls -l | grep May 21
+ 1459  ls -l | grep 19:55
+ 1460  ./pipesim input
+ 1461  ls -l | grep salah | grep 19:55
+ 1462  ./pipesim input
+ 1463  make
+ 1464  ./pipesim input
+ 1465  make
+ 1466  ./pipesim input
+ 1467  make
+ 1468  ./pipesim input
+ 1469  gdb ./pipesim
+ 1470  make clean
+ 1471  make
+ 1472  ./pipesim input
+ 1473  make clean
+ 1474  ./pipesim input
+ 1475  make
+ 1476  ./pipesim input
+ 1477  make
+ 1478  ./pipesim input
+ 1479  make
+ 1480  ./pipesim input
+ 1481  make
+ 1482  ./pipesim input
+ 1483  make
+ 1484  ./pipesim input
+ 1485  gdb ./pipesim 
+ 1486  make
+ 1487  gdb ./pipesim 
+ 1488  ./pipesim input
+ 1489  make
+ 1490  ./pipesim input
+ 1491  make
+ 1492  ./pipesim input
+ 1493  make
+ 1494  ./pipesim input
+ 1495  make
+ 1496  ./pipesim input
+ 1497  make
+ 1498  ./pipesim input
+ 1499  make
+ 1500  ./pipesim input
+ 1501  make
+ 1502  ./pipesim input
+ 1503  make
+ 1504  ./pipesim input
+ 1505  make
+ 1506  ./pipesim input
+ 1507  make
+ 1508  ./pipesim input
+ 1509  make
+ 1510  ./pipesim input
+ 1511  make
+ 1512  ./pipesim input
+ 1513  make
+ 1514  ./pipesim input
+ 1515  make
+ 1516  ./pipesim input
+ 1517  make
+ 1518  ./pipesim input
+ 1519  make
+ 1520  ./pipesim input
+ 1521  ./pipesim input output
+ 1522  cat output 
+ 1523  ls
+ 1524  ./pipesim input
+ 1525  ./pipesim input output
+ 1526  man mmap
+ 1527  make
+ 1528  ./pipesim input output
+ 1529  ./pipesim input output &
+ 1530  make
+ 1531  ./pipesim input output &
+ 1532  ./pipesim input output
+ 1533  cat output 
+ 1534  ls -l
+ 1535  make
+ 1536  ./pipesim input output
+ 1537  ls -l
+ 1538  cat output 
+ 1539  ./pipesim 
+ 1540  make
+ 1541  ./pipesim 
+ 1542  make
+ 1543  ./pipesim 
+ 1544  make
+ 1545  ./pipesim 
+ 1546  make
+ 1547  ./pipesim 
+ 1548  make
+ 1549  ./pipesim 
+ 1550  make
+ 1551  ./pipesim 
+ 1552  make
+ 1553  ./pipesim 
+ 1554  make
+ 1555  ./pipesim 
+ 1556  make
+ 1557  ./pipesim 
+ 1558  make
+ 1559  ./pipesim 
+ 1560  make
+ 1561  ./pipesim 
+ 1562  make
+ 1563  ./pipesim 
+ 1564  make
+ 1565  ./pipesim 
+ 1566  make
+ 1567  ./pipesim 
+ 1568  make
+ 1569  ./pipesim 
+ 1570  make
+ 1571  make clean
+ 1572  make
+ 1573  gcc -ansi -pedantic clone.c -o two
+ 1574  cd USP/Assignment/test\ area/
+ 1575  gcc -ansi -pedantic clone.c -o two
+ 1576  ./two
+ 1577  gcc -ansi -pedantic clone.c -o two
+ 1578  ./two
+ 1579  gcc -ansi -pedantic clone.c -o two
+ 1580  ./two
+ 1581  gcc -ansi -pedantic clone.c -o two
+ 1582  ./two
+ 1583  man pipe
+ 1584  man strcat
+ 1585  man execve
+ 1586  man strcat
+ 1587  gcc -ansi -pedantic clone.c -o two
+ 1588  ./two
+ 1589  gcc -ansi -pedantic clone.c -o two
+ 1590  ./two
+ 1591  gcc -ansi -pedantic clone.c -o two
+ 1592  ./two
+ 1593  gcc -ansi -pedantic clone.c -o two
+ 1594  ./two
+ 1595  man strncat
+ 1596  gcc -ansi -pedantic clone.c -o two
+ 1597  ./two
+ 1598  gcc -ansi -pedantic clone.c -o two
+ 1599  ./two
+ 1600  cd ..
+ 1601  make
+ 1602  ./pipesim input 
+ 1603  valgrind --track-origins=yes ./pipesim input
+ 1604  make
+ 1605  valgrind --track-origins=yes ./pipesim input
+ 1606  make
+ 1607  valgrind --track-origins=yes ./pipesim input
+ 1608  ./pipesim input 
+ 1609  make
+ 1610  ./pipesim input 
+ 1611  man strcat
+ 1612  make
+ 1613  ./pipesim input 
+ 1614  make
+ 1615  ./pipesim input 
+ 1616  man execve
+ 1617  make
+ 1618  ./pipesim input 
+ 1619  gdb ./pipesim 
+ 1620  man execve
+ 1621  make
+ 1622  gdb ./pipesim 
+ 1623  ./pipesim input 
+ 1624  man execve
+ 1625  make
+ 1626  ./pipesim input 
+ 1627  man execve
+ 1628  ls /bin/clean
+ 1629  ls /bin/ls
+ 1630  ls /bin/jobs
+ 1631  make
+ 1632  ./pipesim input 
+ 1633  make
+ 1634  ./pipesim input 
+ 1635  man execve
+ 1636  make
+ 1637  ./pipesim input 
+ 1638  cd test\ area/
+ 1639  gcc -ansi -pedantic clone.c -o two
+ 1640  ./two 
+ 1641  gcc -ansi -pedantic clone.c -o two
+ 1642  ./two 
+ 1643  gcc -ansi -pedantic clone.c -o two
+ 1644  ./two 
+ 1645  gcc -ansi -pedantic clone.c -o two
+ 1646  ./two 
+ 1647  ls /bin/clear
+ 1648  gcc -ansi -pedantic clone.c -o two
+ 1649  ./two 
+ 1650  gcc -ansi -pedantic clone.c -o two
+ 1651  ./two 
+ 1652  gcc -ansi -pedantic clone.c -o two
+ 1653  ./two 
+ 1654  gcc -ansi -pedantic clone.c -o two
+ 1655  ./two 
+ 1656  gcc -ansi -pedantic clone.c -o two
+ 1657  ./two 
+ 1658  gcc -ansi -pedantic clone.c -o two
+ 1659  ./two 
+ 1660  man grep
+ 1661  mad dup2
+ 1662  man dup2
+ 1663  clear
+ 1664  gcc -ansi -pedantic clone.c -o two
+ 1665  ./two 
+ 1666  gcc -ansi -pedantic clone.c -o two
+ 1667  ./two 
+ 1668  grep ./two
+ 1669  man pipe
+ 1670  gcc -ansi -pedantic clone.c -o two
+ 1671  ./two
+ 1672  man execv
+ 1673  man mmap
+ 1674  ma execvp
+ 1675  man execvp
+ 1676  man execv | ls -l
+ 1677  ma execv | ls -l
+ 1678  man more
+ 1679  ls | more
+ 1680  gcc -ansi -pedantic clone.c -o two
+ 1681  ./two
+ 1682  gcc -ansi -pedantic clone.c -o two
+ 1683  ./two
+ 1684  gcc -ansi -pedantic clone.c -o two
+ 1685  ./two
+ 1686  gcc -ansi -pedantic clone.c -o two
+ 1687  ./two
+ 1688  gcc -ansi -pedantic clone.c -o two
+ 1689  ./two
+ 1690  gcc -ansi -pedantic clone.c -o two
+ 1691  man close
+ 1692  man pipe
+ 1693  gcc -ansi -pedantic clone.c -o two
+ 1694  ./two
+ 1695  man wait
+ 1696  man man
+ 1697  man man | grep man
+ 1698  man man | grep man | grep man
+ 1699  ls -l
+ 1700  man man | grep man | grep man
+ 1701  man java
+ 1702  man java | grep prgram
+ 1703  man java | grep program
+ 1704  man tail
+ 1705  man grep | tail
+ 1706  man man
+ 1707  man man | grep manual
+ 1708  man man | grep manual | tail
+ 1709  man execve | grep exec | grep program | tail
+ 1710  ls | grep salah | tail
+ 1711  ls | grep salah
+ 1712  ls
+ 1713  ls -l | grep salah
+ 1714  cd ..
+ 1715  ls -l | grep 21
+ 1716  ls -l | grep 21 | grep ipc
+ 1717  man open
+ 1718  man dup2
+ 1719  make
+ 1720  ./pipesim 
+ 1721  ./pipesim input 
+ 1722  ./pipesim 
+ 1723  make
+ 1724  ./pipesim 
+ 1725  ./pipesim input 
+ 1726  ls
+ 1727  ls -l
+ 1728  ./pipesim input 
+ 1729  ./pipesim input output
+ 1730  cat output
+ 1731  clear
+ 1732  make clean
+ 1733  cat ipc.c
+ 1734  vim ipc.c
+ 1735  vim ipc.h
+ 1736  man mmap
+ 1737  man malloc
+ 1738  man mmap
+ 1739  cd test/
+ 1740  gcc -ansi -pedantic map.c -o test
+ 1741  ./test 
+ 1742  man mmap
+ 1743  gcc -ansi -pedantic map.c -o test
+ 1744  man mmap
+ 1745  gcc -ansi -pedantic map.c -o test
+ 1746  ./test 
+ 1747  gdb ./test 
+ 1748  cd USP/Assignment/test/
+ 1749  cd USP/Assignment/test/
+ 1750  valgrind --show-error-list=yes --track-origins=yes 
+ 1751  valgrind --show-error-list=yes --track-origins=yes ./test 
+ 1752  man mmap
+ 1753  cd ..
+ 1754  make clean
+ 1755  make
+ 1756  ./pipesim 
+ 1757  ./pipesim input
+ 1758  ./pipesim input output
+ 1759  cat output
+ 1760  make clean
+ 1761  rm input
+ 1762  rm output
+ 1763  man nummap
+ 1764  man munmap
+ 1765  make
+ 1766  ./pipesim 
+ 1767  make
+ 1768  man gcc
+ 1769  make
+ 1770  make clean
+ 1771  make
+ 1772  man gcc
+ 1773  man gcc | grep -Wno
+ 1774  man grep
+ 1775  man gcc | grep -\Wno
+ 1776  man gcc | grep \-Wno
+ 1777  man gcc | grep Wno
+ 1778  man gcc | grep Wnoimplicit
+ 1779  man gcc | grep Wnoimplicit-function-declaration
+ 1780  man gcc | grep Wno-implicit-function-declaration
+ 1781  man gcc | grep Wno-implicit
+ 1782  clear
+ 1783  make clean
+ 1784  make
+ 1785  cd USP/Assignment/
+ 1786  make clean
+ 1787  make
+ 1788  ./pipesim 
+ 1789  make clean
+ 1790  cd ..
+ 1791  tar -czvf 20152428_Assignment.tar.gz Assignment
+ 1792  pwd
+ 1793  cd /mnt/Users/moohs/Downloads
+ 1794  cd /mnt/
+ 1795  cd Users/moohs/Downloads
+ 1796  cd c/Users/moohs/Downloads
+ 1797  ls
+ 1798  tar -xzvf 20152428_Assignment.tar.gz 
+ 1799  cd Assignment/
+ 1800  make
+ 1801  ./pipesim 
+ 1802  vim input
+ 1803  pwd
+ 1804  cd /mnt/c/Users/moohs/Downloads/Assignment/
+ 1805  ls
+ 1806  vim input
+ 1807  cd /mnt/c/Users/moohs/Downloads/Assignment/
+ 1808  vim input
+ 1809  ./pipesim input
+ 1810  ./pipesim
+ 1811  cat input 
+ 1812  vim input
+ 1813  ./pipesim
+ 1814  ./pipesim input
+ 1815  ./pipesim
+ 1816  ./pipesim input
+ 1817  ls
+ 1818  cat input 
+ 1819  vim input 
+ 1820  ./pipesim input
+ 1821  make
+ 1822  make clean
+ 1823  ./pipesim input
+ 1824  make
+ 1825  ./pipesim 
+ 1826  ./pipesim input 
+ 1827  gdb ./pipesim 
+ 1828  ls -l
+ 1829  vim input
+ 1830  ls -l | grep salah | grep 23
+ 1831  ./pipesim input 
+ 1832  cat input
+ 1833  vim input 
+ 1834  ./pipesim input 
+ 1835  vim input 
+ 1836  ./pipesim input 
+ 1837  vim input 
+ 1838  cd USP/Assignment/
+ 1839  make
+ 1840  ./pipesim input 
+ 1841  ls -l | grep salah | grep 23
+ 1842  ./pipesim input 
+ 1843  man grep
+ 1844  ./pipesim input 
+ 1845  make
+ 1846  ./pipesim input 
+ 1847  make clean
+ 1848  make
+ 1849  ./pipesim input 
+ 1850  make clean
+ 1851  make
+ 1852  ./pipesim input 
+ 1853  ls -l ../
+ 1854  ./pipesim input 
+ 1855  ls --help
+ 1856  make
+ 1857  ./pipesim input 
+ 1858  make
+ 1859  ./pipesim input 
+ 1860  make
+ 1861  ./pipesim input 
+ 1862  make
+ 1863  ./pipesim input 
+ 1864  make
+ 1865  ./pipesim input 
+ 1866  make
+ 1867  ./pipesim input 
+ 1868  cd USP/Assignment/
+ 1869  make
+ 1870  ./pipesim input 
+ 1871  tail
+ 1872  make
+ 1873  ./pipesim input 
+ 1874  make
+ 1875  ./pipesim input 
+ 1876  ls l | tail
+ 1877  ls l
+ 1878  make
+ 1879  ./pipesim input 
+ 1880  make
+ 1881  ./pipesim input 
+ 1882  make
+ 1883  ./pipesim input 
+ 1884  make
+ 1885  ./pipesim input 
+ 1886  ./bin/ls -l
+ 1887  /bin/ls -l
+ 1888  make
+ 1889  ./pipesim input 
+ 1890  make
+ 1891  ./pipesim input 
+ 1892  make
+ 1893  ./pipesim input 
+ 1894  make
+ 1895  ./pipesim input 
+ 1896  gdb ./pipesim 
+ 1897  cd USP/Assignment/
+ 1898  make
+ 1899  ./pipesim input 
+ 1900  make
+ 1901  ./pipesim input 
+ 1902  make
+ 1903  ./pipesim input 
+ 1904  make
+ 1905  ./pipesim input 
+ 1906  make
+ 1907  ./pipesim input 
+ 1908  make
+ 1909  ./pipesim input 
+ 1910  make
+ 1911  ./pipesim input 
+ 1912  make
+ 1913  ./pipesim input 
+ 1914  cd /mnt/c/Users//moohs/Downloads/Assignment/
+ 1915  make clean
+ 1916  make
+ 1917  gdb ./pipesim 
+ 1918  ls
+ 1919  cat input
+ 1920  ./pipesim input 
+ 1921  ls -l | grep salah | total
+ 1922  vim input
+ 1923  ./pipesim input 
+ 1924  cat input
+ 1925  ls -l
+ 1926  strace ./pipesim input 
+ 1927  make clean
+ 1928  vim ipc.c
+ 1929  cd USP/Assignment/
+ 1930  make
+ 1931  ./pipesim input 
+ 1932  make
+ 1933  ./pipesim input 
+ 1934  clear
+ 1935  ./pipesim input 
+ 1936  make
+ 1937  ./pipesim input 
+ 1938  make
+ 1939  clear
+ 1940  ./pipesim input 
+ 1941  make
+ 1942  ./pipesim input 
+ 1943  make
+ 1944  clear
+ 1945  ./pipesim input 
+ 1946  man sudi
+ 1947  man sudo
+ 1948  python
+ 1949  python3
+ 1950  cd ../Downloads/
+ 1951  tar -xvf 20152428_Assignment.tar.gz
+ 1952  cd Assignment/
+ 1953  make
+ 1954  ./pipesim 
+ 1955  vim input
+ 1956  ./pipesim input
+ 1957  vim input
+ 1958  ./pipesim input
+ 1959  clear
+ 1960  /usr/local/bin/python3.9
+ 1961  ls /usr/local/bin/python
+ 1962  ls /usr/local/bin/ | grep python
+ 1963  ls /usr/local/bin/
+ 1964  ls /usr/local/bin
+ 1965  ls /usr/local
+ 1966  ls /usr/local/bin
+ 1967  ls /usr/local/
+ 1968  ls /usr/local | grep python
+ 1969  python
+ 1970  python3
+ 1971  sudo apt update
+ 1972  sudo apt upgrade
+ 1973  sudo apt dist-upgrade
+ 1974  ls /usr/local/
+ 1975  ls /usr/local/bin
+ 1976  python3
+ 1977  sudp apt install build-essential zlib1g-dev libncurses5-dev libgdbm-dev libnss3-dev libreadline-dev libffi-dev wget
+ 1978  sudo apt install build-essential zlib1g-dev libncurses5-dev libgdbm-dev libnss3-dev libreadline-dev libffi-dev wget
+ 1979  sudo apt install python3.9
+ 1980  ls /usr/local/bin
+ 1981  ls /usr/local/
+ 1982  ls /usr/local/sbin
+ 1983  python3.9 --version
+ 1984  python3.9 --version --version
+ 1985  man mysql
+ 1986  mysql --version
+ 1987  mysql --version --version
+ 1988  python3.9
+ 1989  python3
+ 1990  python3.9
+ 1991  clear
+ 1992  python3.9
+ 1993  history
+ 1994  clear
+ 1995  man run level
+ 1996  man runlevel
+ 1997  man sed
+ 1998  cd USP/20152428_TestAnswers/
+ 1999  ls
+ 2000  vim Question1.txt 
+ 2001  man sed
+ 2002  man regex_t
+ 2003  man regcomp
+ 2004  man signal
+ 2005  vim Question2.txt 
+ 2006  vim Question4.txt 
+ 2007  man open
+ 2008  man read
+ 2009  man write
+ 2010  man 2 write
+ 2011  man clone
+ 2012  man mmap
+ 2013  man sbrk
+ 2014  man write
+ 2015  man 2 write
+ 2016  man mmap
+ 2017  man clone
+ 2018  ls
+ 2019  vim Question2.c
+ 2020  vim Question4.c
+ 2021  man scanf
+ 2022  man termios
+ 2023  man scanf
+ 2024  ls
+ 2025  history > BashHistory

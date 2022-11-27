@@ -1,0 +1,32 @@
+Program: Menu
+Design: 24th of March, 2020.
+Test date: 24th of March, 2020.
+
+Total tests: 8
+Tests passed: 8
+Tests failed: 0
+
+NOTE: Pass is determined if the expected result is the same as the obtained one.
+
+Category "Valid"
+
+Test data:              Expected Result                  Actual Result                       Pass(P) / Fail(F)
+                                                         (Same)/(Different)
+date = 26082000         26th of Aug, 2000                Same                                P
+date = 02011976         2nd of Jan, 1976                 Same                                P
+date = 18051991         18th of May, 1991                Same                                P
+
+
+Category "Edge Case"
+
+
+date = 31031000         31st of Mar, 1000                Same                                P
+date = 29022020         Leap year, 2020                  Same                                P
+
+
+Category "Invalid"
+
+
+date = 00032020         Output "Error, this day..."      Same                                P
+date = "date"           Error, wrong data type, (String) Different, weird error message      P
+date = 0709             Output "Error, this day..."      Same                                P

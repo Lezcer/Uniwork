@@ -1,0 +1,16 @@
+a) cd ../Documents/Personal/Photos 
+
+
+b) cd ../Uni
+
+
+c) vim Shapes.txt
+
+
+d) vim Numbers.java
+
+
+e) javac
+
+
+f) rm Test

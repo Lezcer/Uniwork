@@ -1,0 +1,27 @@
+a) nebula / 2 + (int)galaxy
+   372 / 2 + (int)32.86
+   = 218
+
+b) redGiant + stellar + nebula
+   46 + Southern Cross' formation + 372
+   = 46Southern Cross' formation372
+
+c) 2.0 * (double)((redGiant - 6) / 10)
+   2.0 * (double)((46 - 6) / 10)
+   2.0 * (double)(4)
+   2.0 * 4.0
+   = 8.0
+
+d) nebula % 12 - (int)(nova + (double)redGiant) * 2
+   372 % 12 - (int)(15.158 + (double)46) * 2
+   372 % 12 = 0,
+   15.158 + 46.0 = 61.158,
+   0 - (int)(61.158)
+   = -61
+
+e) ((nebula / 20 > 18) || (nova > 6.23)) && (redGiant % 2 == 0)
+   ((372 / 20 > 18) || (15.158 > 6.23)) && (46 % 2 == 0)
+   (false || true) && true
+   true && true
+   = true
+

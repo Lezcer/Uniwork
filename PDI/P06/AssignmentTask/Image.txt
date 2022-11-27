@@ -1,0 +1,90 @@
+CLASS: Image
+
+CLASS FIELDS: originalImage (2D ARRAY OF Integers)
+
+CONSTRUCTORS:
+default: 
+IMPORT: none
+EXPORT: new address of the constructed object
+ASSERTION: 4 by 4 zero matrix.
+ALGORITHM:
+    originalImage := {0,0,0,0},{0,0,0,0},{0,0,0,0},{0,0,0,0}
+
+alternate:
+IMPORT: inOriginalImage (2D ARRAY OF Integer)
+EXPORT: new address of the constructed object
+ASSERTION: Creates the object of the imported 2D Array
+ALGORITHM:
+    originalImage := inOriginalImage
+
+copy:
+IMPORT: Image (Object)
+EXPORT: address of new Image object
+ASSERTION: Constructs a new 2D array identical to 
+ALGORITHM:
+    originalImage := inImage.OriginalImage
+
+ACCESSORS:
+SUBMODULE: clone
+IMPORT: none
+EXPORT: cloneImage (Object)
+ASSERTION: Returns a cloned object of the current object
+ALGORITHM:
+    CONSTRUCT cloneImage USING COPY CONSTRUCTOR WITH THIS OBJECT
+
+SUBMODULE: toString
+IMPORT: none
+EXPORT: str
+ASSERTION: Returns the 2D array in a string
+ALGORITHM: 
+    resultArray := convolution(kernel);
+    
+    FOR ff:=0 TO resultArray.length (exclusive) INC BY 1
+        someString := "[ "
+        FOR gg:0 TO resultArray[0].length (eclusive) INC BY 1
+            someString := someString + resultArray[ff][gg] + " "
+        END FOR
+        someString := someString + "]"
+    END FOR
+    str := someString
+SUBMODULE: equals
+IMPORT:
+EXPORT:
+ASSERTION:
+ALGORITHM:
+    originalImage := inOriginalImage
+
+PRIVATE SUBMODULES:
+SUBMODULE: convolution
+IMPORT: kernel (2D ARRAY OF Integer)
+EXPORT: resultArray (2D ARRAY OF Integer)
+ASSERTION: stores the values for every element
+ALGORITHM:
+    length := originalImage.length - kernel.length + 1
+    width := originalImage[0].length - kernel[0].lrngth + 1
+    
+    sum := 0
+    
+    FOR n=0 TO length (exclusive) INC BY 1
+        FOR m=0 TO width (exclusive) INC BY 1
+            resultArray[n][m] := convolOperation(n, m);
+        END FOR
+    END FOR
+
+SUBMODULE: convolOperation
+IMPORT:n (integer), m (integer)
+EXPORT: sum
+ASSERTION: undergoes convolutions - basically does the math
+ALGORITHM:
+    length := kernel.length
+    width := kernel[0].length
+
+    sum := 0
+    
+    FOR i=0 TO length (exclusive) INC BY 1
+        FOR j=0 TO width (exclusive) INC BY 1
+            sum = sum + originalImage[n+i][m+j] * kernel[i][j]
+        END FOR
+    END FOR
+    
+

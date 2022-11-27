@@ -1,0 +1,33 @@
+PROGRAM Task4
+    MAIN
+        DO
+            
+            OUTPUT "Please enter a number between 01 and 20 (inclusive)"
+            INPUT = length (Integer)
+
+        WHILE (length < 1 || length > 20)
+
+            arrayNumbers (ARRAY OF Integer OF SIZE length)
+            FOR i := 0 to length (exclusive) INC BY 1
+                GENERATE RANDOM number between 1 and 15
+                number := arrayNumbers[i]
+
+            END FOR
+            
+        DO
+            
+            OUTPUT "Please enter another number to search the array"
+            INPUT = numSearch (Integer)
+
+        WHILE (numSearch < 0) 
+        
+        WHILE (i < length AND !validNum) DO
+            IF (arrayNumbers[i] == numSearch) THEN
+                validNum := TRUE
+                OUTPUT "Found:" i"
+            ELSE
+                OUTPUT "NOT FOUND"
+        END WHILE
+        
+    END MAIN
+END

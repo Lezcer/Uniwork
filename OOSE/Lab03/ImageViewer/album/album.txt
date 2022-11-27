@@ -1,0 +1,5 @@
+800px-Size_planets_comparison.png:Solar system planets size comparison:rating=4
+800px-Ada_Lovelace_portrait.png:Watercolor portrait of Ada King, Countess of Lovelace (Ada Lovelace):date=1840
+800px-Cat_crying_(Lolcat).png:A typical lolcat:gps=1 2 3:rating=3
+bing-cherries-ripe-red-fruit.png:Beautiful red ripe cherries:date=2009:rating=2:gps=9 9 9
+water-plant-green-fine-layers.png:Close up on a green plant:gps=3 3 3

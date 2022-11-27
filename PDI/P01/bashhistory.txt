@@ -1,0 +1,28 @@
+    1  vim .vimrc
+    2  cd Documents/
+    3  ls
+    4  mkdir PID
+    5  rm -rf PID
+    6  mkdir PDI
+    7  cd PDI
+    8  ls 
+    9  mkdir P01
+   10  cd P01
+   11  vim calculator.txt
+   12  ls
+   13  vim calculator.txt
+   14  vi, Calculator.java
+   15  vim Calculator.java
+   16  javac Calculator.java
+   17  vim Calculator.java
+   18  javac Calculator.java
+   19  ls
+   20  java Calculator
+   21  vim Calculator.java
+   22  javac Calculator.java
+   23  ls
+   24  java Calculator
+   25  history
+   26  ls
+   27  history
+   28  history > bashhistory.txt

@@ -1,0 +1,23 @@
+./pipesim README
+
+Behaviour
+The linked list will be used to store information about the processes to be run. 
+These names and arguments of these processes are stored in theinputfile described in usage. 
+The number of these processes should not be constrained.
+Once the linked list has been populated with process information, the processes should be
+executed in sequence.
+The program will iterate through the linked list;for each node it should:
+- Create a new process via fork()
+- Use the child process to execute the process indicated by the current node
+- Store the output from the child process
+- Use the output from the child process as input to the next node
+
+Usage
+./pipesim                         - This will be displayed
+./pipesim inputfile               - This is going to go through 
+                                    said commands and the output 
+                                    will be displayed on the screen
+./pipesim inputfile outputfile    - This is going to go through 
+                                    said commands and the output 
+                                    will be redirected to the 
+                                    specified outputfile

@@ -1,0 +1,23 @@
+PROGRAM Converter
+    MAIN:
+        OUTPUT "What temperature Scale are you working with?"
+        OUTPUT "    >(C)elsius"
+        OUTPUT "    >(F)ahrenheit"
+        INPUT temp (Character)
+        
+        IF (temp is 'C' OR 'c')  THEN
+            OUTPUT "Please input temperature in Celsius"
+            INPUT Cel (Real)
+            Fah := Cel * (9 DIV 5) + 32
+            OUTPUT "Temperature in Fahrenheit is:" + Fah
+
+        ELSE IF (temp is 'F' OR 'f') THEN
+            INPUT Cel (Real)
+            Cel := (Fah - 32) * 5 DIV 9
+            OUTPUT "Temperature in Celsius is:" + Cel
+        
+        ELSE 
+            OUTPUT "Invalid Input, Please input either C or F"
+        END IF
+    END MAIN
+END

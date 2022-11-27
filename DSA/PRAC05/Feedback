@@ -1,0 +1,4 @@
+1. Private Inner class symbol should be a circle with an x
+2. Tree Traversal should store the keys in a queue
+3. This Queue ^ should be declared in wrapper
+4. Display is literally just outputting the inorder traversal...

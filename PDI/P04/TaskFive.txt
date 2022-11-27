@@ -1,0 +1,21 @@
+PROGRAM TaskFive
+    MAIN
+        OUTPUT "Please enter the number of rows for the table"
+        INPUT rows
+
+        OUTPUT "Please enter the number of columns for the table"
+        INPUT cols
+
+        numRows = rows + 1
+        numCols = cols + 1
+
+        Create a 2D ARRAY timesTable size (numRows x numCols)
+        
+        FOR y:=0 TO SIZE OF numRows (exclusive) INC BY 1
+        
+            FOR x:=0 TO numCols (exclusive INC) BY 1
+            timesTable[y][x] = (y + 1)*(x + 1)
+            OUTPUT y + 1
+        OUTPUT x + 1 + " | "
+            
+

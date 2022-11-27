@@ -1,0 +1,1000 @@
+ 1011  vim QuestionOne.txt
+ 1012  vim QuestionTwo.txt
+ 1013  vim QuestionThree.txt
+ 1014  vim QuestionFour.txt
+ 1015  ls
+ 1016  rm -rf QuestionOne
+ 1017  rm -rf QuestionTwo
+ 1018  rm -rf QuestionThree
+ 1019  rm -rf QuestionFour
+ 1020  ls
+ 1021  vim DeclarationOfOriginality_SalahM.pdf 
+ 1022  ls
+ 1023  clear
+ 1024  cd Documents/PDI/P05
+ 1025  ls
+ 1026  cd PI
+ 1027  cd ../Fibonacci/
+ 1028  ls
+ 1029  vim SequenceGen.java 
+ 1030  javac SequenceGen.java 
+ 1031  java SequenceGen 
+ 1032  clear
+ 1033  vim SequenceGen.java 
+ 1034  javac SequenceGen.java 
+ 1035  java SequenceGen 
+ 1036  vim SequenceGen.java 
+ 1037  javac SequenceGen.java 
+ 1038  java SequenceGen 
+ 1039  vim SequenceGen.java 
+ 1040  javac SequenceGen.java 
+ 1041  vim SequenceGen.java 
+ 1042  java SequenceGen 
+ 1043  vim SequenceGen.java 
+ 1044  javac SequenceGen.java 
+ 1045  java SequenceGen 
+ 1046  cd ..
+ 1047  ls
+ 1048  cd P
+ 1049  cd PI
+ 1050  ls
+ 1051  vim pieEstimator.java
+ 1052  cd ..
+ 1053  cd Fibonacci
+ 1054  ls
+ 1055  vim SequenceGen.java 
+ 1056  cd ../PI
+ 1057  vim pieEstimator.java 
+ 1058  clear
+ 1059  cd Documents/PDI/P05/PI
+ 1060  vim pieEstimator.java 
+ 1061  cd ../Fibonacci/
+ 1062  vim SequenceGen.java 
+ 1063  cd ../PI
+ 1064  vim pieEstimator.java 
+ 1065  javac pieEstimator.java 
+ 1066  vim pieEstimator.java 
+ 1067  javac pieEstimator.java 
+ 1068  vim pieEstimator.java 
+ 1069  javac pieEstimator.java 
+ 1070  vim pieEstimator.java 
+ 1071  javac pieEstimator.java 
+ 1072  vim pieEstimator.java 
+ 1073  javac pieEstimator.java 
+ 1074  vim pieEstimator.java 
+ 1075  javac pieEstimator.java 
+ 1076  vim pieEstimator.java 
+ 1077  javac pieEstimator.java 
+ 1078  vim pieEstimator.java 
+ 1079  javac pieEstimator.java 
+ 1080  vim pieEstimator.java 
+ 1081  javac pieEstimator.java 
+ 1082  java pieEstimator 
+ 1083  vim pieEstimator.java 
+ 1084  javac pieEstimator.java 
+ 1085  java pieEstimator 
+ 1086  vim pieEstimator.java 
+ 1087  clear
+ 1088  javac pieEstimator.java 
+ 1089  vim pieEstimator.java 
+ 1090  javac pieEstimator.java 
+ 1091  java pieEstimator 
+ 1092  vim pieEstimator.java 
+ 1093  javac pieEstimator.java 
+ 1094  java pieEstimator 
+ 1095  clear
+ 1096  cd Documents/PDI/P05
+ 1097  ls
+ 1098  cd Euler
+ 1099  ls
+ 1100  vim eConstant.java 
+ 1101  cd ..
+ 1102  ls
+ 1103  PI
+ 1104  cd PI
+ 1105  ls
+ 1106  vim pieEstimator.java 
+ 1107  clear
+ 1108  cd Documents/PDI/TestAnswers/
+ 1109  history
+ 1110  vim QuestionFour.txt 
+ 1111  clear
+ 1112  cd Documents/PDI/TestAnswers
+ 1113  history
+ 1114  ls
+ 1115  vim QuestionOne.txt
+ 1116  clear
+ 1117  vim QuestionTwo.txt
+ 1118  vim QuestionThree.txt
+ 1119  vim QuestionFour.txt
+ 1120  rm .QuestionFour.txt.swp 
+ 1121  la
+ 1122  ls
+ 1123  vim QuestionFour.txt
+ 1124  vim Markup.java
+ 1125  rm .Markup.java.swp 
+ 1126  ls
+ 1127  vim Markup.java
+ 1128  javac Markup.java 
+ 1129  vim Markup.java
+ 1130  javac Markup.java 
+ 1131  java Markup 
+ 1132  vim Markup.java
+ 1133  history
+ 1134  history >~/Documents/PDI/TestAnswers/BashHistory.txt 
+ 1135  ls
+ 1136  cd ..
+ 1137  tar -cvzf 20152428_TestAnswers.tar.gz TestAnswers
+ 1138  clear
+ 1139  cd Documents/PDI/TestAnswers
+ 1140  ls
+ 1141  cd ..
+ 1142  cd P05/
+ 1143  ls
+ 1144  cd PI
+ 1145  ls
+ 1146  vim pieEstimator.java 
+ 1147  cd ..
+ 1148  cd AssignmentTask/
+ 1149  ls
+ 1150  vim Convolutions.java 
+ 1151  cd ..
+ 1152  ls
+ 1153  cd ../TestAnswers/
+ 1154  ls
+ 1155  vim QuestionFour.txt 
+ 1156  clear
+ 1157  cd Documents/PDI/
+ 1158  ls
+ 1159  cd TestAnswers/
+ 1160  vim QuestionOne.txt
+ 1161  ls -l
+ 1162  vim QuestionTwo.txt
+ 1163  ls -l
+ 1164  vim QuestionThree.txt
+ 1165  ls -l
+ 1166  vim QuestionFour.txt
+ 1167  vim Markup.java
+ 1168  cd Documents/PDI/P06
+ 1169  ls\
+ 1170  ls
+ 1171  vim Date.txt
+ 1172  clear
+ 1173  cd Downloads/
+ 1174  ls
+ 1175  cd Documents/PDI/P06
+ 1176  cd ..
+ 1177  cd Documents/PDI/P06
+ 1178  vim Date.txt
+ 1179  cd Documents/PDI/P06clear
+ 1180  clear
+ 1181  vim Date.java
+ 1182  javac Date.java 
+ 1183  ls
+ 1184  la
+ 1185  cd Documents/PDI/P03
+ 1186  ls
+ 1187  vim Menu.txt
+ 1188  cd Documents/PDI/P06
+ 1189  vim Menu.java
+ 1190  clear
+ 1191  cd Documents/PDI/P06clear
+ 1192  cd Documents/PDI/P06
+ 1193  ls
+ 1194  vim Date.txt
+ 1195  cd Documents/PDI/P06
+ 1196  vim Date.java
+ 1197  mkdir AssignmentTask
+ 1198  ls
+ 1199  cd AssignmentTask/
+ 1200  vim Image.txt
+ 1201  vim Image.java
+ 1202  cd Documents/PDI/P05
+ 1203  ls
+ 1204  cd AssignmentTask/
+ 1205  ls
+ 1206  vim Convolutions.java
+ 1207  clear
+ 1208  cd Documents/PDI/P05
+ 1209  cd AssignmentTask/
+ 1210  vim Image.java
+ 1211  cd Documents/PDI/P05
+ 1212  vim Image.java
+ 1213  ls
+ 1214  cd AssignmentTask/
+ 1215  k=-[]'[]
+ 1216  ls
+ 1217  cd ../..
+ 1218  cd P06/AssignmentTask/
+ 1219  ls
+ 1220  vim Image.java 
+ 1221  rm .Image.java.swp 
+ 1222  vim Image.java 
+ 1223  cd Documents/PDI/P06/AssignmentTask/
+ 1224  ls
+ 1225  vim Image.txt
+ 1226  vim ImageTestHarness.java
+ 1227  ls
+ 1228  history >~/Documents/PDI/P06/BashHistory_P06
+ 1229  cd ..
+ 1230  ls
+ 1231  history >~/Documents/PDI/P06/BashHistory_P06.txt
+ 1232  ls
+ 1233  rm BashHistory_P06
+ 1234  ls
+ 1235  clear
+ 1236  cd Documents/PDI/P06/AssignmentTask/
+ 1237  vim Image.java
+ 1238  cd ../..
+ 1239  tar -cvzf 20152428_P06.tar.gz P06
+ 1240  clear
+ 1241  cd Documents/PDI/P07
+ 1242  ls
+ 1243  vim PDIMath.java
+ 1244  javac PDIMath.java 
+ 1245  vim PDIMath.java
+ 1246  javac PDIMath.java 
+ 1247  vim PDIMath.java
+ 1248  javac PDIMath.java 
+ 1249  vim PDIMath.java
+ 1250  javac PDIMath.java 
+ 1251  vim PDIMath.java
+ 1252  javac PDIMath.java 
+ 1253  mkdir AssignmentTask
+ 1254  vim PDIMath_TestHarness.txt
+ 1255  cd Documents/PDI/P07
+ 1256  vim PDIMath.java
+ 1257  cd ../P05
+ 1258  ls
+ 1259  vim PI
+ 1260  cd PI
+ 1261  ls
+ 1262  vim pieEstimator.java 
+ 1263  cd ../P07
+ 1264  cd ../../P07
+ 1265  vim PDIMath.java
+ 1266  cd ../P05/PI
+ 1267  vim pieEstimator.java 
+ 1268  cd ../../P07
+ 1269  vim PDIMath.java
+ 1270  cd ../P05/Euler
+ 1271  ls
+ 1272  vim eConstant.java 
+ 1273  cd ../../P07
+ 1274  vim PDIMath.java
+ 1275  cd ../P05/Euler
+ 1276  vim eConstant.java 
+ 1277  cd ../../P07
+ 1278  vim PDIMath.java
+ 1279  ls
+ 1280  cd AssignmentTask/
+ 1281  ls
+ 1282  vim UserInterface.txt
+ 1283  vim UserInterface.java
+ 1284  apt list --upgradeable
+ 1285  clear
+ 1286  clea
+ 1287  claer
+ 1288  clear
+ 1289  vim Documents/PDI/P07/PDIMath.java
+ 1290  vim Documents/PDI/P07/AssignmentTask/UserInterface.java
+ 1291  cd Documents/PDI/P07/AssignmentTask
+ 1292  ls
+ 1293  javac UserInterface.java 
+ 1294  vim Documents/PDI/P07/AssignmentTask/UserInterface.txt
+ 1295  cd Documents/PDI/P07/AssignmentTask/
+ 1296  ls
+ 1297  vim UserInterface_TestHarness.java
+ 1298  javac vim UserInterface.java
+ 1299  javac vim UserInterface.java >~/Documents/PDI/P07/Week7Errors.txt
+ 1300  cd ..
+ 1301  ls
+ 1302  vim Week7Errors.txt 
+ 1303  cd AssignmentTask/
+ 1304  ls
+ 1305  vim UserInterface_TestHarness.java 
+ 1306  javac UserInterface_TestHarness.java 
+ 1307  vim UserInterface_TestHarness.java 
+ 1308  javac UserInterface_TestHarness.java 
+ 1309  vim UserInterface_TestHarness.java 
+ 1310  javac UserInterface_TestHarness.java 
+ 1311  vim UserInterface_TestHarness.java 
+ 1312  javac UserInterface_TestHarness.java 
+ 1313  vim UserInterface_TestHarness.java 
+ 1314  javac UserInterface_TestHarness.java 
+ 1315  vim UserInterface_TestHarness.java 
+ 1316  javac UserInterface_TestHarness.java 
+ 1317  vim UserInterface_TestHarness.java 
+ 1318  javac UserInterface_TestHarness.java 
+ 1319  java UserInterface_TestHarness 
+ 1320  vim UserInterface_TestHarness.java 
+ 1321  cd Documents/PDI/P06/AssignmentTask/
+ 1322  ls
+ 1323  vim Image.java
+ 1324  vim Image.txt
+ 1325  cd ../../P07/AssignmentTask/
+ 1326  vim UserInterface.java
+ 1327  javac UserInterface.java
+ 1328  vim UserInterface.java
+ 1329  javac UserInterface.java
+ 1330  vim UserInterface.java
+ 1331  javac UserInterface.java
+ 1332  vim UserInterface.java
+ 1333  javac UserInterface.java
+ 1334  vim UserInterface.java
+ 1335  cd Documents/PDI/P07/AssignmentTask/
+ 1336  vim UserInterface.java
+ 1337  javac UserInterface.java
+ 1338  java UserInterface_TestHarness
+ 1339  vim UserInterface_TestHarness.java 
+ 1340  javac UserInterface_TestHarness.java 
+ 1341  vim UserInterface_TestHarness.java 
+ 1342  javac UserInterface_TestHarness.java 
+ 1343  java UserInterface_TestHarness
+ 1344  vim UserInterface_TestHarness.java 
+ 1345  javac UserInterface_TestHarness.java
+ 1346  java UserInterface_TestHarness
+ 1347  javac UserInterface_TestHarness.java
+ 1348  vim UserInterface_TestHarness.java 
+ 1349  javac UserInterface_TestHarness.java
+ 1350  java UserInterface_TestHarness
+ 1351  javac UserInterface_TestHarness.java
+ 1352  java UserInterface_TestHarness
+ 1353  vim Scanner.java
+ 1354  ls
+ 1355  javac UserInterface_TestHarness.java
+ 1356  java UserInterface_TestHarness
+ 1357  javac UserInterface_TestHarness.java
+ 1358  java UserInterface_TestHarness
+ 1359  javac UserInterface_TestHarness.java
+ 1360  ls
+ 1361  javac UserInterface_TestHarness.java
+ 1362  java UserInterface_TestHarness
+ 1363  javac UserInterface_TestHarness.java
+ 1364  java UserInterface_TestHarness
+ 1365  javac UserInterface_TestHarness.java
+ 1366  java UserInterface_TestHarness
+ 1367  javac UserInterface_TestHarness.java
+ 1368  java UserInterface_TestHarness
+ 1369  javac UserInterface_TestHarness.java
+ 1370  java UserInterface_TestHarnessclear
+ 1371  clear
+ 1372  ls
+ 1373  javac UserInterface_TestHarness.java
+ 1374  java UserInterface_TestHarnessclear
+ 1375  java UserInterface_TestHarness
+ 1376  javac UserInterface_TestHarness.java
+ 1377  java UserInterface_TestHarness
+ 1378  do-please-upgrade
+ 1379  do-release-upgrade
+ 1380  clear
+ 1381  cd Documents/PDI/P07
+ 1382  cd AssignmentTask/
+ 1383  ls
+ 1384  vim UserInterface.txt
+ 1385  vim UserInterface.java
+ 1386  vim UserInterface.txt
+ 1387  vim UserInterface.java
+ 1388  ls
+ 1389  clear
+ 1390  ls
+ 1391  history
+ 1392  history >~/Documents/PDI/P07/BashHistory_P07.txt
+ 1393  cd Documents/PDI/P07
+ 1394  ls
+ 1395  vim BashHistory_P07.txt 
+ 1396  cd ..
+ 1397  tar -cvzf 20152428_P05.tar.gz P05
+ 1398  tar -cvzf 20152428_P06.tar.gz P06
+ 1399  tar -cvzf 20152428_P07.tar.gz P07
+ 1400  clear
+ 1401  ls
+ 1402  cd Documents/PDI
+ 1403  ls
+ 1404  cd P08
+ 1405  ls
+ 1406  vim Student.java
+ 1407  javac Student.java 
+ 1408  vim Student.java
+ 1409  javac Student.java 
+ 1410  vim Student.java
+ 1411  javac Student.java 
+ 1412  vim Student.java
+ 1413  javac Student.java 
+ 1414  vim Student.java
+ 1415  javac Student.java 
+ 1416  vim Student.java
+ 1417  javac Student.java 
+ 1418  vim Student.java
+ 1419  javac Student.java 
+ 1420  vim Student.java
+ 1421  javac Student.java 
+ 1422  vim Student.java
+ 1423  javac Student.java 
+ 1424  vim Student.java
+ 1425  javac Student.java 
+ 1426  vim Student.java
+ 1427  javac Student.java 
+ 1428  vim Student.java
+ 1429  javac Student.java 
+ 1430  cd Documents/PDI/P07/AssignmentTask/
+ 1431  ls
+ 1432  vim UserInterface.java 
+ 1433  ls -l
+ 1434  cd Documents/PDI
+ 1435  cd P08
+ 1436  mkdir Assignmeng]]]
+ 1437  mkdir AssignmentTask
+ 1438  ls
+ 1439  rm Assignmeng]]]/
+ 1440  rm -rf Assignmeng]]]/
+ 1441  ls
+ 1442  cd AssignmentTask/
+ 1443  ls
+ 1444  vim FileIO.txt
+ 1445  vim FileIO.java
+ 1446  clear
+ 1447  cd ..
+ 1448  ls
+ 1449  vim PracEight.java
+ 1450  ls
+ 1451  cd
+ 1452  cd Documents/ISE/
+ 1453  ls
+ 1454  cd Documents/PDI/P08
+ 1455  ls
+ 1456  vim PracEight.java 
+ 1457  javac PracEight.java 
+ 1458  vim PracEight.java 
+ 1459  javac PracEight.java 
+ 1460  vim PracEight.java 
+ 1461  javac PracEight.java 
+ 1462  vim PracEight.java 
+ 1463  javac PracEight.java 
+ 1464  vim PracEight.java 
+ 1465  clear
+ 1466  cd Documents/PDI/P08
+ 1467  ls
+ 1468  vim ReadFile.java
+ 1469  clear
+ 1470  javac ReadFile.java
+ 1471  vim ReadFile.java
+ 1472  javac ReadFile.java
+ 1473  vim ReadFile.java
+ 1474  cd Documents/PDI/P08
+ 1475  ls
+ 1476  vim PracEight.java 
+ 1477  vim ReadFile.java 
+ 1478  vim PracEight.java 
+ 1479  vim Student.java 
+ 1480  vim ReadFile.java 
+ 1481  clear
+ 1482  cd Documents/PDI/P08
+ 1483  ks
+ 1484  ls
+ 1485  vim ReadFile.java 
+ 1486  clear
+ 1487  cd Documents/PDI/P08
+ 1488  ld
+ 1489  ls
+ 1490  cd AssignmentTask/
+ 1491  ls
+ 1492  FileIO.java
+ 1493  vim FileIO.java
+ 1494  javac FileIO.java 
+ 1495  vim FileIO.java
+ 1496  javac FileIO.java 
+ 1497  vim FileIO.java
+ 1498  javac FileIO.java 
+ 1499  vim FileIO.java
+ 1500  javac FileIO.java 
+ 1501  vim FileIO.java
+ 1502  javac FileIO.java 
+ 1503  ls
+ 1504  cd ../../P07
+ 1505  ls
+ 1506  cd AssignmentTask/
+ 1507  ls
+ 1508  cp UserInterface.java ../../P08/AssignmentTask/
+ 1509  cp UserInterface.java ../../P08/AssignmentTask/UserInterface.java 
+ 1510  ls
+ 1511  cd ../../P08/AssignmentTask/
+ 1512  ls
+ 1513  javac FileIO.java 
+ 1514  vim F
+ 1515  vim FileIO.java
+ 1516  javac FileIO.java 
+ 1517  vim FileIO.java
+ 1518  javac FileIO.java 
+ 1519  vim FileIO.java
+ 1520  javac FileIO.java 
+ 1521  vim FileIO.java
+ 1522  javac FileIO.java 
+ 1523  cd ..
+ 1524  vim ReadFile.java 
+ 1525  ls
+ 1526  vim .ReadFile.java.swp 
+ 1527  rm .ReadFile.java.swp 
+ 1528  ls
+ 1529  vim ReadFile.java 
+ 1530  cd AssignmentTask/
+ 1531  vim FileIO.java
+ 1532  cd ..
+ 1533  vim ReadFile.java 
+ 1534  cd AssignmentTask/
+ 1535  vim FileIO.java
+ 1536  clear
+ 1537  cd Documents/PDI/P08/AssignmentTask/
+ 1538  vim FileIO.txt
+ 1539  cd Documents/PDI/P08/AssignmentTask/
+ 1540  vim FileIO.java 
+ 1541  javac FileIO.java 
+ 1542  vim FileIO.java 
+ 1543  javac FileIO.java 
+ 1544  vim FileIO.java 
+ 1545  javac FileIO.java 
+ 1546  vim FileIO.java 
+ 1547  javac FileIO.java 
+ 1548  vim FileIO.java 
+ 1549  javac FileIO.java 
+ 1550  vim FileIO.java 
+ 1551  javac FileIO.java 
+ 1552  vim FileIO.java 
+ 1553  javac FileIO.java 
+ 1554  vim FileIO.java 
+ 1555  javac FileIO.java 
+ 1556  vim FileIO.java 
+ 1557  javac FileIO.java 
+ 1558  vim FileIO.java 
+ 1559  javac FileIO.java 
+ 1560  vim FileIO.java 
+ 1561  javac FileIO.java 
+ 1562  vim FileIO.java 
+ 1563  javac FileIO.java 
+ 1564  vim FileIO.java 
+ 1565  javac FileIO.java 
+ 1566  vim FileIO.java 
+ 1567  javac FileIO.java 
+ 1568  vim FileIO.java 
+ 1569  javac FileIO.java 
+ 1570  vim FileIO.java 
+ 1571  javac FileIO.java 
+ 1572  vim FileIO.java 
+ 1573  javac FileIO.java 
+ 1574  vim FileIO.java 
+ 1575  javac FileIO.java 
+ 1576  vim FileIO.java 
+ 1577  javac FileIO.java 
+ 1578  vim FileIO.java 
+ 1579  javac FileIO.java 
+ 1580  ls
+ 1581  vim FileIO.java
+ 1582  cd Documents/PDI/P08/AssignmentTask/
+ 1583  vim FileIO.java
+ 1584  clear
+ 1585  cd Documents/PDI/P08/AssignmentTask/
+ 1586  vim FileIO.txt
+ 1587  ls
+ 1588  vim DetectEdges.java
+ 1589  vim DetectEdges.txt
+ 1590  ls
+ 1591  vim DetectEdges.java
+ 1592  javac DetectEdges.java 
+ 1593  vim DetectEdges.java
+ 1594  cd Documents/PDI/P08/AssignmentTask/
+ 1595  ls
+ 1596  vim UserInterface.java 
+ 1597  clear
+ 1598  cd Documents/PDI/P08/AssignmentTask/
+ 1599  vim FileIO.java
+ 1600  javax FileIO.java
+ 1601  javac FileIO.java
+ 1602  vim FileIO.java
+ 1603  rm .FileIO.java.swp 
+ 1604  vim FileIO.java
+ 1605  cd ../../P05
+ 1606  cd AssignmentTask/
+ 1607  ls
+ 1608  vim Convolutions.java
+ 1609  vim Convolute.java
+ 1610  cd ../../P07/AssignmentTask/
+ 1611  vim FileIO.java
+ 1612  cd ../../P08/AssignmentTask/
+ 1613  vim FileIO.java
+ 1614  ls
+ 1615  vim DetectEdges.java
+ 1616  cd Documents/PDI/P08/AssignmentTask/
+ 1617  vim DetectEdges.java
+ 1618  vim ../../P05/AssignmentTask/Convolutions.java
+ 1619  vim DetectEdges.java
+ 1620  javac DetectEdges.java 
+ 1621  ls
+ 1622  java DetectEdges 
+ 1623  javac DetectEdges.java 
+ 1624  java DetectEdges 
+ 1625  javac DetectEdges.java 
+ 1626  java DetectEdges 
+ 1627  cd Documents/PDI/P08/AssignmentTask/
+ 1628  ls
+ 1629  vim FileIO.java
+ 1630  java DetectEdges 
+ 1631  vim FileIO.java
+ 1632  javac DetectEdges.java 
+ 1633  vim FileIO.java
+ 1634  javac DetectEdges.java 
+ 1635  java DetectEdges 
+ 1636  vim FileIO.java
+ 1637  java DetectEdges 
+ 1638  vim FileIO.java
+ 1639  javac DetectEdges.java \
+ 1640  javac DetectEdges.java
+ 1641  vim FileIO.java
+ 1642  vim DetectEdges.txt
+ 1643  vim FileIO.java
+ 1644  javac DetectEdges.java
+ 1645  java DetectEdges 
+ 1646  vim FileIO.java
+ 1647  vim DetectEdges.java
+ 1648  vim FileIO.java
+ 1649  cd Documents/PDI/P08/AssignmentTask/
+ 1650  vim DetectEdges.java
+ 1651  vim ../../P05/AssignmentTask/Convolutions.java
+ 1652  vim ../../P05/AssignmentTask/Convolutions.txt
+ 1653  vim DetectEdges.txt
+ 1654  javac DetectEdges.java 
+ 1655  java DetectEdges
+ 1656  javac DetectEdges.java 
+ 1657  java DetectEdges
+ 1658  cd Documents/PDI/P08/AssignmentTask/
+ 1659  vim
+ 1660  vclear
+ 1661  clear
+ 1662  javac DetectEdges.java 
+ 1663  ls
+ 1664  rm DetectEdges.class
+ 1665  rm FileIO.class
+ 1666  rm UserInterface.class
+ 1667  ls
+ 1668  history >~/Documents/PDI/P08/BashHistoryP08.txt
+ 1669  ls
+ 1670  history
+ 1671  clear
+ 1672  history >~/Documents/PDI/P08/BashHistoryP08.txt
+ 1673  ls
+ 1674  cd ..
+ 1675  ls
+ 1676  rm PracEight.class
+ 1677  rm Student.class
+ 1678  ls
+ 1679  cd ..
+ 1680  tar -cvzf 20152428_P08.tar.gz P08
+ 1681  ls
+ 1682  rm P09
+ 1683  rm -rf P09
+ 1684  rm -rf P10
+ 1685  ls
+ 1686  mkdir PDIAssignment
+ 1687  ls
+ 1688  cd Documents/PDI
+ 1689  ls
+ 1690  mkdir P09
+ 1691  mkdir P10
+ 1692  ls
+ 1693  cd P04
+ 1694  ls
+ 1695  cd AssignmentTask/
+ 1696  ls -l
+ 1697  cd ..
+ 1698  ls -l
+ 1699  tf you doing
+ 1700  tfAmIDoing
+ 1701  ?
+ 1702  what
+ 1703  c
+ 1704  cb
+ 1705  cs
+ 1706  cf
+ 1707  history
+ 1708  cd Documents/PDI?
+ 1709  cd Documents/PDI/
+ 1710  cd Documents/PDI/P04
+ 1711  cd AssignmentTask/
+ 1712  ls
+ 1713  vim MatrixMultipli
+ 1714  javac MatrixMultiplication.java 
+ 1715  java MatrixMultiplication 
+ 1716  ls -l
+ 1717  cd Documents/PDI/P07/AssignmentTask/
+ 1718  ls
+ 1719  vim UserInterface.txt
+ 1720  vim UserInterface.java
+ 1721  cd ../../P08/AssignmentTask/
+ 1722  vim DetectEdges.java
+ 1723  vim FileIO.java
+ 1724  clear
+ 1725  ls
+ 1726  cd Documents/
+ 1727  ls
+ 1728  cd PDI
+ 1729  ls
+ 1730  cd PDIAssignment/
+ 1731  ls
+ 1732  vim UserInterface.txt
+ 1733  vim UserInterface.java
+ 1734  vim Menu.txt
+ 1735  vim Menu.java
+ 1736  ls
+ 1737  cd ..
+ 1738  cp P07/PDIMath.java PDIAssignment/PDIMath.java
+ 1739  cd PDIAssignment/
+ 1740  ls
+ 1741  vim PDIMath.java 
+ 1742  vim PDIMath.txt
+ 1743  ls
+ 1744  vim Menu.txt
+ 1745  ls
+ 1746  history
+ 1747  history -l
+ 1748  cd Documents/PDI/PDIAssignment/
+ 1749  ls
+ 1750  vim UserInterface.txt
+ 1751  cd Documents/PDI/PDIAssignment/
+ 1752  vim UserInterface.txt
+ 1753  vim UserInterface.java
+ 1754  cd Documents/PDI/PDIAssignment/
+ 1755  ls
+ 1756  vim UserInterface.java
+ 1757  vim UserInterface.txt
+ 1758  vim UserInterface.java
+ 1759  ls -l
+ 1760  vim UserInterface.java
+ 1761  javac UserInterface.java 
+ 1762  vim UserInterface.java
+ 1763  javac UserInterface.java 
+ 1764  vim UserInterface.java
+ 1765  javac UserInterface.java 
+ 1766  vim UserInterface.java
+ 1767  javac UserInterface.java 
+ 1768  vim UserInterface.java
+ 1769  javac UserInterface.java 
+ 1770  vim UserInterface.java
+ 1771  cd Documents/PDI/PDIAssignment/
+ 1772  vim UserInterface.txt
+ 1773  rm -rf UserInterface.txt
+ 1774  vim UserInterface.txt
+ 1775  ls
+ 1776  vim Menu.txt
+ 1777  cd Documents/PDI/PDIAssignment/
+ 1778  ls
+ 1779  vim Menu.java
+ 1780  clear
+ 1781  cd Documents/PDI/PDIAssignment/
+ 1782  cd
+ 1783  cd Documents/PDI
+ 1784  cd P08/AssignmentTask/
+ 1785  l
+ 1786  ls
+ 1787  vim FileIO.java
+ 1788  java FileIO.java
+ 1789  javac FileIO.java
+ 1790  java FileIO.java
+ 1791  java FileIO
+ 1792  javac DetectEdges.java
+ 1793  java DetectEdges 
+ 1794  vim FileIO.java
+ 1795  javac DetectEdges.java
+ 1796  vim FileIO.java
+ 1797  javac DetectEdges.java
+ 1798  vim FileIO.java
+ 1799  javac DetectEdges.java
+ 1800  vim FileIO.java
+ 1801  javac DetectEdges.java
+ 1802  java DetectEdges 
+ 1803  vim FileIO.java
+ 1804  javac DetectEdges.java
+ 1805  java DetectEdges 
+ 1806  ls
+ 1807  vim Image.csv_Converted
+ 1808  ls
+ 1809  cd Documents/PDI
+ 1810  cd P08/AssignmentTask/
+ 1811  vim DetectEdges.java
+ 1812  vim FileIO.java
+ 1813  javac DetectEdges.java 
+ 1814  java DetectEdges 
+ 1815  vim FileIO.java
+ 1816  javac DetectEdges.java 
+ 1817  java DetectEdges 
+ 1818  cd P06/AssignmentTask/
+ 1819  cd Documents/PDI/P06/AssignmentTask/
+ 1820  ls
+ 1821  vim Image.java
+ 1822  cd ../../P08
+ 1823  cd AssignmentTask/
+ 1824  ls
+ 1825  vim DetectEdges.java
+ 1826  cd Documents/PDI/
+ 1827  cp P08/AssignmentTask/Image.java PDIAssignment/Image.java
+ 1828  cp P06/AssignmentTask/Image.java PDIAssignment/Image.java
+ 1829  cp P06/AssignmentTask/Image.txt PDIAssignment/Image.txt
+ 1830  cp P08/AssignmentTask/DetectEdges.txt PDIAssignment/DetectEdges.txt
+ 1831  cp P08/AssignmentTask/DetectEdges.java PDIAssignment/DetectEdges.java
+ 1832  cp P08/AssignmentTask/FileIO.java PDIAssignment/FileIO.java
+ 1833  cp P08/AssignmentTask/FileIO.txt PDIAssignment/FileIO.txt
+ 1834  cd PDIAssignment/
+ 1835  ls
+ 1836  vim Image.java
+ 1837  :50
+ 1838  For the assignment what is the difference between the Menu class and the UserInterface one? If the purpose for the Menu class is to act as the 'main', then what is the use for the DetectEdges class?
+ 1839  This really isn't clarified in the assignment spec
+ 1840  vim Image.java
+ 1841  clear
+ 1842  cd Documents/PDI/P06/AssignmentTask/
+ 1843  cd ../../P08
+ 1844  cd ..
+ 1845  cd PDIAssignment/
+ 1846  vim DetectEdges.java
+ 1847  cd Documents/PDI
+ 1848  cd PDIAssignment/
+ 1849  ls
+ 1850  vim Image.java
+ 1851  vim Kernel.java
+ 1852  vim Image.java
+ 1853  vim Kernel.java
+ 1854  vim Image.java
+ 1855  vim Kernel.java
+ 1856  vim Image.java
+ 1857  vim UserInterface.java
+ 1858  cd Documents/PDI
+ 1859  cd PDIAssignment/
+ 1860  ls
+ 1861  vim Menu.java
+ 1862  vim DetectEdges.java
+ 1863  cd Documents/PDI/PDIAssignment/
+ 1864  ls
+ 1865  vim Kernel.txt
+ 1866  ls\
+ 1867  ls
+ 1868  vim UserInterface.java
+ 1869  vim Menu.java
+ 1870  vim DetectEdges.
+ 1871  vim DetectEdges.java
+ 1872  ls
+ 1873  vim UserInterface.java
+ 1874  vim Menu.java
+ 1875  vim Menu.javaclear
+ 1876  vim FileIO.java
+ 1877  vim Menu.java
+ 1878  clear
+ 1879  cd Documents/PDI
+ 1880  cd PDIAssignment/
+ 1881  ls
+ 1882  vim DetectEdges.java
+ 1883  clear
+ 1884  cd Documents/PDI/PDIAssignment/
+ 1885  ls
+ 1886  vim UserInterface.java
+ 1887  vim PDIMath.java
+ 1888  clear
+ 1889  cd Documents/PDI/PDIAssignment/
+ 1890  ls
+ 1891  vim PDIMath.java
+ 1892  vim UserInterface.java
+ 1893  vim FileIO.java
+ 1894  clear
+ 1895  cd Documents/PDI/PDIAssignment/
+ 1896  ls
+ 1897  cd ../P08/AssignmentTask/
+ 1898  vim FileIO.java
+ 1899  vim DetectEdges.java 
+ 1900  cd ../../PDIAssignment/
+ 1901  vim PDIMath.java
+ 1902  cd Documents/PDI/PDIAssignment/
+ 1903  vim DetectEdges.java
+ 1904  cp Documents/PDI/PDIAssignment PDIAssignment
+ 1905  cp Documents/PDI/PDIAssignment/ PDIAssignment/
+ 1906  cd ..
+ 1907  cp ~/Documents/PDI/PDIAssignment/ PDIAssignment/
+ 1908  cp ~/Documents/PDI/PDIAssignment/ ~/PDIAssignment/
+ 1909  cd ~
+ 1910  cp -r Documents/PDI/PDIAssignment/ PDIAssignment/
+ 1911  ls
+ 1912  cd PDIAssignment/
+ 1913  ls
+ 1914  vim DetectEdges.java
+ 1915  vim Menu.java
+ 1916  vim DetectEdges.java
+ 1917  vim Menu.java
+ 1918  vim DetectEdges.java
+ 1919  vim Menu.java
+ 1920  vim DetectEdges.java
+ 1921  vim Menu.java
+ 1922  vim DetectEdges.java
+ 1923  vim Menu.java
+ 1924  vim DetectEdges.java
+ 1925  clear
+ 1926  ls
+ 1927  vim UserInterface.java 
+ 1928  ls
+ 1929  clear
+ 1930  ls
+ 1931  cd PDIAssignment/
+ 1932  ls
+ 1933  vim Image.java
+ 1934  vim Kernel.java
+ 1935  vim DetectEdges.java
+ 1936  ls
+ 1937  rm -rf .DetectEdges.java.swp 
+ 1938  rm -rf .Image.java.swp 
+ 1939  ls
+ 1940  vim .nfs00000000efb072440000004c 
+ 1941  vim DetectEdges.java
+ 1942  vim PDIMath.java
+ 1943  vim UserInterface.java
+ 1944  vim PDIMath.java
+ 1945  vim DetectEdges.java
+ 1946  vim PDIMath.java
+ 1947  vim DetectEdges.java
+ 1948  clear
+ 1949  cd PDIAssignment/
+ 1950  ls
+ 1951  vim Menu.java
+ 1952  vim PDIMath.java
+ 1953  vim UserInterface.java
+ 1954  vim Menu.java
+ 1955  vim Kernel.java
+ 1956  vim Image.java
+ 1957  vim FileIO.java
+ 1958  vim DetectEdges.java
+ 1959  ls
+ 1960  vim Kernel.txt
+ 1961  vim Menu.txt
+ 1962  vim Image.txt
+ 1963  vim Kernel.txt
+ 1964  vim Image.txt
+ 1965  vim Kernel.txt
+ 1966  vim FileIO.txt
+ 1967  vim UserInterface.txt
+ 1968  vim DetectEdges.txt
+ 1969  history >~/PDIAssignment/BashHistory_PDIAssignment.txt
+ 1970  ls
+ 1971  cd ..
+ 1972  tar -cvzf 20152428_PDIAssignment.tar.gz PDIAssignment/
+ 1973  ls
+ 1974  rm UserInterface.java 
+ 1975  ls
+ 1976  vim Documents/PDI
+ 1977  cd Documents/PDI
+ 1978  ls
+ 1979  cd P10
+ 1980  ls
+ 1981  vim WorksheetTenAnswers.txt
+ 1982  clear
+ 1983  cd Documents/PDI
+ 1984  ls
+ 1985  cd Documents/PDI
+ 1986  ls
+ 1987  rm -rf PDIAssignment/
+ 1988  ls ComssaRevision
+ 1989  mkdir ComssaRevision
+ 1990  ls
+ 1991  ls ComssaRevision
+ 1992  cd ComssaRevision/
+ 1993  ls
+ 1994  vim SquareSum.txt
+ 1995  ls
+ 1996  cd Documents/PDI
+ 1997  ls
+ 1998  rm -rf ComssaRevision/
+ 1999  mkdir 20152428_COMP1007_FinalAssessment
+ 2000  cd 20152428_COMP1007_FinalAssessment/
+ 2001  ls
+ 2002  vim QuestionOne.txt
+ 2003  vim QuestionTwo.txt
+ 2004  ls
+ 2005  vim QuestionOne.txt
+ 2006  ls
+ 2007  vim QuestionOne.txt
+ 2008  vim QuestionTwo.txt 
+ 2009  history
+ 2010  history >~/Documents/PDI/20152428_COMP1007_FinalAssessment/BashHistory.txt

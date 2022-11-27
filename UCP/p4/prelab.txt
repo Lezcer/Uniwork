@@ -1,0 +1,32 @@
+1. 
+a.  create 1D integer array 'a' of size 14
+b.  create 1D real array 'b' with elements 3.3, 0.0, 1.1, 2.2
+c.  create 2D float array 'c' of size 5 by 10
+d.  create 1D integer pointer array 'd' of size 10
+e.  create 2D void pointer array 'e' of size 3 by 4
+f.  create 1D char pointer array storing letters of H e l l o
+g. 
+
+2.
+
+3.
+a.  element 2,1 = 5
+b.  array 'c'
+c.  1D array; 5, 6, 7, 8
+d.  address of c[2]
+e.  c[2] meaning 1D array 5, 6, 7, 8
+f.  &c[2]+1 is &c[3] = address of c[3]
+g.  
+h.
+i.
+j.
+
+4.
+a.  
+b.
+c.
+
+5.
+a.
+b.
+

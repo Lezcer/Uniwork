@@ -1,0 +1,136 @@
+CLASS FileIO
+    SUBMODULE: readFile
+    IMPORT: inFileName (String)
+    EXPORT: image (ARRAY OF Integer 2D)
+    ALGORITHM:
+        ASSERTION: Bunnch of declarations for Stream readers and buffers
+        DO
+            noFile := true
+            TRY
+                fileStream := NEW FileInputStream <-inFileName
+                rdr := NEW InputStreamReader <- fileStream
+                buffRdr := NEW BufferedReader <- rdr
+                arrayHeight := 0
+                line := buffRdr.readLine <- none
+                image (SET LENGTH TO EQUAL arrayHeight (Integer))
+
+                WHILE (line NOT EQUAL TO null)
+                    image[arrayHeight] = processLine <- line (String)
+                    arrayHeight INC BY 1
+
+                    line = buffRdr.readline <- none
+                END WHILE
+                noFile := false
+                fileStream.close <- none
+
+            CATCH(FileNotFoundException)
+                OUTPUT ERROR MESSAGE
+
+            CATCH(IOEsception)
+                OUTPUT ERROR MESSAGE
+
+            CATCH(Esception)
+                OUTPUT ERROR MESSAGE
+
+        WHILE (noFile IS TRUE)
+        IF ((validationDimen <- image) IS FALSE) THEN
+            OUTPUT "Invalid File"
+            REWRITE image (2D array of Integers) by setting it to null
+        END IF
+    END readFile
+
+    SUBMODULE: writeFile
+    IMPORT: fileName (String), writeArray (2D ARRAY OF Integers)
+    EXPORT: none
+    ALGORITHM: 
+        TRY
+            fileStream := NEW FileOutputStream <- fileName
+            pw := NEW PrintWriter <- fileStream
+    
+            FOR i := 0 TO writeArray.length (exclusive) INC BY 1
+                FOR j := 0 TO writeArray[0].length (exclusive) INC BY 1
+                    pw.print <- (writeArray[i][j] + ",")
+                END FOR
+                pw.print <- writeArray[i][writeArray[0] - 1]
+                pw.println <- none
+            END FOR
+            pw.close <- none
+        CATCH(IOException)
+            OUTPUT ERROR MESSAGE
+    END writeFile
+
+    SUBMODULE: readPNG
+    IMPORT: fileName (String)
+    EXPORT: image (2D ARRAY OF Integer)
+    ALGORITHM:
+        TRY
+            inputFile := NEW File <- fileName
+            img := ImageIO.read <- inputFile
+    
+            FOR y := 0 TO img.getHeight <- none (exclusive) INC BY 1
+                FOR x := 0 TO img.getWidth <- none (exclusive) INC BY 1
+                    pixel (Color object) = new Color <- (img.getRed(x,y) , true)
+                    
+                    image[y][x] = (CONVERT TO Integer)((pixel.getRed() * 0.399) +
+                                                       (pixel.getBlue() * 0.587) +
+                                                       (pixel.getGreen() * 0.114))
+                END FOR
+            END FOR
+        CATCH(IOEsception)
+        IF (validationDimen(image)) THEN
+            OUTPUT "Invalid File"
+            EQUATE image to null i.e. reset its value as its not valid
+        END IF
+    END readPNG
+
+    SUBMODULE: writePNG
+    IMPORT: fileName (String), writeArray (2D ARRAY OF Integers)
+    EXPORT: none
+    ALGORITHM:
+        TRY
+            outputFile := File <- fileName
+            theImage := BufferedImage(writeArray[0].length,
+                                      writeArray.length,
+                                      BufferedImage.TYPE_INT_RGB)
+            FOR y := 0 TO writeArray.length INC BY 1
+                FOR x:= 0 TO writeArray[0].length INC BY 1
+                    value := writeArray[y][x] % 256
+                    newColor := NEW Color <- (value, value, value)
+                    theImage.setRGB <- (x, y, newColor.getRGB)
+                END FOR
+                ImageIO.write <- (theImage, "png", outputFile)
+            END FOR
+        CATCH(IOException)
+            OUTPUT ERROR MESSAGE 
+    END writePNG
+
+    PRIVATE SUBMODULE: processLine
+    IMPORT: row (String)
+    EXPORT: rowImage (ARRAY OF INT 1D)
+    ALGORITHM:
+        splitLine (1D ARRAY OF Strings)
+        SPLIT THE row between each "," and store in splitLine (ARRAY OF Strings)
+        rowImage (1D ARRAY OF INTEGERS)
+
+        FOR i := 0 TO splitLine.length (exclusive) INC BY 1
+            rowImage[i] := (PARSE String TO Integer)(splitLine[i])
+        END FOR
+    END processLine
+
+    PRIVATE SUBMODULE: validationDimen
+    IMPORT: image (ARRAY OF INT 2D)
+    EXPORT: valid (Boolean)
+    ALGORITHM:
+        valid := true
+        error := false
+
+        FOR vv := 1 TO image.length (exclusive) INC BY 1
+            IF (image[0].length == image[vv]) THEN
+                error := false
+                IF (error is true) THEN
+                    valid := false
+                END IF
+            END IF
+        END FOR
+    END validationDimen
+

@@ -1,0 +1,39 @@
+Question 2
+a. i. Describe a simple test file that you might use for this program. In the context of the test
+file, what is the output if you uncomment Fork 1? What is the output if you uncomment
+Fork 2?
+    Answer: (Assumption both fork calls aren't called simultaneously)Any file that has 40 characters 
+    or more. 
+    If you uncomment fork 1 then the output will be the first 20 characters repeated
+    If you uncomment fork 2 then the output will be the first 40 characters only
+
+   ii. Assuming that you only uncomment one statement, does it matter which one you
+uncomment? Explain in detail why or why not. If appropriate, discuss underlying data
+structures
+    Answer: yes it does.
+    for fork 1, the child is created before the fp file descriptor (fd) is set, hence when both processes
+    execute that open instruction they will have 2 different fds meaning the fp pointer will be different
+    for both processes. Hence, when they read with fgets() and output with printf(), they output the same 
+    20 characters (so twice)
+    for fork 2, the chile is created after the fd has been set so the fp pointer is the same meaning when 
+    one process reads from the file, the pointer continues from where it is hence the first 40 characters 
+    are read and displayed (20 +20)
+
+b. Examine the following function. This function is intended to return TRUE if the ‘needle’
+is able to be found within ‘haystack’. However, testing reveals that it is not functioning
+as intended. Explain why and provide a solution.
+    Answer: The reason why is because the programmer forgot to use the 'haystack' or the target string,
+    They declared a pointer and used it uninitialised. To fix this set the re variable to haystack.
+
+c. Examine the program below. Describe how this program works. Additionally, explain what
+issues might arise when using this program.
+    Answer: The program is set to execute the my_handler() function when a signal occurs, the 
+    program enters an infinite loop which does the following: checks if i is greater than 0,
+    if it is it calls do_something() and reduces the value of i by 1 then.
+    The my_handler() function increments i by 1.
+
+    An Issue will arise when Control-C is pressed in the process's execution which will cause signal to
+    call my_handler as it has been set. my_handler doesn't call exit in this cause so it will just 
+    increment i. Thus it is hard to terminate the program with Control-C.
+
+d. For C program check Question2.c

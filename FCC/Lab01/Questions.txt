@@ -1,0 +1,20 @@
+Date: 03/03/2022
+
+1. List and briefly define the three key objectives of computer security
+A: CIA, Confidentiality is ensuring the data is kept private and only authorized users can read the data.
+   Integrity is ensuring the data hasn't been modified by an unauthorised party. 
+   Availability is ensuring that nothing is preventing authorized users from accessing data
+
+2. List and briefly define categories of passive and active security attacks.
+A: Passive attacks are attacks that haven't caused any damage to any of the victim devices and hasn't
+   altered their operation in any way.
+   Passive attacks can be classified into attacks that read a message as its passing an insecure channel
+   and attacks that analyse traffic data.
+
+   Active attacks are attacks that alter the opration of computer devices in a network. Active attacks can
+   be categorized into attacks: Masquerading, Replaying, Modifying contents of messages between sender and 
+   receiver, and finally DDoS
+
+3. Please write a program to count the appearance frequency of English
+   letters in a given text input. Your program should take a txt file as input
+   and output a bar chart of letter frequency. Compare your figure to Fig.1

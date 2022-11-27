@@ -1,0 +1,110 @@
+Program QuestionOne
+    MAIN
+        //Main menu
+        DO
+            OUTPUT "Welcome to the number converter, what number type are you currently working with:"
+            OUTPUT "1. Binary"
+            OUTPUT "2. Decimal"
+            OUTPUT "3. Octal"
+            OUTPUT "4. Hexadecimal"
+            OUTPUT "0. Exit"
+            TRY
+                INPUT choice (Integer)
+            CATCH (InputMismatchException)
+                OUTPUT "Please enter an integer"
+        WHILE(choice < 0 OR > 4)//Will loop if an appropiate selection isn't made
+        
+        OUTPUT "Please enter the alphanumeric / numeric?"
+        INPUT number (String)
+        //The numeric-string is inputted we will validate this later
+
+        CASE choice
+            1:
+                splitNumber = number.split <- "\\."
+                IF(validate <- SplitNumber[0], 0, 1 && validate <- splitNumber[1], 0, 1) THEN
+                    //number is valid
+                ELSE IF (validate <- splitNumber[2], 0, 1
+                    OUTPUT errormsg
+            BREAK
+            2:
+                splitNumber = number.split <- "\\."
+                IF(validate <- SplitNumber[0], 0, 9 && validate <- splitNumber[1], 0, 9) THEN
+                    //number is valid
+                ELSE IF (validate <- splitNumber[2], 0, 1
+                    OUTPUT errormsg
+            BREAK
+            3:
+            
+                IF(validate <- number, 0, 7) THEN
+                    //number is valid
+                ELSE
+                    OUTPUT errormsg
+            BREAK
+            4:
+                IF(validateHexa <- number) THEN
+                    //number is valid
+                ELSE
+                    OUTPUT errormsg
+            BREAK
+            DEFAULT:
+                //Do nothing as the choice is to exit
+
+        END CASE
+        
+        OUTPUT "What would you like to convert this numeric / alphanumeric to:"
+        OUTPUT "1. Binary"
+        OUTPUT "2. Decimal"
+        OUTPUT "3. Octal"
+        OUTPUT "4. Hexadecimal"
+        
+        TRY
+            INPUT option (Integer)
+        CATCH (InputMismatchException)
+            OUTPUT "Enter an integer"
+
+        CASE option
+        1:
+            CONVERT String number to a Binary
+            OUTPUT binNumber
+        BREAK
+        2: 
+            CONVERT String number to a Binary
+            CONVERT Binary to Integer
+            OUTPUT intNumber
+        BREAK
+        3:
+            CONVERT String number to a Binary
+            CONVERT Binary to octal
+            OUTPUT octNumber
+        BREAK
+        4:
+            CONVERT String number to a Binary
+            CONVERT Binary to hexadecimal
+            OUTPUT hexNumber
+        BREAK
+    END
+        
+    SUBMODULE: validate
+    IMPORT: number (String), lower (Integer), upper (Integer)
+    EXPORT: valid (Boolean)
+    ASSERTION: validates the user input for the alphanumeric string
+    ALGORITHM:
+            FOR
+                FOR
+                    
+                END FOR
+            END
+    END validate
+
+    SUBMODULE: validateHexa
+    IMPORT: number (String)
+    EXPORT: valid (Boolean)
+    ASSERTION: validates the user input for the alphanumeric string has to be 0 to 9 OR A to F
+    ALGORITHM:
+            FOR
+                FOR
+                    
+                END FOR
+            END FOR
+    END validateHexa
+END

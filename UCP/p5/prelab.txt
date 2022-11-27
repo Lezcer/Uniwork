@@ -1,0 +1,20 @@
+1. 
+A)  "--- -23 +46---"
+B)  "x= 1.230, y=216.000"
+
+2.
+A) scanf("%s %s", lword1, lword2)
+B) scanf("%d:%d:%d %s", hours, minutes, seconds, ampm)
+C) scanf("%c%d° %d' %f" %c%d° %d' %f", ns_deg, ns_min, ns_sec, we_deg, we_min, we_sec)
+
+3.
+A)  using fgets().  first parameter is the string you want to store the integers.
+    second is the maximum characters you want to read i.e. the size of your array -1.
+    (199 - 1) And last is the input stream pointer.
+B)  Both of them read the same file and return 100 characters, however for fgets() if 
+    the line ends before the array is filled it will just simply return that, thus 
+    fgets() is designed for a line, whilst fscanf() reads the first 100 characters.
+C)  you look for the \n character? then create an array of that length to store the 
+    line.
+
+

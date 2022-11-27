@@ -1,0 +1,33 @@
+plugins {
+    id 'java'
+    id 'application'
+    id 'pmd'
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation 'com.github.lgooddatepicker:LGoodDatePicker:11.2.1'
+}
+
+application {
+    mainClass = 'edu.curtin.reminder.ReminderApp'
+}
+
+tasks.run.configure {
+    standardInput = System.in
+}
+
+compileJava {
+    options.compilerArgs << '-Xlint:all,-serial'
+}
+
+pmd {
+    consoleOutput = true
+    toolVersion = '6.43.0'
+    rulesMinimumPriority = 5
+    ruleSets = []
+    ruleSetFiles = files('oose-pmd-rules.xml')
+}

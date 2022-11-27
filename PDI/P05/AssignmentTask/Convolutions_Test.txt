@@ -1,0 +1,158 @@
+Program: Convolutions
+Design date: 25th of April
+Test Date: 25th of April
+
+Total Tests: 8
+Tests Passed:
+Tests Failed:
+
+Valid Category (Note there are no invalid outputs - thus all outputs are expected to be valid)
+
+CASES
+(Convolute - Kernel) please note H means horizontal and V means vertical.
+
+
+1) A - H
+resultArray:
+0 0 0 0
+0 0 0 0
+0 0 0 0
+0 0 0 0
+was this expected (yes/ no - then display what was expected)
+yes
+correct matrix:
+0 0 0 0
+0 0 0 0
+0 0 0 0
+0 0 0 0
+RESULT: PASS
+-----------------------------------------------------------
+2) B - H
+resultArray:
+-7 -11 2  4
+10  17 9 -3
+ 4  5 -1 -7
+-7 -6  1  2
+was this expected (yes/ no - then display what was expected)
+yes
+correct matrix:
+-7 -11 2  4
+10  17 9 -3
+ 4  5 -1 -7
+-7 -6  1  2
+RESULT: PASS
+-----------------------------------------------------------
+3) C - H
+resultArray:
+-7 -11 2  4
+10  17 9 -3
+ 7 11 -2 -4
+-3 -4  2  0
+-7 -11 2  4
+-4 -5  1  7
+ 0  0  0  0
+ 0  0  0  0
+ 0  0  0  0
+ 0  3 -2 -5
+was this expected (yes/ no - then display what was expected)
+yes
+correct matrix:
+-7 -11 2  4
+10  17 9 -3
+ 7 11 -2 -4
+-3 -4  2  0
+-7 -11 2  4
+-4 -5  1  7
+ 0  0  0  0
+ 0  0  0  0
+ 0  0  0  0
+ 0  3 -2 -5
+RESULT: PASS
+-----------------------------------------------------------
+4) D - H
+resultArray:
+-7 -11 2  4  8   3   3
+10 17  9  -3 -18 -21 -21
+7  11  -2 -4 -8  -3  -3
+-3 -4  2  0  5   0   0
+was this expected (yes/ no - then display what was expected)
+yes
+correct matrix:
+-7 -11 2  4  8   3   3
+10 17  9  -3 -18 -21 -21
+7  11  -2 -4 -8  -3  -3
+-3 -4  2  0  5   0   0
+RESULT: PASS
+-----------------------------------------------------------
+5) A - V
+resultArray:
+0 30 30 0
+0 30 30 0
+0 30 30 0
+0 30 30 0
+was this expected (yes/ no - then display what was expected)
+yes
+correct matrix:
+0 30 30 0
+0 30 30 0
+0 30 30 0
+0 30 30 0
+RESULT: PASS
+-----------------------------------------------------------
+6) B - V
+resultArray:
+-5  -4 0  8
+-10 -2 2  3
+0   -2 -4 -7
+-3  -2 -3 -16
+was this expected (yes/ no - then display what was expected)
+yes
+correct matrix:
+-5  -4 0  8
+-10 -2 2  3
+0   -2 -4 -7
+-3  -2 -3 -16
+RESULT: PASS
+-----------------------------------------------------------
+7) C - V
+resultArray:
+-5  -4 0   8
+-10 -2 2   3
+-1  0  -9  -7
+2   -6 -11 -11
+5   -4 -6  -2
+3   0  1   2
+0   6  3   6
+0   6  3   6
+0   6  3   6
+-3  6  4   -3
+was this expected (yes/ no - then display what was expected)
+yes
+correct matrix:
+-5  -4 0   8
+-10 -2 2   3
+-1  0  -9  -7
+2   -6 -11 -11
+5   -4 -6  -2
+3   0  1   2
+0   6  3   6
+0   6  3   6
+0   6  3   6
+-3  6  4   -3
+RESULT: PASS
+-----------------------------------------------------------
+8) D - V
+resultArray:
+-5  -4 0   8   3  0 0
+-10 -2 2   3   -1 0 0
+-1  0  -9  -7  0  0 0
+2   -6 -11 -11 -4 0 0
+was this expected (yes/ no - then display what was expected)
+yes
+correct matrix:
+-5  -4 0   8   3  0 0
+-10 -2 2   3   -1 0 0
+-1  0  -9  -7  0  0 0
+2   -6 -11 -11 -4 0 0
+RESULT: PASS
+

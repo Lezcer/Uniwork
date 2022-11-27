@@ -1,0 +1,56 @@
+/*Practical 03
+  Date: Sat, 14-08-2021*/
+#Task 2
+/*
+-- Setting up commands
+mysql -u me -p
+myUserPassword
+show databases;
+use dswork;
+*/
+source create_tables.sql;
+-- could also use '\. create_tables.sql;' to execute script file
+show columns from Dept;
+show columns from Emp;
+-- could also use 'DESC Emp;', does the same thing as 'SHOW COLUMNS FROM Emp;'
+
+\. insdept.sql;
+\. insemp.sql;
+pager less -SFX
+select * from Emp;
+
+#Task 3
+desc Emp;
+-- for correct attribute names
+select lastname, workdept, salary from Emp where salary > 100000;
+
+select lastname, firstname, birthdate from Emp where salary < 90000;
+
+desc Dept;
+select * from Dept where mgrno IS NULL;
+
+select empno, lastname, workdept, phoneno from Emp where workdept BETWEEN 'D01' and 'E01';
+
+select * from Dept where deptname LIKE '%Service%';
+-- output is the same for 'service' instead, why though?
+
+select empno, lastname, workdept from Emp where workdept = 'D21' and salary <= 60000;
+
+select concat(firstname, ' ', midinit, ' ', lastname) Name from Emp;
+
+select concat(firstname, ' ', midinit, ' ', lastname) Name, date_format(birthdate, '%W, %d %M %Y') Birthday from Emp where job = 'Designer';
+-- not sure if i was suppose to show first name or full name :)
+
+select lastname, workdept, round((salary/12),0) AS 'Monthly Salary' from Emp where workdept IN ('B01', 'C01', 'D11', 'E21');
+-- used AS here because Monthly Salary is a string with a space.
+-- also, IN is similar to AND but you dont need to keep mentioning workdept = this again and again
+
+select lastname, workdept, round((salary/52.1786),2) AS 'Weekly Salary' from Emp where workdept IN ('B01', 'C01', 'E21');
+
+select empno, firstname, date_format(birthdate, '%d %M') birthdate, workdept from Emp where workdept IN ('B01', 'C01', 'D11', 'E21');
+
+select empno, firstname, lastname, workdept, salary+bonus+comm AS 'Total Income' from Emp where workdept IN ('B01', 'C01', 'E21');
+-- note displayed in 2d.p
+
+select empno, firstname, lastname, workdept, salary+bonus+comm AS 'Total Income' from Emp where workdept IN ('B01', 'C01', 'E21');
+

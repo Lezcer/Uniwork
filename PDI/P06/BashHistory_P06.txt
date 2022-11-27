@@ -1,0 +1,1000 @@
+  575  vim Menu.java
+  576  javac Menu.java 
+  577  vim Documents/PDI/P03/SplitMyDate.txt
+  578  cd Documents/PDI/P03
+  579  ls
+  580  vim SplitMyDate_Test.txt 
+  581  ls
+  582  history >~/Documents/PDI/P03/BashHistoryP03.txt
+  583  ls -l
+  584  rm SplitMyDate.txt 
+  585  vim BashHistoryP03.txt 
+  586  cd ..
+  587  tar -cvzf 20152428_P03.tar.gz P03
+  588  ls
+  589  rm FileName_Test.txt 
+  590  clear
+  591  cd Documents/ISE
+  592  ls
+  593  vim WorksheetTwoAnswers.txt 
+  594  vim WorksheetThreeAnswers.txt 
+  595  cd Documents/PDI/P04
+  596  ls
+  597  cp ../P03/Menu.txt
+  598  cp ../P03/Menu.txt 
+  599  cd ..
+  600  cp ../P03/Menu.txt P04
+  601  cp P03/Menu.txt P04
+  602  cp P03/Menu.java P04
+  603  cd P04
+  604  ls
+  605  vim Menu.txt
+  606  git config --global user.name Lezcer
+  607  git config --global user.email moohsaalah14@outlook.com
+  608  git config --list
+  609  ls
+  610  cd Documents/ISE
+  611  ls
+  612  cd WorksheetFour
+  613  mkdir WorksheetFour
+  614  cd WorksheetFour/
+  615  vim Maze.java
+  616  git config --list
+  617  cd Documents/ISE
+  618  ls
+  619  cd WorksheetFour/
+  620  ls
+  621  vim Maze.java 
+  622  cd Documents/ISE/WorksheetFour/
+  623  ls
+  624  vim Maze.java 
+  625  git innit
+  626  git init
+  627  ls -a
+  628  rm .Maze.java.swo 
+  629  ls -a
+  630  git status
+  631  git add Maze.java 
+  632  git status
+  633  git commit -m "Initial commit."
+  634  git status
+  635  vim GridViewer.java
+  636  vim Maze.java 
+  637  vim GridViewer.java
+  638  cd ..
+  639  ls
+  640  vim WorksheetTwo.txt
+  641  vim WorksheetTwoAnswers.txt
+  642  cd Documents/ISE/WorksheetFour/
+  643  cd WorksheetFour/
+  644  vim GridViewer.java 
+  645  vim Maze.java
+  646  clear
+  647  git diff --color
+  648  clear
+  649  git init
+  650  git log
+  651  git status
+  652  git add Maze.java
+  653  git status
+  654  git reset HEAD Maze.java
+  655  git status
+  656  git commit -m "Linking a program."
+  657  ls
+  658  cd Documents/PDI/P04
+  659  ls
+  660  Menu.txt
+  661  vim Menu.txt
+  662  cd Documents/ISE
+  663  ls
+  664  cd WorksheetFour/
+  665  ls
+  666  git diff --color
+  667  clear
+  668  git add Maze.java
+  669  git status
+  670  git add GridViewer.java 
+  671  git status
+  672  git commit -m "Refactoring."
+  673  git status
+  674  git log
+  675  mv GridViewer.java Viewer.java
+  676  ls
+  677  vim Viewer.java 
+  678  clear
+  679  vim Maze.java 
+  680  git status
+  681  git add Viewer.java Maze.java
+  682  git status
+  683  git add -A GridViewer.java
+  684  git status
+  685  git commit -m "Updated class name."
+  686  git branch updating_maze
+  687  git branch updating_messages
+  688  git branch
+  689  git checkout updating_maze
+  690  git status
+  691  vim Maze.java 
+  692  git status
+  693  git add Maze.java
+  694  git status
+  695  git commit -m "Change 1, switched WALL to EMPTY."
+  696  vim Maze.java 
+  697  git status
+  698  git add Maze.java 
+  699  git status
+  700  git commit -m "Change 2, similar to Change 1."
+  701  git status
+  702  git checkout updating_messages
+  703  git status
+  704  vim Maze.java 
+  705  git status
+  706  git add Maze.java 
+  707  git commit -m "Updating Messages - Part 1."
+  708  git status
+  709  vim Maze.java 
+  710  git status
+  711  git add Maze.java 
+  712  git commit -m "Updating Messages - Part 2."
+  713  git status
+  714  git log --branches --graph
+  715  git checkout master
+  716  git status
+  717  git merge updating_maze
+  718  git merge updating_messages
+  719  git log --branches --graph
+  720  clear
+  721  git tag archive/updating_maze updating_maze
+  722  git tag archive/updating_messages updating_messages
+  723  git branch -d updating_maze
+  724  git branch -d updating_messages
+  725  git branch if_replace
+  726  git branch rename_vars
+  727  git log
+  728  clear
+  729  git branches
+  730  git branch
+  731  git checkout if_replace
+  732  vim Maze.java
+  733  git add Maze.java 
+  734  git commit -m "replaced if statement with a switch."
+  735  git status
+  736  git checkout rename-vars
+  737  git checkout rename_vars
+  738  git status
+  739  vim Maze.java 
+  740  git add Maze.java 
+  741  git commit -m "renamed variables by removing CURRENT."
+  742  git checkout master
+  743  clear
+  744  cd Documents/ISE/WorksheetFour
+  745  ls
+  746  git status
+  747  git log --branch
+  748  git log --branches
+  749  git status
+  750  vim Maze.java 
+  751  clear
+  752  cd Documents/ISE/WorksheetFour
+  753  ls
+  754  git log
+  755  git merge if_replace
+  756  git merge rename_vars
+  757  vim Maze.java 
+  758  git add Maze.java 
+  759  git commit -m "Resolving a merge conflict."
+  760  git remote add origin git@github.com:Lezcer/ISE.git
+  761  git push -u origin master
+  762  git remote -v
+  763  git remote add origin https://github.com/Lezcer/ISE.git
+  764  cd ..
+  765  ls
+  766  git clone https://github.com/Lezcer/ISE.git WorksheetFourClone
+  767  cd WorksheetFour
+  768  ls
+  769  git branch change_symbols
+  770  git checkout change_symbols 
+  771  vim Viewer.java 
+  772  cd ../WorksheetFourClone/
+  773  git fetch origin change_symbols
+  774  clear
+  775  cd Documents/PDI/P04
+  776  ls
+  777  vim Menu.txt
+  778  vim Task4.txt
+  779  clear
+  780  cd Documents/PDI/P04/
+  781  ls
+  782  vim Task4.txt
+  783  vim TaskFour.txt
+  784  ls
+  785  vim Task4.txt
+  786  ls
+  787  vim Task4.txt
+  788  rm Task4.txt
+  789  ls
+  790  vim TaskFour.java
+  791  ls
+  792  vim TaskFive.txt
+  793  clear
+  794  cd Documents/PDI/P04
+  795  ls
+  796  vim TaskFive.txt
+  797  cd Documents/PDI/P04
+  798  ls
+  799  mkdir TaskFive
+  800  rm TaskFive
+  801  rm -rf TaskFive
+  802  ls
+  803  mkdir AssignmentTask
+  804  ls
+  805  cd AssignmentTask/
+  806  ls
+  807  ls -l
+  808  cd ..
+  809  ls -l
+  810  clear
+  811  ls -l
+  812  cd Documents/PDI/P04
+  813  ls
+  814  vim TaskFive.java
+  815  ls
+  816  clear
+  817  cd Documents/PDI/P04
+  818  ls
+  819  vim TaskFour.txt
+  820  clear
+  821  cd Documents/PDI/P04
+  822  vim TaskFour.txt
+  823  ls
+  824  vim Menu.jav
+  825  vim Menu.java
+  826  vim TaskFour.txt
+  827  vim TaskFour.java
+  828  vim Menu.java
+  829  vim TaskFour.java
+  830  vim TaskFour.txt
+  831  vim TaskFour.java
+  832  javac TaskFour.java 
+  833  vim TaskFour.java
+  834  clear
+  835  cd Documents/PDI/P04
+  836  ls
+  837  vim TaskFour.java
+  838  javac TaskFour.java
+  839  Java TaskFour
+  840  java TaskFour 
+  841  vim TaskFour.java
+  842  javac TaskFour.java
+  843  java TaskFour 
+  844  vim TaskFour.java
+  845  javac TaskFour.java
+  846  java TaskFour 
+  847  vim TaskFour.java
+  848  javac TaskFour.java
+  849  java TaskFour 
+  850  vim TaskFour.java
+  851  javac TaskFour.java
+  852  vim TaskFour.java
+  853  javac TaskFour.java
+  854  vim TaskFour.java
+  855  javac TaskFour.java
+  856  vim TaskFour.java
+  857  javac TaskFour.java
+  858  vim TaskFour.java
+  859  javac TaskFour.java
+  860  java TaskFour 
+  861  ls
+  862  clear
+  863  ls
+  864  TaskFive.txt
+  865  vim TaskFive.txt 
+  866  clear
+  867  history
+  868  cd Documents/PDI/P04clea
+  869  clear
+  870  ls
+  871  cd Documents/PDI/P04
+  872  ls
+  873  vim TaskFive.java
+  874  ls
+  875  vim TaskFive.txt
+  876  vim TaskFive.java
+  877  javac TaskFive.java 
+  878  vim TaskFour.java
+  879  vim TaskFive.java
+  880  vim TaskFour.java
+  881  vim TaskFive.java
+  882  javac TaskFive.java 
+  883  clear
+  884  vim TaskFive.java
+  885  javac TaskFive.java 
+  886  vim TaskFour.java
+  887  vim TaskFive.java
+  888  javac TaskFive.java 
+  889  vim TaskFive.java
+  890  javac TaskFive.java 
+  891  java TaskFive.java
+  892  java TaskFive
+  893  vim TaskFive.java
+  894  javac TaskFive.java 
+  895  vim TaskFive.java
+  896  javac TaskFive.java 
+  897  java TaskFive
+  898  javac TaskFive.java 
+  899  vim TaskFive.java
+  900  javac TaskFive.java 
+  901  java TaskFive
+  902  clear
+  903  cd Documents/PDI/P04
+  904  java TaskFive
+  905  vim TaskFive.java
+  906  javac TaskFive.java 
+  907  java TaskFive
+  908  ls
+  909  vim TaskFive.java
+  910  javac TaskFive.java 
+  911  java TaskFive
+  912  vim TaskFive.java
+  913  javac TaskFive.java 
+  914  java TaskFive
+  915  clear
+  916  vim TaskFive.java
+  917  javac TaskFive.java 
+  918  java TaskFive
+  919  vim TaskFive.java
+  920  javac TaskFive.java 
+  921  java TaskFive
+  922  vim TaskFive.java
+  923  ls
+  924  cd AssignmentTask
+  925  ls
+  926  vim MatrixMultiplication.txt
+  927  vim MatrixMultiplication.java
+  928  ls
+  929  vim Matrix.java
+  930  clear
+  931  ls
+  932  vim MatrixMultiplication.txt 
+  933  cd ..
+  934  vim TaskFive.java 
+  935  javac TaskFive.java 
+  936  java TaskFive
+  937  vim TaskFive.java 
+  938  javac TaskFive.java 
+  939  java TaskFive
+  940  vim TaskFive.java 
+  941  javac TaskFive.java 
+  942  java TaskFive
+  943  vim TaskFive.java 
+  944  javac TaskFive.java 
+  945  clear
+  946  java TaskFive
+  947  vim TaskFive.java 
+  948  javac TaskFive.java 
+  949  java TaskFive
+  950  clear
+  951  cd Documents/PDI/P04/AssignmentTask/
+  952  cd ..
+  953  vim TaskFive.java
+  954  java TaskFive 
+  955  vim TaskFive.java
+  956  javac TaskFive.java
+  957  java TaskFive 
+  958  vim TaskFive.java
+  959  javac TaskFive.java
+  960  java TaskFive 
+  961  vim TaskFive.java
+  962  javac TaskFive.java
+  963  java TaskFive 
+  964  vim TaskFive.java
+  965  javac TaskFive.java
+  966  clear
+  967  java TaskFive 
+  968  vim TaskFive.java
+  969  javac TaskFive.java
+  970  java TaskFive 
+  971  cd AssignmentTask/
+  972  ls
+  973  vim MatrixMultiplication.txt
+  974  history
+  975  clear
+  976  cd Documents/ISE
+  977  ls
+  978  cd WorksheetFour
+  979  ls
+  980  vim Maze.java
+  981  vim Viewer.java 
+  982  vim Maze.java
+  983  cd ../../PDI/P03
+  984  ls
+  985  vim BooleanExpressions.txt 
+  986  cd Documents/PDI/P04/AssignmentTask/
+  987  ls
+  988  vim MatrixMultiplication.txt
+  989  vim MatrixMultiplication.java
+  990  clear
+  991  ls
+  992  cd ..
+  993  ls
+  994  vim TaskFive.java
+  995  cd AssignmentTask/
+  996  vim MatrixMultiplication.java
+  997  javac MatrixMultiplication.java 
+  998  vim MatrixMultiplication.java
+  999  javac MatrixMultiplication.java 
+ 1000  vim MatrixMultiplication.java
+ 1001  javac MatrixMultiplication.java 
+ 1002  java MatrixMultiplication 
+ 1003  vim MatrixMultiplication.java
+ 1004  clear
+ 1005  cd Documents/PDI/P04/AssignmentTask/
+ 1006  cd ../..
+ 1007  cd P05
+ 1008  ls
+ 1009  cd ..
+ 1010  cd P04/AssignmentTask/
+ 1011  java MatrixMultiplication 
+ 1012  vim MatrixMultiplication.java
+ 1013  javac MatrixMultiplication.java 
+ 1014  java MatrixMultiplication 
+ 1015  vim MatrixMultiplication.java
+ 1016  javac MatrixMultiplication.java 
+ 1017  java MatrixMultiplication 
+ 1018  vim MatrixMultiplication.java
+ 1019  cd Documents/PDI/P04/AssignmentTask/
+ 1020  vim MatrixMultiplication.txt
+ 1021  clear
+ 1022  cd ..
+ 1023  history >~/Documents/PDI/P04/BashHistoryP04.txt
+ 1024  ls
+ 1025  cd
+ 1026  cd Documents/PDI
+ 1027  ls
+ 1028  cd P04
+ 1029  ls
+ 1030  cd AssignmentTask/
+ 1031  vim MatrixMultiplication_Test.txt
+ 1032  cd ..
+ 1033  history >~/Documents/PDI/P04/BashHistoryP04.txt
+ 1034  cd ..
+ 1035  clear
+ 1036  tar -cvzf 20152428_P04.tar.gz P04
+ 1037  cd Documents/PDI/P05
+ 1038  mkdir Euler
+ 1039  mkdir PI
+ 1040  mkdir Permutations
+ 1041  mkdir Convolutions
+ 1042  rm Convolutions/
+ 1043  rm -rf Convolutions/
+ 1044  ls
+ 1045  mkdir AssignmentTask
+ 1046  cd AssignmentTask/
+ 1047  vim Convolutions
+ 1048  vim Convolutions.txt
+ 1049  vim Convolutions.java
+ 1050  ls
+ 1051  clear
+ 1052  ls
+ 1053  clear all
+ 1054  clear
+ 1055  cd Documents/PDI
+ 1056  ls
+ 1057  cp P03/Menu.txt P05/PDIPortfolio
+ 1058  cp P03/Menu.txt P05/PDIPortfolio.txt
+ 1059  cp P03/Menu.java P05/PDIPortfolio.java
+ 1060  cd P05
+ 1061  ls
+ 1062  rm PDIPortfolio
+ 1063  ls
+ 1064  mkdir TaskOne
+ 1065  mv PDIPortfolio.txt TaskOne/PDIPortfolio.txt
+ 1066  mv PDIPortfolio.java TaskOne/PDIPortfolio.java
+ 1067  cd TaskOne
+ 1068  ls
+ 1069  cd ..
+ 1070  ls
+ 1071  pwd
+ 1072  ls
+ 1073  cd TaskOne/
+ 1074  ls
+ 1075  vim PDIPortfolio.txt 
+ 1076  clear
+ 1077  vim Documents/PDI/P05/TaskOne/PDIPortfolio.txt
+ 1078  vim Documents/PDI/P04/AssignmentTask/MatrixMultiplication.java
+ 1079  clear
+ 1080  cd Documents/PDI/P05/AssignmentTask/
+ 1081  ls
+ 1082  vim Convolutions.txt 
+ 1083  clear
+ 1084  cd Documents/PDI/P05/AssignmentTask/
+ 1085  vim Convolutions.txt 
+ 1086  vim Convolutions.java
+ 1087  clear
+ 1088  cd Documents/PDI/P05/AssignmentTask/
+ 1089  vim Convolutions.txt 
+ 1090  cd Documents/PDI/P05/AssignmentTask/
+ 1091  vim Convolutions.java
+ 1092  javac Convolutions.java 
+ 1093  vim Convolutions.java
+ 1094  javac Convolutions.java 
+ 1095  vim Convolutions.java
+ 1096  javac Convolutions.java 
+ 1097  vim Convolutions.java
+ 1098  javac Convolutions.java 
+ 1099  vim Convolutions.java
+ 1100  javac Convolutions.java 
+ 1101  vim Convolutions.java
+ 1102  javac Convolutions.java 
+ 1103  vim Convolutions.java
+ 1104  javac Convolutions.java 
+ 1105  cd Documents/PDI/P05/AssignmentTask/
+ 1106  vim Convolutions.txt 
+ 1107  cd Documents/PDI/P05/AssignmentTask/
+ 1108  vim Convolutions.java
+ 1109  javac Convolutions.java 
+ 1110  vim Convolutions.java
+ 1111  javac Convolutions.java 
+ 1112  vim Convolute.java
+ 1113  javac Convolutions.java 
+ 1114  vim Convolute.java
+ 1115  javac Convolutions.java 
+ 1116  vim Convolutions.java
+ 1117  javac Convolutions.java 
+ 1118  vim Convolutions.java
+ 1119  javac Convolutions.java 
+ 1120  vim Convolute.java
+ 1121  vim Convolutions.java
+ 1122  javac Convolutions.java 
+ 1123  vim Convolutions.java
+ 1124  javac Convolutions.java 
+ 1125  vim Convolutions.java
+ 1126  javac Convolutions.java 
+ 1127  vim Convolutions.java
+ 1128  javac Convolutions.java 
+ 1129  vim Convolutions.java
+ 1130  javac Convolutions.java 
+ 1131  vim Convolutions.java
+ 1132  javac Convolutions.java 
+ 1133  vim Convolutions.java
+ 1134  javac Convolutions.java 
+ 1135  vim Convolutions.java
+ 1136  javac Convolutions.java 
+ 1137  vim Convolutions.java
+ 1138  javac Convolutions.java 
+ 1139  vim Convolutions.java
+ 1140  javac Convolutions.java 
+ 1141  vim Convolutions.java
+ 1142  javac Convolutions.java 
+ 1143  vim Convolutions.java
+ 1144  javac Convolutions.java 
+ 1145  vim Convolutions.java
+ 1146  javac Convolutions.java 
+ 1147  java Convolutions
+ 1148  vim Convolutions.java
+ 1149  javac Convolutions.java 
+ 1150  vim Convolutions.java
+ 1151  javac Convolutions.java 
+ 1152  vim Convolutions.java
+ 1153  javac Convolutions.java 
+ 1154  java Convolutions
+ 1155  vim Convolutions.java
+ 1156  javac Convolutions.java 
+ 1157  java Convolutions
+ 1158  vim Convolutions.java
+ 1159  javac Convolutions.java 
+ 1160  java Convolutions
+ 1161  vim Convolutions.java
+ 1162  javac Convolutions.java 
+ 1163  vim Convolutions.java
+ 1164  javac Convolutions.java 
+ 1165  java Convolutions
+ 1166  vim Convolutions.java
+ 1167  javac Convolutions.java 
+ 1168  vim Convolutions.java
+ 1169  javac Convolutions.java 
+ 1170  cd Documents/PDI/P05/AssignmentTask/
+ 1171  ls
+ 1172  java Convolutions.java
+ 1173  java Convolutions
+ 1174  vim Convolutions.java
+ 1175  clear
+ 1176  cd Documents/PDI/P05/AssignmentTask/
+ 1177  vim Convolutions.java
+ 1178  javac Convolutions.java
+ 1179  java Convolutions
+ 1180  vim Convolutions.java
+ 1181  vim Kernel.java 
+ 1182  vim Convolutions.java
+ 1183  javac Convolutions.java
+ 1184  vim Convolutions.java
+ 1185  javac Convolutions.java
+ 1186  java Convolutions
+ 1187  vim Convolutions.java
+ 1188  javac Convolutions.java
+ 1189  java Convolutions
+ 1190  vim Convolutions.java
+ 1191  clear
+ 1192  cd Documents/PDI/P05/AssignmentTask/
+ 1193  vim Convolutions.java
+ 1194  clear
+ 1195  javac Convolutions.java 
+ 1196  java Convolutions 
+ 1197  vim Convolutions.java
+ 1198  javac Convolutions.java 
+ 1199  java Convolutions 
+ 1200  vim Convolutions.java
+ 1201  javac Convolutions.java 
+ 1202  vim Convolutions.java
+ 1203  javac Convolutions.java 
+ 1204  java Convolutions 
+ 1205  vim Convolutions.java
+ 1206  javac Convolutions.java 
+ 1207  java Convolutions 
+ 1208  vim Convolutions.java'
+ 1209  vim Convolutions.java 
+ 1210  ls
+ 1211  vim Convolutions.java
+ 1212  javac Convolutions.java 
+ 1213  vim Convolutions.java
+ 1214  --upgradeable
+ 1215  cd Documents/PDI/P05/AssignmentTask/
+ 1216  ls
+ 1217  vim Convolutions.txt
+ 1218  clear
+ 1219  cd Documents/PDI/P05/AssignmentTask/
+ 1220  vim Convolutions.java
+ 1221  javac Convolutions.java 
+ 1222  java Convolutions 
+ 1223  vim Convolutions.java
+ 1224  javac Convolutions.java 
+ 1225  java Convolutions 
+ 1226  vim Convolutions.java
+ 1227  javac Convolutions.java 
+ 1228  java Convolutions 
+ 1229  vim Convolutions.java
+ 1230  javac Convolutions.java 
+ 1231  java Convolutions 
+ 1232  vim Convolutions.java
+ 1233  javac Convolutions.java 
+ 1234  vim Convolutions.java
+ 1235  javac Convolutions.java 
+ 1236  vim Convolutions.java
+ 1237  javac Convolutions.java 
+ 1238  java Convolutions 
+ 1239  vim Convolutions.java
+ 1240  javac Convolutions.java 
+ 1241  java Convolutions 
+ 1242  vim Convolutions.java
+ 1243  javac Convolutions.java 
+ 1244  vim Convolutions.java
+ 1245  javac Convolutions.java 
+ 1246  java Convolutions 
+ 1247  vim Convolutions.java
+ 1248  java Convolutions 
+ 1249  vim Convolutions.java
+ 1250  ls -l
+ 1251  vim Convolutions_Test.txt
+ 1252  vim Convolutions.java
+ 1253  vim Convolutions_Test.txt
+ 1254  java Convolutions
+ 1255  -7 -11 2  4  8   3   3
+ 1256  10 17  9  -3 -18 -21 -21
+ 1257  7  11  -2 -4 -8  -3  -3
+ 1258  java Convolutions
+ 1259  vim Convolutions_Test.txt 
+ 1260  history >~/Documents/PDI/P05/BashHistory_P05.txt
+ 1261  cd ..
+ 1262  ls
+ 1263  cd ..
+ 1264  tar -cvzf 20152428_P05.tar.gz P05
+ 1265  cd Documents/PDI/P05
+ 1266  ls
+ 1267  cd Euler/
+ 1268  vim eConstant.java
+ 1269  javac eConstant.java
+ 1270  vim eConstant.java
+ 1271  javac eConstant.java
+ 1272  vim eConstant.java
+ 1273  javac eConstant.java
+ 1274  vim eConstant.java
+ 1275  javac eConstant.java
+ 1276  vim eConstant.java
+ 1277  javac eConstant.java
+ 1278  vim eConstant.java
+ 1279  javac eConstant.java
+ 1280  java eConstant 
+ 1281  vim eConstant.java
+ 1282  javac eConstant.java
+ 1283  vim eConstant.java
+ 1284  javac eConstant.java
+ 1285  java eConstant 
+ 1286  vim eConstant.java
+ 1287  javac eConstant.java
+ 1288  java eConstant 
+ 1289  vim eConstant.java
+ 1290  javac eConstant.java
+ 1291  java eConstant 
+ 1292  vim eConstant.java
+ 1293  javac eConstant.java
+ 1294  java eConstant 
+ 1295  vim eConstant.java
+ 1296  javac eConstant.java
+ 1297  java eConstant 
+ 1298  vim eConstant.java
+ 1299  javac eConstant.java
+ 1300  java eConstant 
+ 1301  clear
+ 1302  vim eConstant.java
+ 1303  javac eConstant.java
+ 1304  java eConstant 
+ 1305  vim eConstant.java
+ 1306  javac eConstant.java
+ 1307  java eConstant 
+ 1308  vim eConstant.java
+ 1309  javac eConstant.java
+ 1310  vim eConstant.java
+ 1311  javac eConstant.java
+ 1312  java eConstant 
+ 1313  cd Documents/PDI/P05/AssignmentTask/
+ 1314  cd ..
+ 1315  ls
+ 1316  mkdir Fibonacci
+ 1317  ls
+ 1318  cd Fibonacci/
+ 1319  ls
+ 1320  vim SequenceGen.java
+ 1321  clear
+ 1322  ls
+ 1323  javac SequenceGen.java 
+ 1324  vim SequenceGen.java
+ 1325  javac SequenceGen.java 
+ 1326  vim SequenceGen.java
+ 1327  javac SequenceGen.java 
+ 1328  vim SequenceGen.java
+ 1329  javac SequenceGen.java 
+ 1330  vim SequenceGen.java
+ 1331  javac SequenceGen.java 
+ 1332  vim SequenceGen.java
+ 1333  javac SequenceGen.java 
+ 1334  vim SequenceGen.java
+ 1335  javac SequenceGen.java 
+ 1336  vim SequenceGen.java
+ 1337  javac SequenceGen.java 
+ 1338  cd Documents/PDI/P02
+ 1339  ls
+ 1340  vim JavaExpressions.txt 
+ 1341  cd Documents/PDI/P03
+ 1342  ls
+ 1343  vim BooleanExpressions.txt 
+ 1344  cd Documents/PDI/
+ 1345  ls
+ 1346  mkdir TestAnswers
+ 1347  cd TestAnswers/
+ 1348  ls
+ 1349  vim QuestionOne
+ 1350  vim QuestionTwo
+ 1351  vim QuestionThree
+ 1352  vim QuestionFour
+ 1353  ls
+ 1354  vim QuestionOne.txt
+ 1355  vim QuestionTwo.txt
+ 1356  vim QuestionThree.txt
+ 1357  vim QuestionFour.txt
+ 1358  ls
+ 1359  rm -rf QuestionOne
+ 1360  rm -rf QuestionTwo
+ 1361  rm -rf QuestionThree
+ 1362  rm -rf QuestionFour
+ 1363  ls
+ 1364  vim DeclarationOfOriginality_SalahM.pdf 
+ 1365  ls
+ 1366  clear
+ 1367  cd Documents/PDI/P05
+ 1368  ls
+ 1369  cd PI
+ 1370  cd ../Fibonacci/
+ 1371  ls
+ 1372  vim SequenceGen.java 
+ 1373  javac SequenceGen.java 
+ 1374  java SequenceGen 
+ 1375  clear
+ 1376  vim SequenceGen.java 
+ 1377  javac SequenceGen.java 
+ 1378  java SequenceGen 
+ 1379  vim SequenceGen.java 
+ 1380  javac SequenceGen.java 
+ 1381  java SequenceGen 
+ 1382  vim SequenceGen.java 
+ 1383  javac SequenceGen.java 
+ 1384  vim SequenceGen.java 
+ 1385  java SequenceGen 
+ 1386  vim SequenceGen.java 
+ 1387  javac SequenceGen.java 
+ 1388  java SequenceGen 
+ 1389  cd ..
+ 1390  ls
+ 1391  cd P
+ 1392  cd PI
+ 1393  ls
+ 1394  vim pieEstimator.java
+ 1395  cd ..
+ 1396  cd Fibonacci
+ 1397  ls
+ 1398  vim SequenceGen.java 
+ 1399  cd ../PI
+ 1400  vim pieEstimator.java 
+ 1401  clear
+ 1402  cd Documents/PDI/P05/PI
+ 1403  vim pieEstimator.java 
+ 1404  cd ../Fibonacci/
+ 1405  vim SequenceGen.java 
+ 1406  cd ../PI
+ 1407  vim pieEstimator.java 
+ 1408  javac pieEstimator.java 
+ 1409  vim pieEstimator.java 
+ 1410  javac pieEstimator.java 
+ 1411  vim pieEstimator.java 
+ 1412  javac pieEstimator.java 
+ 1413  vim pieEstimator.java 
+ 1414  javac pieEstimator.java 
+ 1415  vim pieEstimator.java 
+ 1416  javac pieEstimator.java 
+ 1417  vim pieEstimator.java 
+ 1418  javac pieEstimator.java 
+ 1419  vim pieEstimator.java 
+ 1420  javac pieEstimator.java 
+ 1421  vim pieEstimator.java 
+ 1422  javac pieEstimator.java 
+ 1423  vim pieEstimator.java 
+ 1424  javac pieEstimator.java 
+ 1425  java pieEstimator 
+ 1426  vim pieEstimator.java 
+ 1427  javac pieEstimator.java 
+ 1428  java pieEstimator 
+ 1429  vim pieEstimator.java 
+ 1430  clear
+ 1431  javac pieEstimator.java 
+ 1432  vim pieEstimator.java 
+ 1433  javac pieEstimator.java 
+ 1434  java pieEstimator 
+ 1435  vim pieEstimator.java 
+ 1436  javac pieEstimator.java 
+ 1437  java pieEstimator 
+ 1438  clear
+ 1439  cd Documents/PDI/P05
+ 1440  ls
+ 1441  cd Euler
+ 1442  ls
+ 1443  vim eConstant.java 
+ 1444  cd ..
+ 1445  ls
+ 1446  PI
+ 1447  cd PI
+ 1448  ls
+ 1449  vim pieEstimator.java 
+ 1450  clear
+ 1451  cd Documents/PDI/TestAnswers/
+ 1452  history
+ 1453  vim QuestionFour.txt 
+ 1454  clear
+ 1455  cd Documents/PDI/TestAnswers
+ 1456  history
+ 1457  ls
+ 1458  vim QuestionOne.txt
+ 1459  clear
+ 1460  vim QuestionTwo.txt
+ 1461  vim QuestionThree.txt
+ 1462  vim QuestionFour.txt
+ 1463  rm .QuestionFour.txt.swp 
+ 1464  la
+ 1465  ls
+ 1466  vim QuestionFour.txt
+ 1467  vim Markup.java
+ 1468  rm .Markup.java.swp 
+ 1469  ls
+ 1470  vim Markup.java
+ 1471  javac Markup.java 
+ 1472  vim Markup.java
+ 1473  javac Markup.java 
+ 1474  java Markup 
+ 1475  vim Markup.java
+ 1476  history
+ 1477  history >~/Documents/PDI/TestAnswers/BashHistory.txt 
+ 1478  ls
+ 1479  cd ..
+ 1480  tar -cvzf 20152428_TestAnswers.tar.gz TestAnswers
+ 1481  clear
+ 1482  cd Documents/PDI/TestAnswers
+ 1483  ls
+ 1484  cd ..
+ 1485  cd P05/
+ 1486  ls
+ 1487  cd PI
+ 1488  ls
+ 1489  vim pieEstimator.java 
+ 1490  cd ..
+ 1491  cd AssignmentTask/
+ 1492  ls
+ 1493  vim Convolutions.java 
+ 1494  cd ..
+ 1495  ls
+ 1496  cd ../TestAnswers/
+ 1497  ls
+ 1498  vim QuestionFour.txt 
+ 1499  clear
+ 1500  cd Documents/PDI/
+ 1501  ls
+ 1502  cd TestAnswers/
+ 1503  vim QuestionOne.txt
+ 1504  ls -l
+ 1505  vim QuestionTwo.txt
+ 1506  ls -l
+ 1507  vim QuestionThree.txt
+ 1508  ls -l
+ 1509  vim QuestionFour.txt
+ 1510  vim Markup.java
+ 1511  cd Documents/PDI/P06
+ 1512  ls\
+ 1513  ls
+ 1514  vim Date.txt
+ 1515  clear
+ 1516  cd Downloads/
+ 1517  ls
+ 1518  cd Documents/PDI/P06
+ 1519  cd ..
+ 1520  cd Documents/PDI/P06
+ 1521  vim Date.txt
+ 1522  cd Documents/PDI/P06clear
+ 1523  clear
+ 1524  vim Date.java
+ 1525  javac Date.java 
+ 1526  ls
+ 1527  la
+ 1528  cd Documents/PDI/P03
+ 1529  ls
+ 1530  vim Menu.txt
+ 1531  cd Documents/PDI/P06
+ 1532  vim Menu.java
+ 1533  clear
+ 1534  cd Documents/PDI/P06clear
+ 1535  cd Documents/PDI/P06
+ 1536  ls
+ 1537  vim Date.txt
+ 1538  cd Documents/PDI/P06
+ 1539  vim Date.java
+ 1540  mkdir AssignmentTask
+ 1541  ls
+ 1542  cd AssignmentTask/
+ 1543  vim Image.txt
+ 1544  vim Image.java
+ 1545  cd Documents/PDI/P05
+ 1546  ls
+ 1547  cd AssignmentTask/
+ 1548  ls
+ 1549  vim Convolutions.java
+ 1550  clear
+ 1551  cd Documents/PDI/P05
+ 1552  cd AssignmentTask/
+ 1553  vim Image.java
+ 1554  cd Documents/PDI/P05
+ 1555  vim Image.java
+ 1556  ls
+ 1557  cd AssignmentTask/
+ 1558  k=-[]'[]
+ 1559  ls
+ 1560  cd ../..
+ 1561  cd P06/AssignmentTask/
+ 1562  ls
+ 1563  vim Image.java 
+ 1564  rm .Image.java.swp 
+ 1565  vim Image.java 
+ 1566  cd Documents/PDI/P06/AssignmentTask/
+ 1567  ls
+ 1568  vim Image.txt
+ 1569  vim ImageTestHarness.java
+ 1570  ls
+ 1571  history >~/Documents/PDI/P06/BashHistory_P06
+ 1572  cd ..
+ 1573  ls
+ 1574  history >~/Documents/PDI/P06/BashHistory_P06.txt

@@ -1,0 +1,62 @@
+Class DetectEdges
+
+    MAIN:
+        OUTPUT "Please enter the file name for the kernel: "
+        INPUT kernelName (String)
+
+        DO
+            OUTPUT "Performing on (c)sv or (p)ng: "
+            INPUT choice (Character)
+        WHILE ((choice != 'C' AND choice != 'c') AND (choice != 'P' AND choice != 'p'))
+
+        CASE choice
+            C: c:
+                OUTPUT "Please enter the filename of the csv"
+                INPUT csvName (String)
+                convertedImageFile := csvName + "_Converted"
+                isItPNG := FALSE
+            BREAK
+
+            P: p:
+                OUTPUT "Please enter the filename of the png"
+                INPUT pngName (String)
+                convertedImageFile := pngName + "_Converted"
+                isItPNG := TRUE
+            BREAK
+        END CASE
+        
+        kernel := FileIO.readFile <- kernelName
+        
+        IF (isItPNG)
+            image := FileIO.readPNG <-pngName
+            convolResult = convolExp <- image, kernel
+            FileIO.writePNG <- convertedImageFile, convolResult
+        ELSE
+            image := FileIO.readFile <-csvName
+            convolResult = convolExp <- image, kernel
+            FileIO.writeFile <- convertedImageFile, convolResult
+        END IF
+        
+        OUTPUT "File (" + convertedImageFile + ") written. Goodbye!"
+    END MAIN:
+
+    COMMENT BLOCK: CODE BELOW (Entire method) IS COPIED FROM P05 SUBMITTED 
+    ON 26th of April, 2020 at 5pm Written by Salah Mahamod - 20152428 (me!)
+
+    SUBMODULE: convolExp
+    IMPORT:convoluteMatrix, kernelMatrix
+    EXPORT:resultArray
+    ALGORITHM:
+        FOR n := 0 TO (convoluteMatrix.length ) (exclusive) INC BY 1
+            FOR m := 0 TO (convoluteMatrix[n].length - 2) (exclusive) INC BY 1
+                FOR i:=0 TO (kernelMatrix.length - 1) (exclusive) INC BY 1
+                    sum := sum + convoluteMatrix[n-i][m] * kernelMatrix[i][0]
+                    FOR j:0 TO (kernelMatrix[i].length - 1) (exclusive) INC BY 1
+                        sum := sum + convoluteMatrix[n][m-j] * kernelMatrix[0][j]
+                        resultArray[n][m] = sum
+                    END FOR
+                    sum := 0
+                END FOR
+            END FOR
+        END FOR
+    END convolExp

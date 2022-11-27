@@ -1,0 +1,13 @@
+START CharConverter
+    MAIN:
+        OUTPUT "Please enter an uppercase character: "
+        INPUT name(upperCase)
+        
+        decimal = (convert to INTEGER)upperCase
+        
+        lowerCase =(convert to Character)(decimal + 32)
+        
+        OUTPUT "The ASCII value of "upperCase" is: "decimal"
+        OUTPUT "The lowercase value of "upperCase" is: "lowerCase"
+    END MAIN
+END

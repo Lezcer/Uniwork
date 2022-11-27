@@ -1,0 +1,64 @@
+Program QuestionTwo
+    MAIN
+        OUTPUT "Please enter the first String"
+        INPUT string1 (String)
+        OUTPUT "Please enter the Second String"
+        INPUT string2 (String)
+        result := calculateLEvenshtein <- string1, string2
+        OUTPUT "levenshtein distance is: " + result
+    END MAIN 
+
+    SUBMODULE: min
+    IMPORT: num1, num2, num3 (ALL INTEGERS)
+    EXPORT: lower
+    ASSERTION: returns the lowest integer
+    ALGORTIHM:
+            IF num1 < num2 THEN
+                IF num1 < num3
+                    lower = num1
+                ELSE
+                    lower = num3
+            ELSE
+                IF num2 < num3
+                    lower = num2
+                ELSE
+                    lower = num3
+                
+    END 
+
+    SUBMODULE: calculateLevenshtein
+    IMPORT: x (String), y (string)
+    EXPORT: result (integer)
+    ASSERTION: will return the difference between 2 strings
+    ALGORTIHM:
+        //Copied from lecture 10 slide 22 - AUTHOR Curtin University
+        dp := (2D ARRAY SIZE OF length x, length y)
+        FOR ii := 0 TO length x INC by 1
+            FOR jj := 0 TO length y INC by 1
+                IF ii = 0 THEN
+                    dp[ii][jj] := jj
+                ELSE IF jj = 0 THEN
+                    dp[ii][ii] := ii
+                ELSE
+                    dp[ii][jj] := min <- (dp[ii - 1][jj - 1] +
+                                            costOSubsitution <- (x[ii - 1],
+                                            y[jj - 1], dp[ii - 1][jj],
+                                            dp[ii][jj -1]))
+                END IF
+            END FOR
+        END FOR
+    END 
+
+    SUBMODULE: costOfSubstitution
+    IMPORT: char1, char 2 (ALL CHARACTERS)
+    EXPORT: result (Integer)
+    ASSERTION: checks to see if the two chars are the same
+    ALGORTIHM:
+        equals := char1.equals <- char2
+        IF equals THEN
+            result := 0
+        ELSE
+            result := 1
+        END IF
+    END costOfSubsitution
+END

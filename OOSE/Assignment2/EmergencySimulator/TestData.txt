@@ -1,0 +1,4 @@
+10 fire Midtown
+10 fire Hill Valley
+20 flood Westtown
+30 chemical Perth

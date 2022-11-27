@@ -1,0 +1,34 @@
+plugins {
+    id 'java'
+    id 'application'
+    id 'pmd'
+    id 'org.openjfx.javafxplugin' version '0.0.12'
+}
+
+repositories {
+    mavenCentral()
+}
+
+application {
+    mainClass = 'edu.curtin.imageviewer.MainApplication'
+}
+
+javafx {
+    modules = [ 'javafx.controls' ]
+}
+
+tasks.run.configure {
+    standardInput = System.in
+}
+
+compileJava {
+    options.compilerArgs << '-Xlint:all,-serial'
+}
+
+pmd {
+    consoleOutput = true
+    toolVersion = '6.43.0'
+    rulesMinimumPriority = 5
+    ruleSets = []
+    ruleSetFiles = files('oose-pmd-rules.xml')
+}

@@ -1,0 +1,76 @@
+PROGRAM Convolutions
+    MAIN:
+        OUTPUT "Welcome to PDI Worksheet 5"
+        OUTPUT "Please select a Convolute Matrix by typing A, B, C or D"
+        INPUT choiceCon (Character)
+
+        OUTPUT "Now select a Kernel Matrix by typing either H for horizontal or V for vertical"
+        INPUT choiceKer (Character)
+    
+        CASE choiceCon
+            A: a:
+                convoluteMatrix := Covolute.ARRAY_A[6][6]
+            B: b: 
+                convoluteMatrix := Covolute.ARRAY_B[6][6]
+            C: c:
+                convoluteMatrix := Covolute.ARRAY_C[11][6]
+            D: d:
+                convoluteMatrix := Covolute.ARRAY_D[6][9]
+            DEFAULT:
+                OUTPUT "Enter a valid choice for Convolute Matrix"
+
+        CASE choiceKer
+            H: h:
+                kernelMatrix := Kernel.HORIZONTAL[3][3]
+            V: v: 
+                kernelMatrix := Kernel.VERTICAL[3][3]
+            DEFAULT:
+                OUTPUT "Enter a valid choice for Kernel Matrix"
+
+        displayMatrix <- convoluteMatrix
+        OUTPUT 2 NEWLINES
+        displayMatrix <- kernelMatrix
+        OUTPUT 2 NEWLINES
+        convolExp <- convoluteMatrix, kernelMatrix
+        displayMatrix <-ResultArray[n][m] 
+
+    END MAIN:
+
+
+
+
+
+    SUBMODULE: convolExp
+    IMPORT:convoluteMatrix, kernelMatrix
+    EXPORT:resultArray
+    ALGORITHM:
+        FOR n := 0 TO (convoluteMatrix.length ) (exclusive) INC BY 1
+            FOR m := 0 TO (convoluteMatrix[n].length - 2) (exclusive) INC BY 1
+                FOR i:=0 TO (kernelMatrix.length - 1) (exclusive) INC BY 1
+                    sum := sum + convoluteMatrix[n-i][m] * kernelMatrix[i][0]
+                    FOR j:0 TO (kernelMatrix[i].length - 1) (exclusive) INC BY 1
+                        sum := sum + convoluteMatrix[n][m-j] * kernelMatrix[0][j]
+                        resultArray[n][m] = sum
+                    END FOR
+                    sum := 0
+                END FOR
+            END FOR
+        END FOR
+    END convolExp
+
+
+
+
+
+    SUBMODULE: displayMatrix
+    IMPORT: matrix
+    EXPORT: none
+    ALGORITHM:
+        FOR y := 0 TO matrix.length (exclusive) INC BY 1
+            FOR x := 0 TO matrix.length (exclusive) INC BY 1
+                OUTPUT matrix[y][x] + "  "
+            END FOR
+            OUTPUT NEWLINE
+        END FOR
+    END displayMatrix
+

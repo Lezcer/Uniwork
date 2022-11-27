@@ -1,0 +1,85 @@
+#Practical 02 Commands
+#Inserting values, retrieving data, updating values and deleting rows / tuples.
+
+#Prac01
+create table Students(
+sno CHAR(8),
+firstname VARCHAR(12),
+lastname VARCHAR(15),
+phoneno CHAR(10)
+);
+create table Units(
+unitindex CHAR(8),
+dept CHAR(10),
+unitname VARCHAR(40)
+);
+create table Enrolments(
+unit CHAR(8),
+student CHAR(8),
+year CHAR(4),
+mark INT(3),
+grade CHAR(1)
+);
+
+#Prac02
+-- SOURCE filename //To load MySQL queries from Prac01
+-- Part 2
+
+insert into Students values (12345007, 'James', 'Bond', 0408007007);
+insert into Students values (20152428, 'Salah', 'Mohamed', 0435844248);
+insert into Students values (20162429, 'christian', 'Ronald', 0436845249);
+select * from students;
+
+insert into Units (unitname, unitindex, dept) values ('Database Systems', 'ISYS1001', 'COMPUTING');
+insert into Units (unitname, unitindex, dept) values ('Cybersecurity and Intrusion Detection', 'ISEC3005', 'COMPUTING');
+insert into Units (unitname, unitindex, dept) values ('Foundations of Chemistry', 'CHEM1001', 'SCIENCE');
+select * from Units;
+
+insert into Enrolments (student, year, unit) values (12345007, 2021, 'ISYS1001');
+insert into Enrolments (student, year, unit) values (12345007, 2021, 'ISEC3005');
+insert into Enrolments (student, year, unit) values (12345007, 2021, 'CHEM1001');
+insert into Enrolments (student, year, unit, mark) values (20152428, 2021, 'ISYS1001', 88); 
+insert into Enrolments (student, year, unit, mark) values (20152428, 2021, 'ISEC3005', 88); 
+insert into Enrolments (student, year, unit, mark) values (20152428, 2021, 'CHEM1001', 88); 
+insert into Enrolments (student, year, unit, mark, grade) values (20162429, 2021, 'ISYS1001', 93, 'A'); 
+insert into Enrolments (student, year, unit, mark, grade) values (20162429, 2021, 'ISEC3005', 93, 'A'); 
+insert into Enrolments (student, year, unit, mark, grade) values (20162429, 2021, 'CHEM1001', 93, 'A');
+select * from Enrolments;
+
+-- Part 3
+show columns from Students;
+select firstname, phoneno from Students;
+
+show columns from Units;
+select unitname, dept from Units;
+
+show columns from Enrolments;
+select unit from Enrolments;
+select distinct unit from Enrolments;
+
+/*show column from 'Table' used to find the correct syntax for attribute.*/
+
+-- Part 4
+show columns from Units;
+select * from Units where dept = 'COMPUTING';
+
+show columns from Enrolments;
+select student, mark, grade from Enrolments where mark > 60;
+select student, mark, grade from Enrolments where mark between 65 and 86;
+
+-- Part 5
+show columns from Units;
+update Units set unitindex = 'ISYS1020' where unitname = 'Database Systems';
+select * from Units;
+/*This change in the unitcode for Database Systems doesn't reflect in the Enrolments table.
+Ideally in a database it should however in this case the tables aren't linked.*/
+
+-- Part 6
+delete from Students where sno = 12345007;
+select * from Students;
+/*Likewise this change isn't reflected in the Enrolments table*/
+
+delete from Units where unitindex = 'ISYS1020';
+select * from Units;
+/*Likewise this change isn't reflected in the Enrolments table*/
+ 

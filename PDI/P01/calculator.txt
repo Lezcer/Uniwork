@@ -1,0 +1,14 @@
+START Calculator
+    MAIN:
+       
+       OUTPUT "Please enter the first number"
+       INPUT numOne(Integer)
+
+       OUTPUT "Please enter the second number"
+       INPUT numTwo(Integer)
+       
+       answer = numOne + numTwo
+       
+       OUTPUT "The answer is: numOne + numTwo = answer"
+    END MAIN
+END     

@@ -1,0 +1,20 @@
+1.
+a)  You can't set primitive datatypes to null?
+b)  42 isn't a memory address?
+c)  Pointer doesn't point to a memory address yet?
+d)  Pointer should be pointing to a pointer, Address of char is 1 level off?
+e)  You can only typecast a pointer from datatype to another?
+f)  the pointer to a function isn't pointing at a function
+g)  mismatch?
+
+2.
+
+3.
+a)  It requires the address of the variable not the variable itself
+b)  Because the pointer points to an address, thus it's value is the  address
+c)  
+d)  Yes technically but pointers also dictate how much space the address has so TYPECAST
+
+
+
+passing by reference?

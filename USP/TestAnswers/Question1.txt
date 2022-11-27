@@ -1,0 +1,32 @@
+Question 1
+a. Describe the general steps required to create and use a loadable kernel module.
+    Answer: First of all the functions for the device operations structure, and the ones required by 
+    it are written down. this includes the init and exit fuctions that register and unregister 
+    the module / device driver, set up and clear up both request queue and parameters (used for
+    I/O operations), and for the interript line (and its handler). Once the code is writen the 
+    code is compiled, a .ko file is created in the current directory, that will be loaded into 
+    the kernel using the insmod command (and rmmod to unload)
+
+b. Describe what a runlevel is in Linux. Additionally, describe how they are used (with
+specific examples) in Linux.
+    Answer: A runlevel is a mode of operation (out of the seven) that defines the state of init and
+    the system after turning on. For example runlevel 1, which is Single user mode allows the computer to boot
+    into a single superuser (usually the admin)
+
+c. Create a sed command for finding occurrences of four consecutive and identical word
+characters (like aaaa or bbbb)
+    Answer: sed 's/\b([:alpha:]\1\1\1)//g'
+
+d. Specifically describe the use of the following bash script
+    Answer: All of the following happens from the input stream of the second command entered with the execution 
+    of this script (3rd). So; in the input stream, any punctuation symbols are removed, the word containing the 
+    first command (2nd after the bash script), and it is replaced with the word "@". Then removes all alphanumer
+    -ic characters, collapses spaces in between words, and removes any lines that begin with '^' character. The
+    output of this is directed into another sed command which replaces all occurrences of the newline character
+    '\n' with spaces. This output is redirected to another sed command which removes all occurences of the string
+    "@$" and replaces any '@' characters with a new line character. The output is redirected to a file named temp.
+    
+    Then, removes all lines starting with '$', also replaces all new line characters with a space, then search For
+    a "'('<any character><any number of closed braket ')'> <-followed by a space" and replaces that with any 
+    integer  followed by a space and the "$2" string from redirected output when the stream editor sed was set as 
+    a file.
