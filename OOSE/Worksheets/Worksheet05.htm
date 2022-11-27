@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<meta charset="utf-8">
+<title>Worksheet 5: Separation of Concerns</title>
+<style>
+
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&family=Merriweather+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@500&family=Merriweather&family=Merriweather+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@media screen {
+html { background: #404040; }
+body {
+box-shadow: 5px 5px 10px black;
+max-width: 50em;
+padding: 4em;
+margin-left: auto;
+margin-right: auto;
+}
+}
+html {
+font-family: 'Open Sans', sans-serif;
+line-height: 1.8em;
+}
+body {
+background: white;
+}
+h1, h2 { font-family: "Merriweather", serif; }
+h2 { margin-top: 1.5em; }
+pre { line-height: 1.7em; }
+code { font-family: "Inconsolata", monospace; }
+.admonition {
+border-radius: 5px;
+border: 1px solid #606060;
+padding: 0 1em;
+margin: 1ex 0;
+}
+.admonition-title {
+font-weight: bold;
+font-family: "Merriweather Sans", sans-serif;
+}
+.admonition.note {
+border: 1px solid #0060c0;
+background: #c0d8ff;
+}
+ul > li::marker {
+color: #0080ff;
+content: '\25A0\00A0';
+}
+ol {
+width: 100%;
+counter-reset: listitem;
+padding: 0;
+}
+ol > li {
+display: table;
+counter-increment: listitem;
+}
+ol > li::before {
+content: counters(listitem, ".") ". ";
+display: table-cell;
+width: 2ex;
+padding-right: 0.5em;
+color: #ff6000;
+font-weight: bold;
+}
+ol > li > p:first-child {
+margin-top: 0;
+}
+ol > li > :last-child {
+margin-bottom: 0;
+}
+.alpha + ol > li::before {
+content: "(" counter(listitem, lower-alpha) ") ";
+}
+li {
+margin: 0.5em 0 0.5em 0;
+padding-left: 0.5em;
+padding-top: 0em;
+width: calc(100% - 1ex);
+}
+@media screen {
+.toc {
+position: fixed;
+z-index: -1;
+left: 1ex;
+top: 1ex;
+overflow-y: scroll;
+width: 20em;
+max-height: 90%;
+border-radius: 0.5ex;
+background: white;
+box-shadow: 5px 5px 10px black;
+}
+.toc:hover, .toc:focus {
+z-index: 1;
+}
+}
+.toc {
+padding: 1em;
+}
+.toc .toctitle {
+font-weight: bold;
+margin: 0;
+}
+code .o, code .p { color: red; }
+code .k, code .kd, code .kt { color: blue; font-weight: bold; }
+code .s1 { color: green; }
+code .na, code .nc, code .nf { color: black; }
+@media screen {
+body {
+position: relative;
+}
+.pageN {
+position: absolute;
+right: 0%;
+top: 0%;
+background: white;
+color: black;
+padding: 0 1em;
+margin-top: -1px;
+}
+.pageN:not(:last-child) {
+border-bottom: 1px solid black;
+}
+}
+@media print {
+.pageN {
+display: none;
+}
+}
+body { counter-reset: _lamd_sec_0; }
+h2:not(.notnumbered) {
+counter-reset: _lamd_sec_1;
+counter-increment: _lamd_sec_0;
+}
+h2:not(.notnumbered)::before {
+content: counter(_lamd_sec_0);
+margin-right: 1em;
+}
+.boxed {
+border: 1px solid #808080;
+border-radius: 5px;
+padding-left: 1em;
+padding-right: 1em;
+}
+.smalluml {
+padding-bottom: 1em;
+vertical-align: top;
+}
+
+</style>
+</head>
+<body>
+<h1 id="worksheet-5-separation-of-concerns">Worksheet 5: Separation of Concerns</h1>
+<div class="admonition preamble">
+<p>COMP2003/6005 Object Oriented Software Engineering</p>
+<p>Created by David Cooper<br>
+Copyright © 2022 Curtin University<br>
+Updated <span>2022-04-03</span></p>
+</div>
+
+
+<div class="toc"><span class="toctitle">Contents</span><ul><li><a href="#discussion-breaking-down-responsibilities">Discussion: Breaking Down Responsibilities</a></li>
+<li><a href="#discussion-poorly-conceived-responsibilities">Discussion: Poorly-Conceived Responsibilities</a></li>
+<li><a href="#discussion-or-group-exercise-model-view-controller">Discussion (or Group Exercise): Model View Controller</a></li>
+<li><a href="#packages-and-mvc">Packages and MVC</a></li>
+</ul></div>
+
+
+<h2 id="discussion-breaking-down-responsibilities">Discussion: Breaking Down Responsibilities</h2>
+<p>For each of the following systems, suggest what the different “concerns” might be that ought to be separated. </p>
+<p>Keep Model-View-Controller (MVC) in mind, but consider other 
+concerns, and more fine-grained concerns as well. It may help to first 
+list the actors (human and non-human) with which the system interacts. </p>
+<p class="alpha" style="display: none;"><br></p>
+<ol><li>
+<p>An aircraft autopilot system.</p>
+</li>
+<li>
+<p>A multiplayer first-person shooter game.</p>
+</li>
+<li>
+<p>A streaming/podcast application.</p>
+</li>
+</ol><div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This sort of exercise determines the large-scale structure of your 
+software, and is basically the first step in the design process.</p>
+</div>
+<h2 id="discussion-poorly-conceived-responsibilities">Discussion: Poorly-Conceived Responsibilities</h2>
+<p class="alpha">For each of the following cases, identify a problem 
+with the breakdown of class and/or package responsibilities, and suggest
+ (roughly speaking) how to fix it:<br></p>
+<ol><li>
+<p>A class that loads and parses input files, connects to an online 
+payment system, and prompts the user to enter their name and date of 
+birth.</p>
+</li>
+<li>
+<p>A package structure that organises all exceptions into an <code>exceptions</code> package, all interfaces into an <code>interfaces</code> package, and all (other) classes into a <code>classes</code> package.</p>
+</li>
+<li>
+<p>A “view” class that looks like this:</p>
+<div class="boxed highlight"><pre><span></span><code><span class="kd">public</span> <span class="kd">class</span> <span class="nc">View</span>
+<span class="p">{</span>
+    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">display</span><span class="p">(</span><span class="n">String</span> <span class="n">s</span><span class="p">)</span>
+    <span class="p">{</span>
+        <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">s</span><span class="p">);</span>
+    <span class="p">}</span>
+
+    <span class="kd">public</span> <span class="n">String</span> <span class="nf">input</span><span class="p">()</span>
+    <span class="p">{</span>
+        <span class="k">return</span> <span class="k">new</span> <span class="n">Scanner</span><span class="p">(</span><span class="n">System</span><span class="p">.</span><span class="na">in</span><span class="p">).</span><span class="na">nextLine</span><span class="p">();</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div>
+</li>
+</ol><h2 id="discussion-or-group-exercise-model-view-controller">Discussion (or Group Exercise): Model View Controller</h2>
+<p>Obtain a copy of <code>worksheet5_mapper_java.zip</code>. Spend a few minutes considering the nature of the classes it contains.</p>
+<p>As a class, or in groups, discuss how you think each class fits into 
+the model-view-controller architecture. Be sure to have a justification.</p>
+<h2 id="packages-and-mvc">Packages and MVC</h2>
+<p>Take the AddressBook system – ideally your previous code from 
+worksheet 2. (The original worksheet 1 code would also work, but is 
+slightly less interesting.) Separate the code into four packages, with 
+the following names:</p>
+<ul><li><code>edu.curtin.addressbook</code> (which should already exist, and should now contain just the main class);</li>
+<li><code>edu.curtin.addressbook.model</code>;</li>
+<li><code>edu.curtin.addressbook.view</code>;</li>
+<li><code>edu.curtin.addressbook.controller</code>.</li>
+</ul><div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>You would not normally need to break up such a small system into multiple packages. This exercise is just to give you practice.</p>
+</div>
+<p>To do this, you will need to:</p>
+<ul><li>
+<p>Set up the appropriate directory structure.</p>
+</li>
+<li>
+<p>Split up <code>AddressBookApp</code> into two or three classes, because some parts of it logically belong in different packages. The <code>addOption()</code> mutator mentioned in the previous worksheet may come in handy. </p>
+</li>
+<li>
+<p>Modify the <code>package</code> declarations in each .java file, and add <code>import</code> declarations as needed.</p>
+</li>
+</ul><div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>If you want/need to change the main class’s name or package, you also need to update the build configuration. For Gradle, open <code>build.gradle</code> and find and edit this line as needed:</p>
+<div class="highlight"><pre><span></span><code><span class="n">mainClass</span> <span class="o">=</span> <span class="s1">'edu.curtin.addressbook.AddressBookApp'</span>
+</code></pre></div>
+<p>This specifies the “fully qualified” name of the main class; i.e., the class name prefixed with the package name.</p>
+</div>
+
+<script>
+const pageHeight = 1200;       
+        function pageN(t, n)
+        {
+            let elem = document.createElement('div');
+            elem.className = 'pageN';
+            elem.style.top = `calc(${t}px - 1em)`;
+            elem.textContent = n;
+            elem.title = 'Pseudo page number';
+            document.body.append(elem);
+        }
+       
+        const totalHeight = document.body.clientHeight;
+        let n = 1;
+        let t = pageHeight;
+        while(t < totalHeight)
+        {
+            pageN(t, n);
+            n += 1;
+            t += pageHeight;
+        }
+        
+        let elem = document.createElement('div');
+        elem.className = 'pageN';
+        elem.style.top = 'auto';
+        elem.style.bottom = '0';
+        elem.textContent = n;
+        elem.title = 'Pseudo page number';
+        document.body.append(elem);
+    
+</script><div class="pageN" style="top: calc(-1em + 1200px);" title="Pseudo page number">1</div><div class="pageN" style="top: calc(-1em + 2400px);" title="Pseudo page number">2</div><div class="pageN" style="top: auto; bottom: 0px;" title="Pseudo page number">3</div>
+
+</body></html>

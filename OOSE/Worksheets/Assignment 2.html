@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>Assignment 2</title>
+<style>
+
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&family=Merriweather+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@500&family=Merriweather&family=Merriweather+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@media screen {
+html { background: #404040; }
+body {
+box-shadow: 5px 5px 10px black;
+max-width: 50em;
+padding: 4em;
+margin-left: auto;
+margin-right: auto;
+}
+}
+html {
+font-family: 'Open Sans', sans-serif;
+line-height: 1.8em;
+}
+body {
+background: white;
+}
+h1, h2, h3, h4 { font-family: "Merriweather", serif; }
+h2, h3, h4 { margin-top: 1.5em; }
+pre { line-height: 1.7em; }
+code { font-family: "Inconsolata", monospace; }
+.admonition {
+border-radius: 5px;
+border: 1px solid #606060;
+padding: 0 1em;
+margin: 1ex 0;
+}
+.admonition-title {
+font-weight: bold;
+font-family: "Merriweather Sans", sans-serif;
+}
+.admonition.note {
+border: 1px solid #0060c0;
+background: #c0d8ff;
+}
+.admonition.warning {
+border: 1px solid #c03030;
+background: #ffc0c0;
+}
+ul > li::marker {
+color: #0080ff;
+content: '\25A0\00A0';
+}
+ul ul > li::marker {
+color: #80c0ff;
+content: '\25B8\00A0';
+}
+ol {
+width: 100%;
+counter-reset: listitem;
+padding: 0;
+}
+ol > li {
+display: table;
+counter-increment: listitem;
+}
+ol > li::before {
+content: counters(listitem, ".") ". ";
+display: table-cell;
+width: 2ex;
+padding-right: 0.5em;
+color: #ff6000;
+font-weight: bold;
+}
+ol > li > p:first-child {
+margin-top: 0;
+}
+ol > li > :last-child {
+margin-bottom: 0;
+}
+ol ol > li::before {
+width: 3ex;
+}
+li {
+margin: 0.5em 0 0.5em 0;
+padding-left: 0.5em;
+padding-top: 0em;
+width: calc(100% - 1ex);
+}
+code .o, code .p { color: red; }
+code .kd, code .kn, code .kt { color: blue; font-weight: bold; }
+code .nc, code .nd, code .nf, code .nn { color: black; }
+@media screen {
+.toc {
+position: fixed;
+z-index: -1;
+left: 1ex;
+top: 1ex;
+overflow-y: scroll;
+width: 20em;
+max-height: 90%;
+border-radius: 0.5ex;
+background: white;
+box-shadow: 5px 5px 10px black;
+}
+.toc:hover, .toc:focus {
+z-index: 1;
+}
+}
+.toc {
+padding: 1em;
+}
+.toc .toctitle {
+font-weight: bold;
+margin: 0;
+}
+body { counter-reset: _lamd_sec_0; }
+h2:not(.notnumbered) {
+counter-reset: _lamd_sec_1;
+counter-increment: _lamd_sec_0;
+}
+h2:not(.notnumbered)::before {
+content: counter(_lamd_sec_0);
+margin-right: 1em;
+}
+h3:not(.notnumbered) {
+counter-reset: _lamd_sec_2;
+counter-increment: _lamd_sec_1;
+}
+h3:not(.notnumbered)::before {
+content: counter(_lamd_sec_0) "." counter(_lamd_sec_1);
+margin-right: 1em;
+}
+h4:not(.notnumbered) {
+counter-reset: _lamd_sec_3;
+counter-increment: _lamd_sec_2;
+}
+h4:not(.notnumbered)::before {
+content: counter(_lamd_sec_0) "." counter(_lamd_sec_1) "." counter(_lamd_sec_2);
+margin-right: 1em;
+}
+@media screen {
+body {
+position: relative;
+}
+.pageN {
+position: absolute;
+right: 0%;
+top: 0%;
+background: white;
+color: black;
+padding: 0 1em;
+margin-top: -1px;
+}
+.pageN:not(:last-child) {
+border-bottom: 1px solid black;
+}
+}
+@media print {
+.pageN {
+display: none;
+}
+}
+.boxed {
+border: 1px solid gray;
+padding: 0 1ex;
+border-radius: 1mm;
+}
+
+</style>
+<style> body { background: url("data:image/svg+xml;base64,PHN2ZyBiYXNlUHJvZmlsZT0idGlueSIgdmVyc2lvbj0iMS4yIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciCiAgICAgICAgICAgICAgICB3aWR0aD0iMjgwIiBoZWlnaHQ9IjYwIj4KICAgICAgICAgICAgICAgIDx0ZXh0IHg9IjAiIHk9IjUwIiBzdHlsZT0iZm9udDogYm9sZCA2MHB4IHNhbnMtc2VyaWY7IGZpbGw6ICNmZWZlZmU7Ij4yMDE1MjQyODwvdGV4dD4KICAgICAgICAgICAgPC9zdmc+") white; } .d { position: absolute; left: 10000px; color: white; color: #ffffff00; font-size: 1px; z-index: -1; } </style><script> window.onload = function() { const colours = ["#181800","#181800","#000018","#180000","#000018","#000018","#000018","#001800","#001800","#001800","#000018","#180000","#001800","#000018","#000018","#180000","#180000","#000018"]; let i = 0; for(const element of document.getElementsByClassName('c')) { if(window.getComputedStyle(element)['color'] === 'rgb(0, 0, 0)') { element.style.color = colours[i]; i = (i + 1) % colours.length; } } }; </script></head>
+<body><p style="color: red; text-align: center;"><span class="c">Please</span> do  <span class="c">not</span> <span class="c">share</span>  <span class="c">this</span>  <span class="c">file</span>  <span class="c">with</span>  <span class="c">other</span>  <span class="c">people</span>.   It <span class="c">has</span>  <span class="c">been</span> <span class="c">fingerprinted</span>  <span class="c">with</span>  <span class="c">your</span>  ID  (<span class="c">20152428</span>).<span><span aria-hidden="true" class="d"><span>
+̢̡̢̢̨̠̥̤</span></span></span></p>
+<h1 id="assignment-2">Assignment  2</h1>
+<div class="admonition preamble">
+<p><strong><span class="c">Object</span>   <span class="c">Oriented</span> <span class="c">Software</span>  <span class="c">Engineering</span></strong> (<span class="c">COMP2003</span>/<span class="c">6005</span>)<br>
+<span class="c">Semester</span>  1,  <span class="c">2022</span><span><span aria-hidden="true" class="d"><span>
+̢̡̢̢̨̠̥̤</span></span></span></p>
+<p><strong><span class="c">Due</span>:</strong>  <span class="c">TBA</span><br><strong><span class="c">Weight</span>:</strong>  45%  of   <span class="c">the</span> <span class="c">unit</span>  <span class="c">mark</span><span><span aria-hidden="true" class="d"><span>
+̢̡̢̢̨̠̥̤</span></span></span></p>
+</div>
+<div class="toc"><span class="toctitle">Contents</span><ul><li><a href="#your-task"><span class="c">Your</span> <span class="c">Task</span></a><span><span aria-hidden="true" class="d"><span>
+̢̡̢̢̨̠̥̤</span></span></span></li>
+<li><a href="#submission"><span class="c">Submission</span></a><span><span aria-hidden="true" class="d"><span>
+̢̡̢̢̨̠̥̤</span></span></span></li>
+<li><a href="#marking"><span class="c">Marking</span></a><ul><li><a href="#demo"><span class="c">Demo</span></a><span><span aria-hidden="true" class="d"><span>
+̢̡̢̢̨̠̥̤</span></span></span></li>
+<li><a href="#marking_criteria"><span class="c">Criteria</span></a><span><span aria-hidden="true" class="d"><span>
+̢̡̢̢̨̠̥̤</span></span></span></li>
+<li><a href="#your-responses-to-the-criteria"><span class="c">Your</span>  <span class="c">Responses</span>  to  <span class="c">the</span>  <span class="c">Criteria</span></a><span><span aria-hidden="true" class="d"><span>
+̢̡̢̢̨̠̥̤</span></span></span></li>
+</ul><span><span aria-hidden="true" class="d"><span>
+̢̡̢̢̨̠̥̤</span></span></span></li>
+<li><a href="#problem_description"><span class="c">Problem</span>  <span class="c">Description</span></a><ul><li><a href="#generating-emergencies"><span class="c">Generating</span>   <span class="c">Emergencies</span></a><span><span aria-hidden="true" class="d"><span>
+̢̡̢̢̨̠̥̤</span></span></span></li>
+<li><a href="#simulation-logic"><span class="c">Simulation</span> <span class="c">Logic</span></a><span><span aria-hidden="true" class="d"><span>
+̢̡̢̢̨̠̥̤</span></span></span></li>
+<li><a href="#communicating-with-responders"><span class="c">Communicating</span>  <span class="c">with</span> <span class="c">Responders</span></a><ul><li><a href="#the-poll-method-incoming-messages"><span class="c">The</span>  <span class="c">poll</span>()  <span class="c">Method</span>  —  <span class="c">Incoming</span>  <span class="c">Messages</span></a><span><span aria-hidden="true" class="d"><span>
+̢̡̢̢̨̠̥̤</span></span></span></li>
+<li><a href="#the-send-method-outgoing-messages"><span class="c">The</span>   <span class="c">send</span>() <span class="c">Method</span>  — <span class="c">Outgoing</span>  <span class="c">Messages</span></a><span><span aria-hidden="true" class="d"><span>
+̢̡̢̢̨̠̥̤</span></span></span></li>
+</ul><span><span aria-hidden="true" class="d"><span>
+̢̡̢̢̨̠̥̤</span></span></span></li>
+</ul><span><span aria-hidden="true" class="d"><span>
+̢̡̢̢̨̠̥̤</span></span></span></li>
+<li><a href="#academic-integrity"><span class="c">Academic</span>  <span class="c">Integrity</span></a><span><span aria-hidden="true" class="d"><span>
+̢̡̢̢̨̠̥̤</span></span></span></li>
+</ul></div>
+<p><span class="c">This</span>  <span class="c">assignment</span>  <span class="c">will</span>  <span class="c">focus</span>   <span class="c">primarily</span> on  <span class="c">topics</span> <span class="c">not</span>  <span class="c">otherwise</span>  <span class="c">covered</span>  in  <span class="c">Assignment</span>  1,   <span class="c">but</span> <span class="c">these</span>  <span class="c">build</span> on  <span class="c">earlier</span>  <span class="c">topics</span>,  <span class="c">and</span>  <span class="c">good</span>  <span class="c">practices</span>   <span class="c">assessed</span> in  <span class="c">Assignment</span> 1  <span class="c">will</span>  <span class="c">continue</span>  to  be  <span class="c">assessed</span>   <span class="c">here</span>.<span><span aria-hidden="true" class="d"><span>
+̢̡̢̢̨̠̥̤</span></span></span></p>
+<h2 id="your-task">Your Task</h2>
+<p><span class="c">Design</span>  <span class="c">and</span> <span class="c">implement</span>  <span class="c">the</span>  <span class="c">system</span>  <span class="c">described</span>  <span class="c">below</span>  <span class="c">under</span>   <a href="#problem_description"><span class="c">Problem</span> <span class="c">Description</span></a>.  <span class="c">Specifically</span>:<span><span aria-hidden="true" class="d"><span>
+̢̡̢̢̨̠̥̤</span></span></span></p>
+<ul><li>
+<p><span class="c">Use</span> <span class="c">either</span>  <span class="c">Java</span>,  C#,  C++  or  <span class="c">Python</span>   to <span class="c">implement</span>  <span class="c">the</span> <span class="c">system</span>  <span class="c">described</span>.<span><span aria-hidden="true" class="d"><span>
+̢̡̢̢̨̠̥̤</span></span></span></p>
+<ul><li>If  <span class="c">using</span>  <span class="c">Java</span>,  <span class="c">you</span>  <span class="c">must</span>   <span class="c">also</span> <span class="c">use</span>  <span class="c">PMD</span> as  in  <span class="c">the</span>  <span class="c">practical</span>  <span class="c">worksheet</span>  <span class="c">code</span>,   <span class="c">and</span> it’s  <span class="c">thus</span> <span class="c">highly</span>  <span class="c">recommended</span>  <span class="c">that</span>  <span class="c">you</span>  <span class="c">use</span>  <span class="c">Gradle</span>.<span><span aria-hidden="true" class="d"><span>
+̢̡̢̢̨̠̥̤</span></span></span></li>
+<li>If   <span class="c">using</span> <span class="c">Python</span>,  <span class="c">please</span> <span class="c">use</span>  <a href="https://docs.python.org/3/library/typing.html"><span class="c">type</span>  <span class="c">hinting</span></a>  <span class="c">for</span>  <span class="c">all</span>  <span class="c">method</span>/<span class="c">function</span>   <span class="c">parameters</span> <span class="c">and</span>  <span class="c">return</span> <span class="c">types</span>.<span><span aria-hidden="true" class="d"><span>
+̢̡̢̢̨̠̥̤</span></span></span></li>
+</ul><span><span aria-hidden="true" class="d"><span>
+̢̡̢̢̨̠̥̤</span></span></span></li>
+<li>
+<p>In  <span class="c">your</span>  <span class="c">design</span>,  <span class="c">use</span>  (a)  <span class="c">the</span>   <strong><span class="c">Observer</span> <span class="c">Pattern</span></strong>,  <span class="c">and</span> (b)  <span class="c">the</span>  <strong><span class="c">State</span>  <span class="c">Pattern</span></strong>.  <span class="c">Make</span>  <span class="c">sure</span>   <span class="c">that</span> <span class="c">they</span>  <span class="c">both</span>:<span><span aria-hidden="true" class="d"><span>
+̢̡̢̢̨̠̥̤</span></span></span></p>
+<ul><li><span class="c">Help</span> to  <span class="c">create</span>  <span class="c">low</span>  <span class="c">coupling</span>  (<span class="c">and</span>/or  <span class="c">high</span>   <span class="c">extensibility</span>).<span><span aria-hidden="true" class="d"><span>
+̢̡̢̢̨̠̥̤</span></span></span></li>
+<li><span class="c">Address</span> <span class="c">the</span>  <span class="c">actual</span> <span class="c">requirements</span>  of  <span class="c">the</span>  <span class="c">system</span>;  i.e.,  <span class="c">they</span>’re   <span class="c">part</span> of  <span class="c">the</span> <span class="c">solution</span>  to  <span class="c">the</span>  <span class="c">problem</span>  <span class="c">description</span>,  <span class="c">not</span>   <span class="c">just</span> <span class="c">added</span>  on.<span><span aria-hidden="true" class="d"><span>
+̢̡̢̢̨̠̥̤</span></span></span></li>
+</ul><span><span aria-hidden="true" class="d"><span>
+̢̡̢̢̨̠̥̤</span></span></span></li>
+<li>
+<p><span class="c">Use</span> <span class="c">dependency</span>  <span class="c">injection</span>,  <span class="c">good</span>  <span class="c">error</span>  <span class="c">handling</span>,  <span class="c">logging</span>,   a <span class="c">good</span>  <span class="c">breakdown</span> of  <span class="c">packages</span>  (or  <span class="c">namespaces</span>),  <span class="c">and</span>  <span class="c">generally</span>   <span class="c">well</span> <span class="c">thought</span>  <span class="c">out</span> <span class="c">classes</span>/<span class="c">interfaces</span>.<span><span aria-hidden="true" class="d"><span>
+̢̡̢̢̨̠̥̤</span></span></span></p>
+<span><span aria-hidden="true" class="d"><span>
+̢̡̢̢̨̠̥̤</span></span></span></li>
+</ul><ul><li>
+<p><span class="c">Provide</span>  a  <strong><span class="c">UML</span>  <span class="c">class</span>  <span class="c">diagram</span></strong>  <span class="c">and</span>   <span class="c">one</span> or  <span class="c">more</span> <strong><span class="c">UML</span>  <span class="c">state</span>  <span class="c">chart</span>(s)</strong>,  <span class="c">accurately</span>  <span class="c">representing</span>  <span class="c">your</span>   <span class="c">design</span>.<span><span aria-hidden="true" class="d"><span>
+̢̡̢̢̨̠̥̤</span></span></span></p>
+<ul><li><span class="c">The</span> <span class="c">class</span>  <span class="c">diagram</span> <span class="c">must</span>  <span class="c">show</span>  <span class="c">the</span>  <span class="c">structure</span>  of  <span class="c">your</span>   <span class="c">entire</span> <span class="c">app</span>.<span><span aria-hidden="true" class="d"><span>
+̢̡̢̢̨̠̥̤</span></span></span></li>
+<li><span class="c">The</span>  <span class="c">state</span> <span class="c">chart</span>(s)  <span class="c">must</span>  <span class="c">show</span>  <span class="c">how</span>  <span class="c">states</span>  <span class="c">and</span>   <span class="c">state</span> <span class="c">transitions</span>  <span class="c">occur</span> in  <span class="c">specific</span>,  <span class="c">relevant</span>  <span class="c">part</span>(s)  of  <span class="c">the</span>   <span class="c">app</span>.<span><span aria-hidden="true" class="d"><span>
+̢̡̢̢̨̠̥̤</span></span></span></li>
+<li><span class="c">Use</span> a  <span class="c">proper</span> <span class="c">tool</span>;  e.g.,  <a href="https://www.umlet.com/"><span class="c">Umlet</span></a>,  <a href="https://draw.io"><span class="c">draw</span>.io</a>,  <a href="https://plantuml.com"><span class="c">PlantUML</span></a>  or   <span class="c">others</span>, <span class="c">but</span>  <span class="c">submit</span> <span class="c">your</span>  <span class="c">diagrams</span>  in  .<span class="c">pdf</span>  or  .<span class="c">png</span>   <span class="c">format</span>. (<span class="c">Avoid</span>  <span class="c">tools</span> <span class="c">that</span>  <span class="c">have</span>  no  <span class="c">explicit</span>  <span class="c">support</span>  <span class="c">for</span>   <span class="c">UML</span>.)<span><span aria-hidden="true" class="d"><span>
+̢̡̢̢̨̠̥̤</span></span></span></li>
+<li><span class="c">Make</span> <span class="c">the</span>  <span class="c">diagram</span> <span class="c">layout</span>  as  <span class="c">neat</span>  <span class="c">and</span>  <span class="c">logical</span>  as   <span class="c">practical</span>. <span class="c">Minimise</span>  <span class="c">crossing</span> <span class="c">lines</span>.<span><span aria-hidden="true" class="d"><span>
+̢̡̢̢̨̠̥̤</span></span></span></li>
+<li>If  in  <span class="c">doubt</span>  as  to  <span class="c">whether</span>   or <span class="c">not</span>  to <span class="c">represent</span>  <span class="c">certain</span>  <span class="c">things</span>  on  <span class="c">the</span>  <span class="c">diagram</span>,   <span class="c">err</span> on  <span class="c">the</span> <span class="c">side</span>  of  <span class="c">more</span>  <span class="c">detail</span>.<span><span aria-hidden="true" class="d"><span>
+̢̡̢̢̨̠̥̤</span></span></span></li>
+</ul><span><span aria-hidden="true" class="d"><span>
+̢̡̢̢̨̠̥̤</span></span></span></li>
+</ul><ul><li><span class="c">Provide</span>  a  <span class="c">response</span>   to <span class="c">each</span>  of <span class="c">the</span>  <a href="#marking_criteria"><span class="c">marking</span>  <span class="c">criteria</span></a>.  <span class="c">Record</span>  <span class="c">this</span>  in   a <span class="c">file</span>  <span class="c">called</span> <code><span class="c">criteria</span>.<span class="c">txt</span></code>  (or  <code><span class="c">criteria</span>.md</code>).<span><span aria-hidden="true" class="d"><span>
+̢̡̢̢̨̠̥̤</span></span></span></li>
+</ul><h2 id="submission">Submission</h2>
+<p><span class="c">Submit</span>  <span class="c">all</span>  of  <span class="c">the</span>   <span class="c">above</span>, <span class="c">plus</span>  a <span class="c">signed</span>  <span class="c">declaration</span>  of  <span class="c">originality</span>,  to  <span class="c">the</span>   <span class="c">appropriate</span> <span class="c">area</span>  on <span class="c">Blackboard</span>.  <span class="c">Include</span>  <span class="c">everything</span>  in  a  <span class="c">single</span>   .<span class="c">zip</span>/.<span class="c">tar</span>.gz <span class="c">file</span>  (<em><span class="c">please</span> <span class="c">avoid</span></em>  .<span class="c">rar</span>,  .<span class="c">zipx</span>  or  .7z).  <span class="c">You</span>   do <span class="c">not</span>  <span class="c">need</span> to  <span class="c">include</span>  <span class="c">any</span>  <span class="c">compiled</span>  <span class="c">code</span>.<span><span aria-hidden="true" class="d"><span>
+̢̡̢̢̨̠̥̤</span></span></span></p>
+<p><span class="c">You</span>  <span class="c">must</span>   <span class="c">verify</span> <span class="c">that</span>  <span class="c">your</span> <span class="c">submission</span>  is  <span class="c">correct</span>  <span class="c">and</span>  <span class="c">not</span>  <span class="c">corrupted</span>.   <span class="c">Once</span> <span class="c">you</span>  <span class="c">have</span> <span class="c">submitted</span>,  <span class="c">please</span>  <span class="c">download</span>  <span class="c">your</span>  <span class="c">own</span>  <span class="c">submission</span>   <span class="c">and</span> <span class="c">thoroughly</span>  <span class="c">check</span> <span class="c">that</span>  it  is  <span class="c">intact</span>.  <span class="c">You</span>  <span class="c">may</span>   <span class="c">make</span> <span class="c">multiple</span>  <span class="c">submissions</span>. <span class="c">Only</span>  <span class="c">your</span>  <span class="c">last</span>  <span class="c">one</span>  <span class="c">will</span>  be   <span class="c">marked</span>.<span><span aria-hidden="true" class="d"><span>
+̢̡̢̢̨̠̥̤</span></span></span></p>
+<h2 id="marking">Marking</h2>
+<h3 id="demo">Demo</h3>
+<p><span class="c">You</span> <span class="c">are</span>  <span class="c">principally</span> <span class="c">being</span>  <span class="c">assessed</span>  on  <em><span class="c">design</span></em>.  <span class="c">However</span>,  we   <span class="c">also</span> <span class="c">need</span>  to <span class="c">ensure</span>  <span class="c">you</span>  <span class="c">produce</span>  a  <span class="c">working</span>  <span class="c">app</span>,   <span class="c">and</span> <span class="c">running</span>  <span class="c">demos</span> is  an  <span class="c">efficient</span>  <span class="c">way</span>  to  do   <span class="c">this</span>. <span class="c">The</span>  <span class="c">logistics</span> <span class="c">will</span>  <span class="c">vary</span>  <span class="c">between</span>  <span class="c">locations</span>,  <span class="c">but</span>  <span class="c">the</span>   <span class="c">following</span> <span class="c">approaches</span>  <span class="c">are</span> <span class="c">being</span>  <span class="c">considered</span>:<span><span aria-hidden="true" class="d"><span>
+̢̡̢̢̨̠̥̤</span></span></span></p>
+<ul><li><span class="c">Uploading</span>  a  <span class="c">short</span>  <span class="c">video</span>.<span><span aria-hidden="true" class="d"><span>
+̢̡̢̢̨̠̥̤</span></span></span></li>
+<li><span class="c">Scheduling</span>  a   <span class="c">real</span>-<span class="c">time</span> <span class="c">online</span>  <span class="c">demo</span> (e.g.,  <span class="c">over</span>  <span class="c">Blackboard</span>  <span class="c">Collaborate</span>  or  <span class="c">other</span>   <span class="c">video</span> <span class="c">conferencing</span>  <span class="c">tools</span>).<span><span aria-hidden="true" class="d"><span>
+̢̡̢̢̨̠̥̤</span></span></span></li>
+<li><span class="c">Scheduling</span> a  <span class="c">face</span>-to-<span class="c">face</span>  <span class="c">demo</span>.<span><span aria-hidden="true" class="d"><span>
+̢̡̢̢̨̠̥̤</span></span></span></li>
+</ul><p><span class="c">Further</span>  <span class="c">announcements</span>  <span class="c">will</span>  be   <span class="c">made</span> on  <span class="c">which</span> <span class="c">approach</span>(es)  <span class="c">will</span>  <span class="c">actually</span>  be  <span class="c">used</span>.<span><span aria-hidden="true" class="d"><span>
+̢̡̢̢̨̠̥̤</span></span></span></p>
+
+
+<p>If  <span class="c">your</span>   <span class="c">app</span> <span class="c">does</span>  <span class="c">not</span> <span class="c">work</span>  as  <span class="c">expected</span>,  <span class="c">you</span>  <span class="c">should</span>  <span class="c">expect</span>   a <span class="c">mark</span>  <span class="c">penalty</span>.<span><span aria-hidden="true" class="d"><span>
+̢̡̢̢̨̠̥̤</span></span></span></p>
+<h3 id="marking_criteria">Criteria</h3>
+<p><span class="c">The</span> <span class="c">assignment</span>  <span class="c">will</span>  be  <span class="c">marked</span>  <span class="c">out</span>  of   45. <span class="c">There</span>  <span class="c">are</span> <span class="c">six</span>  <span class="c">core</span>  <span class="c">marking</span>  <span class="c">criteria</span>  <span class="c">and</span>  an   <span class="c">additional</span> <span class="c">bonus</span>:<span><span aria-hidden="true" class="d"><span>
+̢̡̢̢̨̠̥̤</span></span></span></p>
+<ol><li>
+<p><strong>6  <span class="c">marks</span></strong> –  <span class="c">General</span>  <span class="c">code</span>  <span class="c">quality</span>,  <span class="c">including</span>  <span class="c">addressing</span>   <span class="c">PMD</span> <span class="c">rules</span>.<span><span aria-hidden="true" class="d"><span>
+̢̡̢̢̨̠̥̤</span></span></span></p>
+<ul><li><span class="c">The</span>  <span class="c">code</span> <span class="c">must</span>  be  <span class="c">reasonably</span>-<span class="c">well</span>  <span class="c">commented</span>.<span><span aria-hidden="true" class="d"><span>
+̢̡̢̢̨̠̥̤</span></span></span></li>
+<li>
+<p>If  <span class="c">using</span>  <span class="c">Java</span>,   <span class="c">you</span> <span class="c">must</span>  <span class="c">also</span> <span class="c">use</span>  <span class="c">PMD</span>,  <span class="c">and</span>  <span class="c">use</span>  <span class="c">the</span>  <span class="c">same</span>   <span class="c">PMD</span> “<span class="c">ruleset</span>”  — “<code><span class="c">oose</span>-<span class="c">pmd</span>-<span class="c">rules</span>.<span class="c">xml</span></code>”  —  <span class="c">used</span>  in  <span class="c">the</span>  <span class="c">practical</span>   <span class="c">worksheet</span> <span class="c">code</span>.<span><span aria-hidden="true" class="d"><span>
+̢̡̢̢̨̠̥̤</span></span></span></p>
+<ul><li><span class="c">There</span>  <span class="c">should</span> be  no  <span class="c">PMD</span>  <span class="c">rule</span>  <span class="c">violations</span>.<span><span aria-hidden="true" class="d"><span>
+̢̡̢̢̨̠̥̤</span></span></span></li>
+<li><span class="c">You</span>  <span class="c">may</span>   <a href="https://pmd.github.io/latest/pmd_userdocs_suppressing_warnings.html"><em><span class="c">suppress</span></em> <span class="c">PMD</span>  <span class="c">rules</span></a>, in  <span class="c">specific</span>  <span class="c">places</span>,  if  <span class="c">appropriate</span>,  as   <span class="c">long</span> as  <span class="c">you</span> <span class="c">include</span>  a  <span class="c">comment</span>  <span class="c">justifying</span>  it.  If   <span class="c">you</span>’re <span class="c">not</span>  <span class="c">certain</span> <span class="c">what</span>  <span class="c">would</span>  be  <span class="c">appropriate</span>,  <span class="c">ask</span>  in   <span class="c">advance</span> (in  <span class="c">general</span> <span class="c">terms</span>).<span><span aria-hidden="true" class="d"><span>
+̢̡̢̢̨̠̥̤</span></span></span></li>
+</ul><span><span aria-hidden="true" class="d"><span>
+̢̡̢̢̨̠̥̤</span></span></span></li>
+<li>
+<p>If  <span class="c">using</span>  <span class="c">another</span>  <span class="c">language</span>,  <span class="c">you</span>  <span class="c">must</span>   <span class="c">find</span> <span class="c">and</span>  <span class="c">use</span> <span class="c">another</span>  <span class="c">such</span>  “<span class="c">linting</span>”  <span class="c">tool</span>  in  an   <span class="c">equivalent</span> <span class="c">manner</span>.<span><span aria-hidden="true" class="d"><span>
+̢̡̢̢̨̠̥̤</span></span></span></p>
+<span><span aria-hidden="true" class="d"><span>
+̢̡̢̢̨̠̥̤</span></span></span></li>
+</ul><span><span aria-hidden="true" class="d"><span>
+̢̡̢̢̨̠̥̤</span></span></span></li>
+<li>
+<p><strong>[6  <span class="c">marks</span>]</strong> —  <span class="c">Clear</span>  <span class="c">and</span>  <span class="c">distinct</span>  <span class="c">package</span>/<span class="c">class</span>/<span class="c">interface</span>/<span class="c">method</span>  <span class="c">responsibilities</span>.<span><span aria-hidden="true" class="d"><span>
+̢̡̢̢̨̠̥̤</span></span></span></p>
+<span><span aria-hidden="true" class="d"><span>
+̢̡̢̢̨̠̥̤</span></span></span></li>
+<li>
+<p><strong>[6   <span class="c">marks</span>]</strong> —  <span class="c">Appropriate</span> <span class="c">error</span>  <span class="c">handling</span>  <span class="c">and</span>  <span class="c">logging</span>.<span><span aria-hidden="true" class="d"><span>
+̢̡̢̢̨̠̥̤</span></span></span></p>
+<span><span aria-hidden="true" class="d"><span>
+̢̡̢̢̨̠̥̤</span></span></span></li>
+<li>
+<p><strong>[6  <span class="c">marks</span>]</strong>  —   <span class="c">Implementation</span> of  <span class="c">dependency</span> <span class="c">injection</span>.<span><span aria-hidden="true" class="d"><span>
+̢̡̢̢̨̠̥̤</span></span></span></p>
+<span><span aria-hidden="true" class="d"><span>
+̢̡̢̢̨̠̥̤</span></span></span></li>
+<li>
+<p><strong>[7  <span class="c">marks</span>]</strong>  —  <span class="c">Use</span>  of  <span class="c">the</span>   <span class="c">Observer</span> <span class="c">Pattern</span>.<span><span aria-hidden="true" class="d"><span>
+̢̡̢̢̨̠̥̤</span></span></span></p>
+<span><span aria-hidden="true" class="d"><span>
+̢̡̢̢̨̠̥̤</span></span></span></li>
+<li>
+<p><strong>[7  <span class="c">marks</span>]</strong> —  <span class="c">Use</span>  of  <span class="c">the</span>  <span class="c">State</span>  <span class="c">Pattern</span>.<span><span aria-hidden="true" class="d"><span>
+̢̡̢̢̨̠̥̤</span></span></span></p>
+<span><span aria-hidden="true" class="d"><span>
+̢̡̢̢̨̠̥̤</span></span></span></li>
+<li>
+<p><strong>[7   <span class="c">marks</span>]</strong> —  <span class="c">Clear</span> <span class="c">and</span>  <span class="c">correct</span>  <span class="c">UML</span>  <span class="c">class</span>  <span class="c">diagram</span>  <span class="c">and</span>   <span class="c">state</span> <span class="c">chart</span>(s).<span><span aria-hidden="true" class="d"><span>
+̢̡̢̢̨̠̥̤</span></span></span></p>
+<span><span aria-hidden="true" class="d"><span>
+̢̡̢̢̨̠̥̤</span></span></span></li>
+<li>
+<p><strong>[6  <span class="c">bonus</span> <span class="c">marks</span>]</strong>  —  <span class="c">Meaningful</span>  <span class="c">use</span>  of  <span class="c">generics</span>,   in <span class="c">the</span>  <span class="c">sense</span> of  <span class="c">creating</span>  <span class="c">your</span>  <span class="c">own</span>  <span class="c">class</span>/<span class="c">interface</span>  <span class="c">with</span>   <span class="c">generic</span> <span class="c">type</span>  <span class="c">parameter</span>(s), <span class="c">such</span>  <span class="c">that</span>  it  <span class="c">contributes</span>  to  <span class="c">code</span>   <span class="c">reuse</span>.<span><span aria-hidden="true" class="d"><span>
+̢̡̢̢̨̠̥̤</span></span></span></p>
+<div class="admonition warning">
+<p class="admonition-title"><span class="c">Warning</span><span><span aria-hidden="true" class="d"><span>
+̢̡̢̢̨̠̥̤</span></span></span></p>
+<p><span class="c">These</span> <span class="c">bonus</span>  <span class="c">marks</span> <em><span class="c">are</span>  <span class="c">not</span></em>  <span class="c">intended</span>  to  be  <span class="c">easy</span>   to <span class="c">get</span>.  Do <span class="c">not</span>  <span class="c">spend</span>  <span class="c">your</span>  <span class="c">time</span>  on  <span class="c">them</span>   <span class="c">until</span> <span class="c">you</span>’re  <span class="c">confident</span> <span class="c">with</span>  <span class="c">the</span>  <span class="c">other</span>  <span class="c">criteria</span>.<span><span aria-hidden="true" class="d"><span>
+̢̡̢̢̨̠̥̤</span></span></span></p>
+</div>
+<span><span aria-hidden="true" class="d"><span>
+̢̡̢̢̨̠̥̤</span></span></span></li>
+</ol><h3 id="your-responses-to-the-criteria">Your  Responses  to   the Criteria</h3>
+<p><span class="c">You</span>  <span class="c">must</span> <span class="c">provide</span>  a  <span class="c">response</span>  to  <span class="c">each</span>  of   <span class="c">criteria</span> 2–6,  as <span class="c">part</span>  of  <span class="c">your</span>  <span class="c">submission</span>.  <span class="c">For</span>  <span class="c">each</span>   of <span class="c">those</span>  <span class="c">critera</span>, <span class="c">write</span>  a  <span class="c">paragraph</span>  or  <span class="c">two</span>  <span class="c">justifying</span>   <span class="c">the</span> <span class="c">choices</span>  <span class="c">you</span> <span class="c">have</span>  <span class="c">made</span>.  <span class="c">Include</span>  <span class="c">this</span>  in  <code><span class="c">criteria</span>.<span class="c">txt</span></code>.<span><span aria-hidden="true" class="d"><span>
+̢̡̢̢̨̠̥̤</span></span></span></p>
+<p><span class="c">This</span>   <span class="c">fulfils</span> <span class="c">two</span>  <span class="c">purposes</span>:<span><span aria-hidden="true" class="d"><span>
+̢̡̢̢̨̠̥̤</span></span></span></p>
+<ol><li>We <span class="c">want</span>  to  <span class="c">know</span>  <span class="c">that</span>  <span class="c">you</span>  <span class="c">can</span>   <span class="c">articulate</span>, in  <span class="c">plain</span> <span class="c">English</span>,  <span class="c">what</span>  <span class="c">you</span>  <span class="c">are</span>  <span class="c">doing</span>.  <span class="c">This</span>   is <span class="c">part</span>  of <span class="c">the</span>  <span class="c">task</span>.<span><span aria-hidden="true" class="d"><span>
+̢̡̢̢̨̠̥̤</span></span></span></li>
+<li>If  <span class="c">you</span>  do  <span class="c">something</span>  <span class="c">unusual</span>/<span class="c">unorthodox</span>,   <span class="c">this</span> is  <span class="c">your</span> <span class="c">opportunity</span>  to  <span class="c">justify</span>  it.<span><span aria-hidden="true" class="d"><span>
+̢̡̢̢̨̠̥̤</span></span></span></li>
+</ol><p><span class="c">One</span>  <span class="c">way</span>  to   <span class="c">think</span> <span class="c">about</span>  <span class="c">what</span> <span class="c">you</span>’re  <span class="c">doing</span>  <span class="c">here</span>  is  <span class="c">this</span>:  <span class="c">imagine</span>   <span class="c">that</span> <span class="c">the</span>  <span class="c">marker</span> is  <span class="c">slightly</span>  <span class="c">sceptical</span>  <span class="c">about</span>  <span class="c">whether</span>  to   <span class="c">award</span> <span class="c">you</span>  <span class="c">the</span> <span class="c">marks</span>  <span class="c">for</span>  a  <span class="c">given</span>  <span class="c">criterion</span>.  <span class="c">What</span>   <span class="c">would</span> <span class="c">you</span>  <span class="c">say</span> to  <span class="c">convince</span>  <span class="c">them</span>?<span><span aria-hidden="true" class="d"><span>
+̢̡̢̢̨̠̥̤</span></span></span></p>
+<p><span class="c">Make</span>  <span class="c">your</span>  <span class="c">responses</span>  <span class="c">concise</span>   <span class="c">and</span> to-<span class="c">the</span>-<span class="c">point</span>.  <span class="c">Address</span> <span class="c">each</span>  <span class="c">criterion</span>  <span class="c">separately</span>.<span><span aria-hidden="true" class="d"><span>
+̢̡̢̢̨̠̥̤</span></span></span></p>
+<h2 id="problem_description">Problem  Description</h2>
+<p><span class="c">Your</span>  <span class="c">task</span>  is   to <span class="c">design</span>  <span class="c">and</span> <span class="c">implement</span>  a  <span class="c">system</span>  to  <span class="c">simulate</span>  <span class="c">natural</span>   <span class="c">disasters</span>, to  <span class="c">help</span> <span class="c">test</span>  <span class="c">emergency</span>  <span class="c">service</span>  <span class="c">responses</span>.<span><span aria-hidden="true" class="d"><span>
+̢̡̢̢̨̠̥̤</span></span></span></p>
+<p><span class="c">Your</span>  <span class="c">particular</span>  <span class="c">part</span>   of <span class="c">the</span>  <span class="c">system</span> <span class="c">will</span>:<span><span aria-hidden="true" class="d"><span>
+̢̡̢̢̨̠̥̤</span></span></span></p>
+<ul><li><span class="c">Generate</span>  <span class="c">pretend</span>  <span class="c">emergencies</span>  <span class="c">based</span>  on  <span class="c">the</span>   <span class="c">contents</span> of  a <span class="c">file</span>;<span><span aria-hidden="true" class="d"><span>
+̢̡̢̢̨̠̥̤</span></span></span></li>
+<li><span class="c">Receive</span>  <span class="c">updates</span>  <span class="c">from</span>  <span class="c">emergency</span>  <span class="c">responders</span>;<span><span aria-hidden="true" class="d"><span>
+̢̡̢̢̨̠̥̤</span></span></span></li>
+<li><span class="c">Determine</span>  <span class="c">what</span>   <span class="c">actually</span> <span class="c">happens</span>  (in <span class="c">the</span>  <span class="c">course</span>  of  <span class="c">the</span>  <span class="c">simulation</span>);<span><span aria-hidden="true" class="d"><span>
+̢̡̢̢̨̠̥̤</span></span></span></li>
+<li><span class="c">Send</span>  <span class="c">this</span>   <span class="c">information</span> <span class="c">back</span>  to <span class="c">emergency</span>  <span class="c">responders</span>.<span><span aria-hidden="true" class="d"><span>
+̢̡̢̢̨̠̥̤</span></span></span></li>
+</ul><p><span class="c">This</span>  <span class="c">all</span>  <span class="c">happens</span>  “in  <span class="c">real</span>   <span class="c">time</span>”. <span class="c">Your</span>  <span class="c">simulation</span> <span class="c">must</span>  <span class="c">maintain</span>  a  <span class="c">loop</span>  <span class="c">that</span>  <span class="c">counts</span>   <span class="c">time</span> in  <span class="c">seconds</span>, <span class="c">and</span>  at  <span class="c">each</span>  <span class="c">iteration</span>  it  <span class="c">must</span>   <span class="c">run</span> <span class="c">through</span>  <span class="c">the</span> <span class="c">above</span>  <span class="c">steps</span>.  <span class="c">Only</span>  at  <span class="c">specific</span>  <span class="c">points</span>   in <span class="c">time</span>  <span class="c">will</span> <span class="c">things</span>  <span class="c">actually</span>  <span class="c">happen</span>,  <span class="c">but</span>  <span class="c">you</span>  <span class="c">won</span>’t   <span class="c">know</span> <span class="c">unless</span>  <span class="c">you</span> <span class="c">check</span>  <span class="c">every</span>  <span class="c">second</span>.<span><span aria-hidden="true" class="d"><span>
+̢̡̢̢̨̠̥̤</span></span></span></p>
+<p><span class="c">You</span>  <span class="c">will</span>  <span class="c">need</span>  to   <span class="c">use</span> an  “<span class="c">event</span> <span class="c">loop</span>”  <span class="c">roughly</span>  <span class="c">like</span>  <span class="c">this</span>:<span><span aria-hidden="true" class="d"><span>
+̢̡̢̢̨̠̥̤</span></span></span></p>
+<div class="boxed highlight"><pre><span></span><code><span class="c">while</span>(<span class="c">simulation</span> <span class="c">doesn</span>'t <span class="c">need</span> to <span class="c">stop</span>)
+{
+    <span class="c">check</span> <span class="c">whether</span> <span class="c">anything</span> <span class="c">has</span> <span class="c">happened</span>
+    <span class="c">take</span> <span class="c">actions</span> if <span class="c">necessary</span>
+    <span class="c">sleep</span> <span class="c">for</span> 1 <span class="c">second</span>
+}
+</code></pre></div>
+<div class="admonition note">
+<p class="admonition-title"><span class="c">Sleeping</span><span><span aria-hidden="true" class="d"><span>
+̢̡̢̢̨̠̥̤</span></span></span></p>
+<p><span class="c">Sleeping</span>  (i.e.,  <span class="c">doing</span>   <span class="c">nothing</span> <span class="c">for</span>  a <span class="c">small</span>  <span class="c">period</span>)  is  <span class="c">necessary</span>  to  <span class="c">maintain</span>   a <span class="c">sense</span>  of <span class="c">time</span>  <span class="c">passing</span>.<span><span aria-hidden="true" class="d"><span>
+̢̡̢̢̨̠̥̤</span></span></span></p>
+<p><span class="c">Here</span>’s  <span class="c">some</span>  <span class="c">relevant</span>  <span class="c">API</span>  <span class="c">references</span>:<span><span aria-hidden="true" class="d"><span>
+̢̡̢̢̨̠̥̤</span></span></span></p>
+<ul><li><span class="c">Java</span>:   <a href="https://docs.oracle.com/en/java/javase/11/docs/api/java.base/java/lang/Thread.html#sleep(long)"><code><span class="c">Thread</span>.<span class="c">sleep</span>(<span class="c">millisecs</span>)</code></a>. (<span class="c">You</span>  <span class="c">will</span> <span class="c">have</span>  to  <span class="c">catch</span>  <code><span class="c">InterruptedException</span></code>  <span class="c">and</span>  <span class="c">treat</span>   it as  an <span class="c">internal</span>  <span class="c">error</span>.  In  <span class="c">multithreaded</span>  <span class="c">code</span>,  <span class="c">this</span>   <span class="c">exception</span> <span class="c">has</span>  a <span class="c">specific</span>  <span class="c">purpose</span>,  <span class="c">but</span>  it  <span class="c">shouldn</span>’t  <span class="c">happen</span>   in <span class="c">the</span>  <span class="c">ordinary</span> <span class="c">single</span>-<span class="c">threaded</span>  <span class="c">code</span>  <span class="c">that</span>  <span class="c">you</span>’ll  be  <span class="c">writing</span>.)<span><span aria-hidden="true" class="d"><span>
+̢̡̢̢̨̠̥̤</span></span></span></li>
+<li><span class="c">Python</span>:   <a href="https://docs.python.org/3/library/time.html#time.sleep"><code><span class="c">time</span>.<span class="c">sleep</span>(<span class="c">secs</span>)</code></a> (<span class="c">where</span>  <code><span class="c">secs</span></code> is  a  <code><span class="c">float</span></code>).<span><span aria-hidden="true" class="d"><span>
+̢̡̢̢̨̠̥̤</span></span></span></li>
+<li>C#:  <a href="https://docs.microsoft.com/en-us/dotnet/api/system.threading.thread.sleep?view=net-5.0#System_Threading_Thread_Sleep_System_Int32_"><code><span class="c">Thread</span>.<span class="c">Sleep</span>(<span class="c">millisecs</span>)</code></a>.<span><span aria-hidden="true" class="d"><span>
+̢̡̢̢̨̠̥̤</span></span></span></li>
+<li>C++:  <a href="https://www.cplusplus.com/reference/thread/this_thread/sleep_for/"><code><span class="c">std</span>::<span class="c">this_thread</span>::<span class="c">sleep_for</span>(<span class="c">duration</span>)</code></a>.<span><span aria-hidden="true" class="d"><span>
+̢̡̢̢̨̠̥̤</span></span></span></li>
+</ul><p><span class="c">There</span>  <span class="c">are</span>   <span class="c">alternatives</span> to  <span class="c">sleeping</span>, <span class="c">such</span>  as  <span class="c">using</span>  <span class="c">the</span>  <span class="c">Java</span>  <code><span class="c">Timer</span></code>   <span class="c">class</span>, <span class="c">but</span>  <span class="c">these</span> <span class="c">tend</span>  to  <span class="c">create</span>  <span class="c">threads</span>,  <span class="c">which</span>  <span class="c">entail</span>   <span class="c">unexpected</span> <span class="c">issues</span>  (<span class="c">particularly</span> “<span class="c">race</span>  <span class="c">conditions</span>”)  <span class="c">that</span>  <span class="c">you</span>  <span class="c">may</span>  <span class="c">not</span>   be <span class="c">prepared</span>  <span class="c">for</span>.<span><span aria-hidden="true" class="d"><span>
+̢̡̢̢̨̠̥̤</span></span></span></p>
+</div>
+<h3 id="generating-emergencies">Generating Emergencies</h3>
+<p>On  <span class="c">startup</span>  (i.e.,  <span class="c">once</span>),  <span class="c">the</span>  <span class="c">program</span>   <span class="c">must</span> <span class="c">read</span>  a <span class="c">file</span>  <span class="c">whose</span>  <span class="c">name</span>  <span class="c">will</span>  be  <span class="c">given</span>   on <span class="c">the</span>  <span class="c">command</span>-<span class="c">line</span>. <span class="c">The</span>  <span class="c">file</span>  <span class="c">will</span>  <span class="c">have</span>  a  <span class="c">relatively</span>   <span class="c">simple</span> <span class="c">format</span>.  <span class="c">Each</span> <span class="c">line</span>  <span class="c">consists</span>  of  an  <span class="c">integer</span>  (a   <span class="c">time</span> in  <span class="c">seconds</span>), <span class="c">then</span>  a  <span class="c">space</span>,  <span class="c">then</span>  a  <span class="c">type</span>   of <span class="c">emergency</span>  (“<code><span class="c">fire</span></code>”, “<code><span class="c">flood</span></code>”  or  “<code><span class="c">chemical</span></code>”),  <span class="c">then</span>  a  <span class="c">space</span>,   <span class="c">then</span> a  <span class="c">location</span> as  <span class="c">free</span>-<span class="c">form</span>  <span class="c">text</span>.  To  be  <span class="c">precise</span>,   <span class="c">each</span> <span class="c">line</span>  <span class="c">matches</span> <span class="c">the</span>  <span class="c">regular</span>  <span class="c">expression</span>  “<code>[0-9]+ (<span class="c">fire</span>|<span class="c">flood</span>|<span class="c">chemical</span>) .+</code>”.<span><span aria-hidden="true" class="d"><span>
+̢̡̢̢̨̠̥̤</span></span></span></p>
+<div class="admonition note">
+<p class="admonition-title"><span class="c">Regular</span>  <span class="c">expressions</span><span><span aria-hidden="true" class="d"><span>
+̢̡̢̢̨̠̥̤</span></span></span></p>
+<p><span class="c">This</span>  <span class="c">document</span>   <span class="c">uses</span> <span class="c">regular</span>  <span class="c">expressions</span> <em><span class="c">only</span></em>  to  be  <span class="c">precise</span>  <span class="c">about</span>  <span class="c">data</span>   <span class="c">formats</span>. <span class="c">There</span>’s  no <span class="c">requirement</span>  to  <span class="c">use</span>  <span class="c">regular</span>  <span class="c">expressions</span>  in   <span class="c">your</span> <span class="c">code</span>,  <span class="c">though</span> <span class="c">they</span>  <span class="c">may</span>  be  of  <span class="c">some</span>  <span class="c">use</span>.<span><span aria-hidden="true" class="d"><span>
+̢̡̢̢̨̠̥̤</span></span></span></p>
+<p>(In   <span class="c">any</span> <span class="c">case</span>,  it <span class="c">will</span>  be  <span class="c">beneficial</span>  to  <span class="c">your</span>  <span class="c">career</span>   to <span class="c">know</span>  <span class="c">how</span> to  <span class="c">use</span>  <span class="c">regular</span>  <span class="c">expressions</span>,  if  <span class="c">you</span>   <span class="c">don</span>’t <span class="c">already</span>!)<span><span aria-hidden="true" class="d"><span>
+̢̡̢̢̨̠̥̤</span></span></span></p>
+</div>
+<p><span class="c">For</span>  <span class="c">instance</span>:<span><span aria-hidden="true" class="d"><span>
+̢̡̢̢̨̠̥̤</span></span></span></p>
+<div class="boxed highlight"><pre><span></span><code><span class="c">240</span> <span class="c">flood</span> <span class="c">Midtown</span>
+60 <span class="c">fire</span> <span class="c">Midtown</span>
+<span class="c">120</span> <span class="c">fire</span> <span class="c">Hill</span> <span class="c">Valley</span>
+<span class="c">240</span> <span class="c">flood</span> <span class="c">Hill</span> <span class="c">Valley</span>
+<span class="c">240</span> <span class="c">chemical</span> <span class="c">Westtown</span>
+</code></pre></div>
+<p><span class="c">Each</span> <span class="c">line</span>  <span class="c">expresses</span>  <span class="c">the</span>  <span class="c">fact</span>  <span class="c">that</span>  a   <span class="c">particular</span> <span class="c">type</span>  of <span class="c">emergency</span>  <span class="c">begins</span>  at  a  <span class="c">particular</span>  <span class="c">time</span>   in a  <span class="c">particular</span> <span class="c">location</span>.  <span class="c">The</span>  <span class="c">lines</span>  <span class="c">are</span>  in  no   <span class="c">particular</span> <span class="c">order</span>,  <span class="c">but</span> <span class="c">the</span>  <span class="c">parts</span>  of  <span class="c">the</span>  <span class="c">line</span>  <span class="c">after</span>   <span class="c">the</span> <span class="c">integer</span>  <span class="c">should</span> be  <span class="c">unique</span>;  e.g.,  <span class="c">there</span>  <span class="c">can</span>  <span class="c">only</span>   be <span class="c">one</span>  <span class="c">flood</span> in  <span class="c">Midtown</span>  in  a  <span class="c">given</span>  <span class="c">simulation</span>.<span><span aria-hidden="true" class="d"><span>
+̢̡̢̢̨̠̥̤</span></span></span></p>
+<p><span class="c">Your</span>   <span class="c">program</span> <span class="c">must</span>  <span class="c">keep</span> <span class="c">track</span>  of  <span class="c">this</span>,  as  <span class="c">will</span>  <span class="c">become</span>   <span class="c">clear</span> in  <span class="c">the</span> <span class="c">following</span>  <span class="c">sections</span>.  If  <span class="c">the</span>  <span class="c">file</span>  is   <span class="c">invalid</span> or  <span class="c">unreadable</span>, <span class="c">the</span>  <span class="c">simulation</span>  <span class="c">should</span>  <span class="c">not</span>  <span class="c">proceed</span>.<span><span aria-hidden="true" class="d"><span>
+̢̡̢̢̨̠̥̤</span></span></span></p>
+
+
+<h3 id="simulation-logic">Simulation  Logic</h3>
+<p><span class="c">Once</span>   an <span class="c">emergency</span>  <span class="c">begins</span>, it  <span class="c">may</span>  <span class="c">produce</span>  <span class="c">several</span>  <span class="c">effects</span>,  as   <span class="c">follows</span>:<span><span aria-hidden="true" class="d"><span>
+̢̡̢̢̨̠̥̤</span></span></span></p>
+<div class="admonition note">
+<p class="admonition-title"><span class="c">Note</span><span><span aria-hidden="true" class="d"><span>
+̢̡̢̢̨̠̥̤</span></span></span></p>
+<p><span class="c">This</span> <span class="c">section</span>  <span class="c">uses</span> <span class="c">named</span>  <span class="c">constants</span>  (e.g.,  <code><span class="c">FIRE_LOW_TO_HIGH_TIME</span></code>)  <span class="c">rather</span>  <span class="c">than</span>   <span class="c">using</span> <span class="c">fixed</span>  <span class="c">numbers</span>. <span class="c">Use</span>  <span class="c">these</span>  <span class="c">same</span>  <span class="c">names</span>  in  <span class="c">your</span>   <span class="c">code</span> <span class="c">for</span>  <span class="c">clarity</span>. <span><span aria-hidden="true" class="d"><span>
+̢̡̢̢̨̠̥̤</span></span></span></p>
+<p>It  <span class="c">doesn</span>’t  <span class="c">matter</span>  <span class="c">what</span>  <span class="c">the</span>  <span class="c">actual</span>   <span class="c">values</span> <span class="c">are</span>,  <span class="c">except</span> <span class="c">that</span>  <span class="c">you</span>  <span class="c">should</span>  <span class="c">choose</span>  <span class="c">them</span>  in   a <span class="c">way</span>  <span class="c">that</span> <span class="c">makes</span>  <span class="c">the</span>  <span class="c">functionality</span>  <span class="c">easy</span>  to  <span class="c">demonstrate</span>.   (<span class="c">You</span> <span class="c">can</span>  <span class="c">create</span> a  <span class="c">system</span>  of  <span class="c">configurable</span>  <span class="c">options</span>  <span class="c">instead</span>   of <span class="c">constants</span>  if <span class="c">you</span>  <span class="c">like</span>,  <span class="c">but</span>  <span class="c">that</span>  <span class="c">isn</span>’t  a   <span class="c">requirement</span>.)<span><span aria-hidden="true" class="d"><span>
+̢̡̢̢̨̠̥̤</span></span></span></p>
+<p><span class="c">All</span> <span class="c">times</span>  <span class="c">are</span> in  <span class="c">seconds</span>.  <span class="c">All</span>  <span class="c">probabilities</span>  <span class="c">are</span>  in   <span class="c">the</span> <span class="c">range</span>  0–1, <span class="c">and</span>  <span class="c">are</span>  <span class="c">for</span>  a  <span class="c">given</span>  <span class="c">event</span>   <span class="c">occurring</span> in  a <span class="c">given</span>  <span class="c">second</span>  (<em><span class="c">not</span></em>  <span class="c">the</span>  <span class="c">probability</span>  of   <span class="c">the</span> <span class="c">event</span>  <span class="c">occurring</span> <span class="c">overall</span>).  <span class="c">Your</span>  <span class="c">program</span>  <span class="c">must</span>  <span class="c">use</span>  a   <span class="c">random</span> <span class="c">number</span>  <span class="c">generator</span> to  <span class="c">evaluate</span>  <span class="c">whether</span>  <span class="c">the</span>  <span class="c">event</span>  <span class="c">actually</span>   <span class="c">happens</span> in  <span class="c">each</span> <span class="c">second</span>.  <span class="c">Probabilities</span>  <span class="c">are</span>  <span class="c">independent</span>  <span class="c">from</span>  <span class="c">one</span>   <span class="c">second</span> to  <span class="c">the</span> <span class="c">next</span>,  <span class="c">and</span>  <span class="c">events</span>  <span class="c">may</span>  <span class="c">repeat</span>.<span><span aria-hidden="true" class="d"><span>
+̢̡̢̢̨̠̥̤</span></span></span></p>
+</div>
+<ul><li>
+<p>A  <span class="c">fire</span>   <span class="c">emergency</span> <span class="c">will</span>  at <span class="c">first</span>  be  “<span class="c">low</span>-<span class="c">intensity</span>”.  If  a  <span class="c">fire</span>   <span class="c">has</span> <span class="c">been</span>  <span class="c">burning</span> at  <span class="c">low</span>-<span class="c">intensity</span>  <span class="c">for</span>  <code><span class="c">FIRE_LOW_TO_HIGH_TIME</span></code>  (<span class="c">seconds</span>),  <span class="c">unattended</span>,   it <span class="c">will</span>  <span class="c">then</span> <span class="c">become</span>  “<span class="c">high</span>-<span class="c">intensity</span>”.  If  <span class="c">attended</span>  by  a   <span class="c">fire</span>-<span class="c">fighting</span> <span class="c">team</span>,  a <span class="c">low</span>-<span class="c">intensity</span>  <span class="c">fire</span>  <span class="c">will</span>  <span class="c">take</span>  <code><span class="c">FIRE_LOW_CLEANP_TIME</span></code>  to   <span class="c">extinguish</span> (<span class="c">ending</span>  <span class="c">the</span> <span class="c">emergency</span>),  <span class="c">while</span>  a  <span class="c">high</span>-<span class="c">intensity</span>  <span class="c">fire</span>  <span class="c">will</span>   <span class="c">take</span> <code><span class="c">FIRE_HIGH_TO_LOW_TIME</span></code>  to <span class="c">reduce</span>  to  <span class="c">the</span>  <span class="c">level</span>  of  <span class="c">low</span>-<span class="c">intensity</span>.   If <span class="c">fire</span>  <span class="c">fighters</span> <span class="c">are</span>  <span class="c">absent</span>,  <span class="c">the</span>  <span class="c">fire</span>  <span class="c">will</span>  <span class="c">continue</span>   <span class="c">indefinitely</span>.<span><span aria-hidden="true" class="d"><span>
+̢̡̢̢̨̠̥̤</span></span></span></p>
+<p><span class="c">For</span> <span class="c">each</span>  <span class="c">passing</span> <span class="c">second</span>:<span><span aria-hidden="true" class="d"><span>
+̢̡̢̢̨̠̥̤</span></span></span></p>
+<ul><li>A  <span class="c">low</span>-<span class="c">intensity</span>  <span class="c">fire</span>  <span class="c">has</span>  a  <code><span class="c">FIRE_LOW_CASUALTY_PROB</span></code>   <span class="c">probability</span> (0–1)  of <span class="c">hospitalising</span>  <span class="c">someone</span>,  <span class="c">and</span>  a  <code><span class="c">FIRE_LOW_DAMAGE_PROB</span></code>  <span class="c">probability</span>   of <span class="c">destroying</span>  a <span class="c">property</span>.<span><span aria-hidden="true" class="d"><span>
+̢̡̢̢̨̠̥̤</span></span></span></li>
+<li>A  <span class="c">high</span>-<span class="c">intensity</span>  <span class="c">fire</span>  <span class="c">has</span>  a  <code><span class="c">FIRE_HIGH_CASUALTY_PROB</span></code>   <span class="c">probability</span> of  <span class="c">hospitalising</span> <span class="c">someone</span>,  <span class="c">and</span>  a  <code><span class="c">FIRE_HIGH_DAMAGE_PROB</span></code>  <span class="c">probability</span>  of   <span class="c">destroying</span> a  <span class="c">property</span>.<span><span aria-hidden="true" class="d"><span>
+̢̡̢̢̨̠̥̤</span></span></span></li>
+</ul><span><span aria-hidden="true" class="d"><span>
+̢̡̢̢̨̠̥̤</span></span></span></li>
+<li>
+<p>A <span class="c">flood</span>  <span class="c">emergency</span>  <span class="c">will</span>  <span class="c">dissipate</span>  on  <span class="c">its</span>   <span class="c">own</span> in  <code><span class="c">FLOOD_END_TIME</span></code> <span class="c">time</span>.  <span class="c">Until</span>  it  <span class="c">ends</span>,  <span class="c">for</span>  <span class="c">each</span>   <span class="c">passing</span> <span class="c">second</span>:<span><span aria-hidden="true" class="d"><span>
+̢̡̢̢̨̠̥̤</span></span></span></p>
+<ul><li><span class="c">There</span>  is a  <code><span class="c">FLOOD_DAMAGE_PROB</span></code>  <span class="c">probability</span>  of  <span class="c">property</span>  <span class="c">destruction</span>.<span><span aria-hidden="true" class="d"><span>
+̢̡̢̢̨̠̥̤</span></span></span></li>
+<li><em>If   <span class="c">flood</span> <span class="c">rescuers</span>  <span class="c">are</span> <span class="c">absent</span></em>,  <span class="c">there</span>  is  a  <code><span class="c">FLOOD_CASUALTY_PROB</span></code>  <span class="c">probability</span>   of <span class="c">someone</span>  <span class="c">needing</span> <span class="c">hospitalisation</span>.  (If  <span class="c">flood</span>  <span class="c">rescuers</span>  <span class="c">are</span>  <span class="c">present</span>,   <span class="c">nobody</span> <span class="c">will</span>  <span class="c">need</span> <span class="c">hospitalisation</span>.)<span><span aria-hidden="true" class="d"><span>
+̢̡̢̢̨̠̥̤</span></span></span></li>
+</ul><span><span aria-hidden="true" class="d"><span>
+̢̡̢̢̨̠̥̤</span></span></span></li>
+<li>
+<p>A  <span class="c">chemical</span>  <span class="c">spill</span>  <span class="c">emergency</span>  <span class="c">will</span>  <span class="c">take</span>   a <span class="c">clean</span>-up  <span class="c">team</span> <code><span class="c">CHEM_CLEANUP_TIME</span></code>  to  <span class="c">clean</span>  it  up,  <span class="c">from</span>   <span class="c">the</span> <span class="c">time</span>  <span class="c">they</span> <span class="c">arrive</span>.  <span class="c">The</span>  <span class="c">spill</span>  <span class="c">will</span>  <span class="c">not</span>  go   <span class="c">away</span> <span class="c">otherwise</span>.<span><span aria-hidden="true" class="d"><span>
+̢̡̢̢̨̠̥̤</span></span></span></p>
+<p><span class="c">For</span>  <span class="c">each</span> <span class="c">passing</span>  <span class="c">second</span>,  a  <span class="c">chemical</span>  <span class="c">spill</span>  <span class="c">has</span>   <code><span class="c">CHEM_CASUALTY_PROB</span></code> <span class="c">probability</span>  of <span class="c">hospitalising</span>  <span class="c">someone</span>,  <span class="c">and</span>  <code><span class="c">CHEM_CONTAM_PROB</span></code>  <span class="c">probability</span>  of   <span class="c">causing</span> <span class="c">environmental</span>  <span class="c">contamination</span>.<span><span aria-hidden="true" class="d"><span>
+̢̡̢̢̨̠̥̤</span></span></span></p>
+<span><span aria-hidden="true" class="d"><span>
+̢̡̢̢̨̠̥̤</span></span></span></li>
+</ul><p>A <span class="c">lot</span>  <span class="c">depends</span>  on  <span class="c">whether</span>  <span class="c">emergency</span>  <span class="c">responders</span>   (of <span class="c">the</span>  <span class="c">right</span> <span class="c">specialisation</span>)  <span class="c">are</span>  <span class="c">present</span>.  <span class="c">Importantly</span>:<span><span aria-hidden="true" class="d"><span>
+̢̡̢̢̨̠̥̤</span></span></span></p>
+<ul><li>
+<p><span class="c">Responders</span>  <span class="c">can</span>  <span class="c">arrive</span>   at, <span class="c">and</span>  <span class="c">later</span> <span class="c">depart</span>  a  <span class="c">location</span>.<span><span aria-hidden="true" class="d"><span>
+̢̡̢̢̨̠̥̤</span></span></span></p>
+<span><span aria-hidden="true" class="d"><span>
+̢̡̢̢̨̠̥̤</span></span></span></li>
+<li>
+<p>It  is  <span class="c">not</span>  <span class="c">necessary</span>   to <span class="c">keep</span>  <span class="c">track</span> of  “<span class="c">how</span>  <span class="c">many</span>”  <span class="c">responder</span>  <span class="c">teams</span>  <span class="c">there</span>   <span class="c">are</span>. <span class="c">Either</span>  a <span class="c">particular</span>  <span class="c">type</span>  of  <span class="c">team</span>  is  <span class="c">present</span>   at a  <span class="c">location</span>, or  it  is  <span class="c">not</span>.<span><span aria-hidden="true" class="d"><span>
+̢̡̢̢̨̠̥̤</span></span></span></p>
+<span><span aria-hidden="true" class="d"><span>
+̢̡̢̢̨̠̥̤</span></span></span></li>
+<li>
+<p>It  is  <span class="c">not</span>   <span class="c">necessary</span> to  <span class="c">keep</span> <span class="c">track</span>  of  “<span class="c">previous</span>  <span class="c">visits</span>”  by  <span class="c">responder</span>   <span class="c">teams</span>. If  <span class="c">responders</span> <span class="c">have</span>  <span class="c">attended</span>  an  <span class="c">emergency</span>  <span class="c">before</span>  <span class="c">but</span>   <span class="c">failed</span> to  <span class="c">clean</span> it  up  at  <span class="c">the</span>  <span class="c">time</span>,  a   <span class="c">future</span> <span class="c">team</span>  <span class="c">will</span> <span class="c">start</span>  <span class="c">from</span>  <span class="c">scratch</span>.  <span><span aria-hidden="true" class="d"><span>
+̢̡̢̢̨̠̥̤</span></span></span></p>
+<p>(<span class="c">Responders</span>  <span class="c">are</span>  <em><span class="c">not</span></em>   <span class="c">guaranteed</span> to  <span class="c">stay</span> <span class="c">for</span>  <span class="c">the</span>  <span class="c">time</span>  <span class="c">required</span>  to  <span class="c">resolve</span>   an <span class="c">emergency</span>!  In <span class="c">extreme</span>  <span class="c">circumstances</span>,  <span class="c">they</span>  <span class="c">may</span>  <span class="c">have</span>  to   <span class="c">prioritise</span> <span class="c">some</span>  <span class="c">emergencies</span> <span class="c">over</span>  <span class="c">others</span>.)<span><span aria-hidden="true" class="d"><span>
+̢̡̢̢̨̠̥̤</span></span></span></p>
+<span><span aria-hidden="true" class="d"><span>
+̢̡̢̢̨̠̥̤</span></span></span></li>
+</ul><p><span class="c">Finally</span>,  <span class="c">all</span>  <span class="c">events</span>  <span class="c">described</span>  <span class="c">here</span>   <span class="c">must</span> be  <span class="c">reported</span> <span class="c">back</span>  to  <span class="c">responders</span>.  <span class="c">The</span>  <span class="c">simulation</span>  as   a <span class="c">whole</span>  <span class="c">ends</span> <span class="c">when</span>  it  <span class="c">receives</span>  a  <span class="c">special</span>  “<span class="c">end</span>”   <span class="c">message</span> <span class="c">from</span>  <span class="c">the</span> <span class="c">responders</span>.<span><span aria-hidden="true" class="d"><span>
+̢̡̢̢̨̠̥̤</span></span></span></p>
+<h3 id="communicating-with-responders">Communicating  with  Responders</h3>
+<p><span class="c">Since</span>  <span class="c">the</span>  <span class="c">objective</span>  is   to <span class="c">test</span>  <span class="c">emergency</span> <span class="c">responses</span>,  <span class="c">you</span>  <span class="c">must</span>  <span class="c">expect</span>  <span class="c">that</span>  <span class="c">there</span>   <span class="c">will</span> be  <span class="c">actual</span> <span class="c">fire</span>  <span class="c">fighters</span>,  <span class="c">flood</span>  <span class="c">rescuers</span>,  <span class="c">and</span>  <span class="c">other</span>   <span class="c">responders</span> <span class="c">participating</span>  in <span class="c">the</span>  <span class="c">exercise</span>.  <span class="c">They</span>  <span class="c">will</span>  be  <span class="c">travelling</span>   to <span class="c">the</span>  <span class="c">locations</span> of  <span class="c">the</span>  <span class="c">emergencies</span>  <span class="c">with</span>  <span class="c">all</span>  <span class="c">their</span>   <span class="c">equipment</span>, <span class="c">following</span>  <span class="c">their</span> <span class="c">usual</span>  <span class="c">procedures</span>,  <span class="c">and</span>  <span class="c">pretending</span>  to  <span class="c">handle</span>   <span class="c">the</span> <span class="c">problems</span>  <span class="c">once</span> <span class="c">there</span>.  <span class="c">Each</span>  <span class="c">different</span>  <span class="c">team</span>  of  <span class="c">responders</span>   <span class="c">will</span> <span class="c">communicate</span>  <span class="c">with</span> <span class="c">your</span>  <span class="c">program</span>  to  <span class="c">say</span>  <span class="c">who</span>  <span class="c">they</span>   <span class="c">are</span> <span class="c">and</span>  <span class="c">where</span> <span class="c">they</span>  <span class="c">are</span>.<span><span aria-hidden="true" class="d"><span>
+̢̡̢̢̨̠̥̤</span></span></span></p>
+<p><span class="c">Your</span>  <span class="c">program</span>  is  <span class="c">expected</span>  to   <span class="c">send</span> <span class="c">and</span>  <span class="c">receive</span> <span class="c">information</span>  to/<span class="c">from</span>  <span class="c">responders</span>  <span class="c">via</span>  an  <span class="c">interface</span>   <span class="c">and</span> a  <span class="c">single</span> <span class="c">implementing</span>  <span class="c">class</span>,  <span class="c">defined</span>  as  <span class="c">follows</span>:<span><span aria-hidden="true" class="d"><span>
+̢̡̢̢̨̠̥̤</span></span></span></p>
+<p><span><span aria-hidden="true" class="d"><span>
+̢̡̢̢̨̠̥̤</span></span></span></p><div class="boxed highlight"><pre><span></span><code><span class="kn"><span class="c">package</span></span> <span class="nn"><span class="c">edu</span>.<span class="c">curtin</span>.<span class="c">emergencysim</span>.<span class="c">responders</span></span><span class="p">;</span>
+<span class="kn"><span class="c">import</span></span> <span class="nn"><span class="c">java</span>.<span class="c">util</span>.*</span><span class="p">;</span>
+<span class="kd"><span class="c">public</span></span> <span class="kd"><span class="c">interface</span></span> <span class="nc"><span class="c">ResponderComm</span></span>
+<span class="p">{</span>
+    <span class="n"><span class="c">List</span></span><span class="o">&lt;</span><span class="n"><span class="c">String</span></span><span class="o">&gt;</span> <span class="nf"><span class="c">poll</span></span><span class="p">();</span>
+    <span class="kt"><span class="c">void</span></span> <span class="nf"><span class="c">send</span></span><span class="p">(</span><span class="n"><span class="c">String</span></span> <span class="n">s</span><span class="p">);</span>
+<span class="p">}</span>
+</code></pre></div><br><div class="boxed highlight"><pre><span></span><code><span class="kn"><span class="c">package</span></span> <span class="nn"><span class="c">edu</span>.<span class="c">curtin</span>.<span class="c">emergencysim</span>.<span class="c">responders</span></span><span class="p">;</span>
+<span class="kn"><span class="c">import</span></span> <span class="nn"><span class="c">java</span>.<span class="c">util</span>.*</span><span class="p">;</span>
+<span class="kd"><span class="c">public</span></span> <span class="kd"><span class="c">class</span></span> <span class="nc"><span class="c">ResponderCommImpl</span></span> <span class="kd"><span class="c">implements</span></span> <span class="n"><span class="c">ResponderComm</span></span>
+<span class="p">{</span>
+    <span class="nd">@<span class="c">Override</span></span>
+    <span class="kd"><span class="c">public</span></span> <span class="n"><span class="c">List</span></span><span class="o">&lt;</span><span class="n"><span class="c">String</span></span><span class="o">&gt;</span> <span class="nf"><span class="c">poll</span></span><span class="p">()</span> <span class="p">{...}</span>
+
+    <span class="nd">@<span class="c">Override</span></span>
+    <span class="kd"><span class="c">public</span></span> <span class="kt"><span class="c">void</span></span> <span class="nf"><span class="c">send</span></span><span class="p">(</span><span class="n"><span class="c">String</span></span> <span class="n">s</span><span class="p">)</span> <span class="p">{...}</span>
+<span class="p">}</span>
+</code></pre></div>
+<p>A  <span class="c">sample</span>   <span class="c">implementation</span> <span class="c">will</span>  be <span class="c">available</span>  on  <span class="c">Blackboard</span>,  <span class="c">and</span>  <span class="c">you</span>  <span class="c">can</span>   (<span class="c">and</span> <span class="c">likely</span>  <span class="c">will</span> <span class="c">need</span>  to)  <span class="c">modify</span>  it  to  <span class="c">test</span>   <span class="c">your</span> <span class="c">program</span>’s  <span class="c">behaviour</span>.<span><span aria-hidden="true" class="d"><span>
+̢̡̢̢̨̠̥̤</span></span></span></p>
+<p>We’ll <span class="c">discuss</span>  <span class="c">what</span>  <span class="c">the</span>  <span class="c">methods</span>  <span class="c">are</span>  <span class="c">for</span>   <span class="c">below</span>. <em><span class="c">But</span>  <span class="c">first</span></em>, <span class="c">there</span>  <span class="c">are</span>  <span class="c">some</span>  <span class="c">important</span>  <span class="c">constraints</span>  <span class="c">imposed</span>   on <span class="c">you</span>  <span class="c">here</span>:<span><span aria-hidden="true" class="d"><span>
+̢̡̢̢̨̠̥̤</span></span></span></p>
+<ol><li>
+<p><span class="c">You</span> <span class="c">must</span>  <span class="c">keep</span>  <span class="c">the</span>  <code><span class="c">ResponderComm</span></code>  <span class="c">interface</span>  <span class="c">exactly</span>   as it  is, as  <span class="c">shown</span>  <span class="c">above</span>.  <span class="c">You</span>  <span class="c">cannot</span>  <span class="c">make</span>   <span class="c">any</span> <span class="c">change</span>  to it  at  <span class="c">all</span>  (<span class="c">with</span>  <span class="c">the</span>  <span class="c">one</span>   <span class="c">exception</span> <span class="c">that</span>  <span class="c">you</span> <span class="c">may</span>  <span class="c">translate</span>  it  <span class="c">into</span>  <span class="c">another</span>  <span class="c">language</span>,   if <span class="c">you</span>  <span class="c">choose</span> to  <span class="c">use</span>  <span class="c">one</span>).<span><span aria-hidden="true" class="d"><span>
+̢̡̢̢̨̠̥̤</span></span></span></p>
+<span><span aria-hidden="true" class="d"><span>
+̢̡̢̢̨̠̥̤</span></span></span></li>
+<li>
+<p><span class="c">The</span>  <span class="c">implementing</span>  <span class="c">class</span>  <span class="c">must</span>   <span class="c">stand</span> <span class="c">alone</span>,  <span class="c">separate</span> <span class="c">from</span>  <span class="c">the</span>  “<span class="c">real</span>”  <span class="c">part</span>  of  <span class="c">your</span>   <span class="c">application</span>:<span><span aria-hidden="true" class="d"><span>
+̢̡̢̢̨̠̥̤</span></span></span></p>
+<ol><li>
+<p>It <span class="c">must</span>  <span class="c">not</span> <span class="c">refer</span>  to  <span class="c">any</span>  <span class="c">other</span>  <span class="c">part</span>  of   <span class="c">your</span> <span class="c">application</span>.<span><span aria-hidden="true" class="d"><span>
+̢̡̢̢̨̠̥̤</span></span></span></p>
+<span><span aria-hidden="true" class="d"><span>
+̢̡̢̢̨̠̥̤</span></span></span></li>
+<li>
+<p>No  <span class="c">other</span> <span class="c">part</span>  of  <span class="c">your</span>  <span class="c">application</span>  <span class="c">may</span>  <span class="c">refer</span>   to it,  <span class="c">except</span> to  <span class="c">call</span>  <span class="c">its</span>  <span class="c">constuctor</span>,  <span class="c">once</span>.  <span class="c">Your</span>   <span class="c">app</span> <span class="c">must</span>  <span class="c">have</span> a  <span class="c">reference</span>  to  <span class="c">the</span>  <code><span class="c">ResponderComm</span></code>  <span class="c">interface</span>   <span class="c">instead</span>.<span><span aria-hidden="true" class="d"><span>
+̢̡̢̢̨̠̥̤</span></span></span></p>
+<span><span aria-hidden="true" class="d"><span>
+̢̡̢̢̨̠̥̤</span></span></span></li>
+</ol><span><span aria-hidden="true" class="d"><span>
+̢̡̢̢̨̠̥̤</span></span></span></li>
+</ol><div class="admonition note">
+<p class="admonition-title"><span class="c">What</span>?! <span class="c">Why</span>?<span><span aria-hidden="true" class="d"><span>
+̢̡̢̢̨̠̥̤</span></span></span></p>
+<p><span class="c">There</span>  is a  <span class="c">principle</span>  <span class="c">behind</span>  <span class="c">these</span>  <span class="c">constraints</span>.  <span class="c">They</span>   <span class="c">ensure</span> <span class="c">that</span>  a <span class="c">future</span>  <span class="c">team</span>  <span class="c">can</span>  <span class="c">easily</span>  “<span class="c">drop</span>  in”   an <span class="c">alternative</span>  <span class="c">implementation</span> of  <code><span class="c">ResponderComm</span></code>.  <span class="c">You</span>’ll  be  <span class="c">working</span>  <span class="c">with</span>   a <span class="c">test</span>  (or “<span class="c">mock</span>”)  <span class="c">implementation</span>,  <span class="c">with</span>  <span class="c">hard</span>-<span class="c">coded</span>  <span class="c">test</span>  <span class="c">data</span>.   <span class="c">The</span> <span class="c">future</span>,  <span class="c">real</span> <span class="c">implementation</span>  <span class="c">would</span>  <span class="c">provide</span>  an  <span class="c">actual</span>  <span class="c">real</span>-<span class="c">time</span>   <span class="c">communication</span> <span class="c">link</span>  to <span class="c">the</span>  <span class="c">responders</span>  <span class="c">over</span>  <span class="c">radio</span>,  <span class="c">but</span>  <span class="c">that</span>’s   <span class="c">just</span> <span class="c">not</span>  <span class="c">practical</span> <span class="c">here</span>.<span><span aria-hidden="true" class="d"><span>
+̢̡̢̢̨̠̥̤</span></span></span></p>
+<p>In  a  <span class="c">sense</span>,  <span class="c">you</span>’re  <span class="c">only</span>  <span class="c">being</span>   <span class="c">asked</span> to  <span class="c">write</span> a  <span class="c">partially</span>-<span class="c">functioning</span>  <span class="c">system</span>,  <span class="c">with</span>  a  <span class="c">mock</span>   <span class="c">communication</span> <span class="c">link</span>  to <span class="c">let</span>  <span class="c">you</span>  <span class="c">demonstrate</span>  <span class="c">the</span>  <span class="c">core</span>  of   <span class="c">the</span> <span class="c">system</span>.<span><span aria-hidden="true" class="d"><span>
+̢̡̢̢̨̠̥̤</span></span></span></p>
+<p>(<span class="c">From</span>  an <span class="c">educational</span>  <span class="c">perspective</span>,  <span class="c">this</span>  is  <span class="c">useful</span>  <span class="c">experience</span>,   as it’s  <span class="c">the</span> <span class="c">sort</span>  of  <span class="c">thing</span>  <span class="c">you</span>  <span class="c">have</span>  to   <span class="c">get</span> <span class="c">used</span>  to <span class="c">when</span>  <span class="c">working</span>  in  a  <span class="c">team</span>  <span class="c">environment</span>.)<span><span aria-hidden="true" class="d"><span>
+̢̡̢̢̨̠̥̤</span></span></span></p>
+</div>
+<h4 id="the-poll-method-incoming-messages">The   <code>poll()</code> Method  — Incoming  Messages</h4>
+<p><span class="c">Your</span>  <span class="c">program</span>  <span class="c">must</span>  <span class="c">call</span>  <code><span class="c">poll</span>()</code>   to <span class="c">receive</span>  <span class="c">communications</span> <span class="c">from</span>  <span class="c">the</span>  <span class="c">responders</span>.  It  <span class="c">will</span>  <span class="c">return</span>   a <span class="c">list</span>  of <span class="c">all</span>  <span class="c">communications</span>  <span class="c">received</span>  <span class="c">since</span>  it  <span class="c">was</span>   <span class="c">last</span> <span class="c">called</span>.  In <span class="c">practice</span>,  <span class="c">this</span>  <span class="c">list</span>  <span class="c">will</span>  be  <span class="c">empty</span>   <span class="c">most</span> of  <span class="c">the</span> <span class="c">time</span>.  <span class="c">Even</span>  <span class="c">when</span>  <span class="c">non</span>-<span class="c">empty</span>,  it  <span class="c">will</span>   <span class="c">usually</span> <span class="c">have</span>  <span class="c">just</span> <span class="c">one</span>  <span class="c">string</span>.  <span class="c">But</span>  in  <span class="c">principle</span>,  it   <em><span class="c">could</span></em> <span class="c">have</span>  <span class="c">any</span> <span class="c">number</span>  of  <span class="c">strings</span>,  if  <span class="c">multiple</span>  <span class="c">teams</span>   <span class="c">send</span> <span class="c">messages</span>  at <span class="c">exactly</span>  <span class="c">the</span>  <span class="c">same</span>  <span class="c">time</span>.<span><span aria-hidden="true" class="d"><span>
+̢̡̢̢̨̠̥̤</span></span></span></p>
+<p><span class="c">The</span>  <span class="c">strings</span>  <span class="c">have</span>   a <span class="c">precise</span>  <span class="c">format</span>. <span class="c">Most</span>  of  <span class="c">them</span>  <span class="c">consist</span>  of  an   <span class="c">emergency</span> <span class="c">team</span>  <span class="c">type</span> (“<code><span class="c">fire</span></code>”,  “<code><span class="c">flood</span></code>”  or  “<code><span class="c">chemical</span></code>”),  <span class="c">then</span>  a   <span class="c">space</span>, <span class="c">then</span>  “<code>+</code>” or  “<code>-</code>”,  <span class="c">then</span>  a  <span class="c">space</span>,  <span class="c">then</span>   <span class="c">free</span>-<span class="c">form</span> <span class="c">text</span>.  <span class="c">There</span> is  <span class="c">also</span>  a  <span class="c">special</span>  <span class="c">message</span>  <span class="c">consisting</span>   of <span class="c">just</span>  <span class="c">the</span> <span class="c">word</span>  “<code><span class="c">end</span></code>”,  <span class="c">which</span>  <span class="c">means</span>  <span class="c">the</span>  <span class="c">whole</span>   <span class="c">simulation</span> <span class="c">should</span>  <span class="c">shut</span> <span class="c">down</span>.  <span class="c">Put</span>  <span class="c">together</span>,  <span class="c">these</span>  <span class="c">messages</span>  <span class="c">conform</span>   to <span class="c">the</span>  <span class="c">regular</span> <span class="c">expression</span>  “<code><span class="c">end</span>|(<span class="c">fire</span>|<span class="c">flood</span>|<span class="c">chemical</span>) [+-] .+</code>”.<span><span aria-hidden="true" class="d"><span>
+̢̡̢̢̨̠̥̤</span></span></span></p>
+<p><span class="c">For</span>  <span class="c">non</span>-<span class="c">end</span>  <span class="c">messages</span>,  <span class="c">the</span>  <span class="c">emergency</span>   <span class="c">team</span> <span class="c">type</span>  <span class="c">indicates</span> <span class="c">which</span>  <span class="c">team</span>  is  <span class="c">arriving</span>  or  <span class="c">leaving</span>,   <span class="c">with</span> a  “<code>+</code>” <span class="c">for</span>  <span class="c">arrival</span>,  <span class="c">and</span>  “<code>-</code>”  <span class="c">for</span>  <span class="c">departure</span>.   <span class="c">The</span> <span class="c">rest</span>  of <span class="c">the</span>  <span class="c">string</span>  <span class="c">gives</span>  <span class="c">the</span>  <span class="c">location</span>  <span class="c">the</span>   <span class="c">team</span> <span class="c">has</span>  <span class="c">arrived</span> at  or  <span class="c">departed</span>.  <span class="c">For</span>  <span class="c">instance</span>:<span><span aria-hidden="true" class="d"><span>
+̢̡̢̢̨̠̥̤</span></span></span></p>
+<ul><li>“<code><span class="c">flood</span> + <span class="c">Midtown</span></code>”  <span class="c">means</span>   <span class="c">that</span> <span class="c">flood</span>  <span class="c">rescuers</span> <span class="c">have</span>  <span class="c">arrived</span>  in  <span class="c">Midtown</span>  (as  of   <span class="c">the</span> <span class="c">time</span>  <span class="c">when</span> <span class="c">the</span>  <span class="c">message</span>  <span class="c">arrived</span>).<span><span aria-hidden="true" class="d"><span>
+̢̡̢̢̨̠̥̤</span></span></span></li>
+<li>“<code><span class="c">chemical</span> - <span class="c">Westtown</span></code>”  <span class="c">means</span>  <span class="c">that</span>  <span class="c">chemical</span>   <span class="c">cleanup</span> <span class="c">crews</span>  <span class="c">have</span> <span class="c">left</span>  <span class="c">Westtown</span>.<span><span aria-hidden="true" class="d"><span>
+̢̡̢̢̨̠̥̤</span></span></span></li>
+</ul><p><span class="c">Any</span>  <span class="c">invalid</span>  <span class="c">messages</span>  <span class="c">should</span>  be   <span class="c">logged</span>; no  <span class="c">other</span> <span class="c">action</span>  is  <span class="c">necessary</span>,  <span class="c">and</span>  <span class="c">the</span>  <span class="c">simulation</span>   <span class="c">should</span> <span class="c">continue</span>  as <span class="c">normal</span>.<span><span aria-hidden="true" class="d"><span>
+̢̡̢̢̨̠̥̤</span></span></span></p>
+<h4 id="the-send-method-outgoing-messages">The  <code>send()</code>  Method  —  Outgoing  Messages</h4>
+<p><span class="c">Your</span>   <span class="c">program</span> <span class="c">must</span>  <span class="c">call</span> <code><span class="c">send</span>()</code>  to  <span class="c">send</span>  <span class="c">information</span>  <span class="c">back</span>  to   <span class="c">the</span> <span class="c">responders</span>  <span class="c">about</span> <span class="c">events</span>  in  <span class="c">the</span>  <span class="c">simulation</span>.  <span class="c">There</span>  <span class="c">are</span>   <span class="c">two</span> <span class="c">types</span>  of <span class="c">events</span>:<span><span aria-hidden="true" class="d"><span>
+̢̡̢̢̨̠̥̤</span></span></span></p>
+<ul><li>
+<p><span class="c">Status</span>  <span class="c">events</span>  <span class="c">occur</span>  <span class="c">when</span>  an  <span class="c">emergency</span>   <span class="c">begins</span>, or  <span class="c">changes</span>, or  <span class="c">ends</span>.  <span class="c">These</span>  <span class="c">messages</span>  <span class="c">consist</span>  of   an <span class="c">emergency</span>  <span class="c">type</span> (“<code><span class="c">fire</span></code>”,  “<code><span class="c">flood</span></code>”  or  “<code><span class="c">chemical</span></code>”),  <span class="c">then</span>  a   <span class="c">space</span>, <span class="c">then</span>  a <span class="c">status</span>  <span class="c">change</span>  (“<code><span class="c">start</span></code>”,  “<code><span class="c">end</span></code>”,  “<code><span class="c">low</span></code>”  or   “<code><span class="c">high</span></code>”, <span class="c">with</span>  <span class="c">the</span> <span class="c">last</span>  <span class="c">two</span>  <span class="c">used</span>  <span class="c">only</span>  <span class="c">for</span>  <span class="c">fires</span>),   <span class="c">then</span> a  <span class="c">space</span>, <span class="c">then</span>  a  <span class="c">location</span>.  In  <span class="c">regular</span>  <span class="c">expression</span>   <span class="c">form</span>: “<code>(<span class="c">fire</span>|<span class="c">flood</span>|<span class="c">chemical</span>) (<span class="c">start</span>|<span class="c">end</span>|<span class="c">low</span>|<span class="c">high</span>) .+</code>”.<span><span aria-hidden="true" class="d"><span>
+̢̡̢̢̨̠̥̤</span></span></span></p>
+<p><span class="c">For</span>  <span class="c">instance</span>:<span><span aria-hidden="true" class="d"><span>
+̢̡̢̢̨̠̥̤</span></span></span></p>
+<ul><li>“<code><span class="c">flood</span> <span class="c">end</span> <span class="c">Midtown</span></code>” <span class="c">means</span>  <span class="c">that</span>  <span class="c">the</span>  <span class="c">flood</span>  in  <span class="c">Midtown</span>   is <span class="c">over</span>.<span><span aria-hidden="true" class="d"><span>
+̢̡̢̢̨̠̥̤</span></span></span></li>
+<li>“<code><span class="c">fire</span> <span class="c">low</span> <span class="c">Hill</span> <span class="c">Valley</span></code>”  <span class="c">means</span> <span class="c">that</span>  <span class="c">the</span>  <span class="c">fire</span>  in  <span class="c">Hill</span>  <span class="c">Valley</span>   is <span class="c">now</span>  <span class="c">low</span>-<span class="c">intensity</span> (<span class="c">down</span>  <span class="c">from</span>  <span class="c">high</span>-<span class="c">intensity</span>).<span><span aria-hidden="true" class="d"><span>
+̢̡̢̢̨̠̥̤</span></span></span></li>
+</ul><span><span aria-hidden="true" class="d"><span>
+̢̡̢̢̨̠̥̤</span></span></span></li>
+<li>
+<p><span class="c">Loss</span>  <span class="c">events</span>  <span class="c">occur</span>  <span class="c">when</span>   <span class="c">someone</span> is  <span class="c">hospitalised</span>, or  a  <span class="c">property</span>  is  <span class="c">damaged</span>,  or   <span class="c">there</span> is  <span class="c">environmental</span> <span class="c">contamination</span>.  <span class="c">These</span>  <span class="c">messages</span>  <span class="c">consist</span>  of  an   <span class="c">emergency</span> <span class="c">type</span>  (“<code><span class="c">fire</span></code>”, “<code><span class="c">flood</span></code>”  or  “<code><span class="c">chemical</span></code>”),  <span class="c">then</span>  a  <span class="c">space</span>,   <span class="c">then</span> a  <span class="c">loss</span> <span class="c">type</span>  (“<code><span class="c">casualty</span></code>”,  “<code><span class="c">damage</span></code>”  or  “<code><span class="c">contam</span></code>”),  <span class="c">then</span>   a <span class="c">space</span>,  <span class="c">then</span> a  <span class="c">count</span>  of  <span class="c">the</span>  <span class="c">number</span>  of   <span class="c">this</span> <span class="c">kind</span>  of <span class="c">loss</span>  in  <span class="c">this</span>  <span class="c">particular</span>  <span class="c">emergency</span>  <span class="c">since</span>   it <span class="c">started</span>,  <span class="c">then</span> a  <span class="c">space</span>,  <span class="c">then</span>  a  <span class="c">location</span>.  In   <span class="c">regular</span> <span class="c">expression</span>  <span class="c">form</span>: “<code>(<span class="c">fire</span>|<span class="c">flood</span>|<span class="c">chemical</span>) (<span class="c">casualty</span>|<span class="c">damage</span>|<span class="c">contam</span>) [0-9]+ .+</code>”.<span><span aria-hidden="true" class="d"><span>
+̢̡̢̢̨̠̥̤</span></span></span></p>
+<p><span class="c">For</span>  <span class="c">instance</span>:<span><span aria-hidden="true" class="d"><span>
+̢̡̢̢̨̠̥̤</span></span></span></p>
+<ul><li>“<code><span class="c">fire</span> <span class="c">casualty</span> 2 <span class="c">Midtown</span></code>”  <span class="c">means</span>  <span class="c">that</span>  a  <span class="c">person</span>   <span class="c">has</span> <span class="c">just</span>  <span class="c">been</span> <span class="c">hospitalised</span>  <span class="c">due</span>  to  a  <span class="c">fire</span>  in   <span class="c">Midtown</span>, <span class="c">and</span>  <span class="c">this</span> <span class="c">fire</span>  <span class="c">has</span>  <span class="c">hospitalised</span>  <span class="c">two</span>  <span class="c">people</span>  so   <span class="c">far</span> (<span class="c">including</span>  <span class="c">the</span> <span class="c">one</span>  <span class="c">just</span>  <span class="c">reported</span>).<span><span aria-hidden="true" class="d"><span>
+̢̡̢̢̨̠̥̤</span></span></span></li>
+<li>“<code><span class="c">flood</span> <span class="c">damage</span> 3 <span class="c">Hill</span> <span class="c">Valley</span></code>”  <span class="c">means</span>  <span class="c">that</span>  a   <span class="c">property</span> <span class="c">has</span>  <span class="c">just</span> <span class="c">been</span>  <span class="c">destroyed</span>  <span class="c">due</span>  to  a  <span class="c">flood</span>   in <span class="c">Hill</span>  <span class="c">Valley</span>, <span class="c">and</span>  <span class="c">this</span>  <span class="c">flood</span>  <span class="c">has</span>  <span class="c">destroyed</span>  <span class="c">three</span>   <span class="c">properties</span> so  <span class="c">far</span>.<span><span aria-hidden="true" class="d"><span>
+̢̡̢̢̨̠̥̤</span></span></span></li>
+</ul><p><span class="c">Environmental</span> <span class="c">contamination</span>  <span class="c">has</span>  a  <span class="c">count</span>  <span class="c">just</span>  as   <span class="c">the</span> <span class="c">other</span>  <span class="c">two</span> <span class="c">types</span>  of  <span class="c">loss</span>  do,  <span class="c">for</span>  <span class="c">simplicity</span>.<span><span aria-hidden="true" class="d"><span>
+̢̡̢̢̨̠̥̤</span></span></span></p>
+<span><span aria-hidden="true" class="d"><span>
+̢̡̢̢̨̠̥̤</span></span></span></li>
+</ul><p><span class="c">These</span>   <span class="c">are</span> <span class="c">messages</span>  <span class="c">that</span> <span class="c">your</span>  <span class="c">application</span>  <span class="c">must</span>  <span class="c">construct</span>,  of  <span class="c">course</span>.<span><span aria-hidden="true" class="d"><span>
+̢̡̢̢̨̠̥̤</span></span></span></p>
+<h2 id="academic-integrity">Academic   Integrity</h2>
+<p><span class="c">Please</span> <span class="c">see</span>  <span class="c">the</span> <em><span class="c">Coding</span>  <span class="c">and</span>  <span class="c">Academic</span>  <span class="c">Integrity</span>  <span class="c">Guidelines</span></em>  on   <span class="c">Blackboard</span>.<span><span aria-hidden="true" class="d"><span>
+̢̡̢̢̨̠̥̤</span></span></span></p>
+<p>In <span class="c">summary</span>,  <span class="c">this</span> is  an  <span class="c">assessable</span>  <span class="c">task</span>.  If  <span class="c">you</span>   <span class="c">use</span> <span class="c">someone</span>  <span class="c">else</span>’s <span class="c">work</span>  or  <span class="c">assistance</span>  to  <span class="c">help</span>  <span class="c">complete</span>   <span class="c">part</span> of  <span class="c">the</span> <span class="c">assignment</span>,  <span class="c">where</span>  it’s  <span class="c">intended</span>  <span class="c">that</span>  <span class="c">you</span>   <span class="c">complete</span> it  <span class="c">yourself</span>, <span class="c">you</span>  <span class="c">will</span>  <span class="c">have</span>  <span class="c">compromised</span>  <span class="c">the</span>  <span class="c">assessment</span>.   <span class="c">You</span> <span class="c">will</span>  <span class="c">not</span> <span class="c">receive</span>  <span class="c">marks</span>  <span class="c">for</span>  <span class="c">any</span>  <span class="c">parts</span>  of   <span class="c">your</span> <span class="c">submission</span>  <span class="c">that</span> <span class="c">are</span>  <span class="c">not</span>  <span class="c">your</span>  <span class="c">own</span>  <span class="c">original</span>  <span class="c">work</span>.   <span class="c">Further</span>, if  <span class="c">you</span> do  <span class="c">not</span>  <em><span class="c">reference</span></em>  <span class="c">any</span>  <span class="c">external</span>  <span class="c">sources</span>   <span class="c">that</span> <span class="c">you</span>  <span class="c">use</span>, <span class="c">you</span>  <span class="c">are</span>  <span class="c">committing</span>  <span class="c">plagiarism</span>  <span class="c">and</span>/or  <span class="c">collusion</span>,   <span class="c">and</span> <span class="c">penalties</span>  <span class="c">for</span> <span class="c">academic</span>  <span class="c">misconduct</span>  <span class="c">may</span>  <span class="c">apply</span>.<span><span aria-hidden="true" class="d"><span>
+̢̡̢̢̨̠̥̤</span></span></span></p>
+<p><span class="c">Curtin</span>  <span class="c">also</span>  <span class="c">provides</span>   <span class="c">general</span> <span class="c">advice</span>  on <span class="c">academic</span>  <span class="c">integrity</span>  at  <a href="http://academicintegrity.curtin.edu.au"><span class="c">academicintegrity</span>.<span class="c">curtin</span>.<span class="c">edu</span>.au</a>.<span><span aria-hidden="true" class="d"><span>
+̢̡̢̢̨̠̥̤</span></span></span></p>
+<p><span class="c">The</span>  <span class="c">unit</span>  <span class="c">coordinator</span>   <span class="c">may</span> <span class="c">require</span>  <span class="c">you</span> to  <span class="c">provide</span>  an  <span class="c">oral</span>  <span class="c">justification</span>  of,   or to  <span class="c">answer</span> <span class="c">questions</span>  <span class="c">about</span>,  <span class="c">any</span>  <span class="c">piece</span>  of  <span class="c">written</span>   <span class="c">work</span> <span class="c">submitted</span>  in <span class="c">this</span>  <span class="c">unit</span>.  <span class="c">Your</span>  <span class="c">response</span>(s)  <span class="c">may</span>  be   <span class="c">referred</span> to  as <span class="c">evidence</span>  in  an  <span class="c">academic</span>  <span class="c">misconduct</span>  <span class="c">inquiry</span>.<span><span aria-hidden="true" class="d"><span>
+̢̡̢̢̨̠̥̤</span></span></span></p>
+<script>
+const pageHeight = 1200;       
+        function pageN(t, n)
+        {
+            let elem = document.createElement('div');
+            elem.className = 'pageN';
+            elem.style.top = `calc(${t}px - 1em)`;
+            elem.textContent = n;
+            elem.title = 'Pseudo page number';
+            document.body.append(elem);
+        }
+       
+        const totalHeight = document.body.clientHeight;
+        let n = 1;
+        let t = pageHeight;
+        while(t < totalHeight)
+        {
+            pageN(t, n);
+            n += 1;
+            t += pageHeight;
+        }
+        
+        let elem = document.createElement('div');
+        elem.className = 'pageN';
+        elem.style.top = 'auto';
+        elem.style.bottom = '0';
+        elem.textContent = n;
+        elem.title = 'Pseudo page number';
+        document.body.append(elem);
+    
+</script>
+</body>
+</html>
